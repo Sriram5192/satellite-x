@@ -1,0 +1,28 @@
+{
+  "properties": {
+    "layers": [
+      {
+        "name": "phh2o",
+        "depths": [
+          {
+            "label": "0-5cm",
+            "values": {
+              "mean": 68
+            }
+          }
+        ]
+      },
+      {
+        "name": "nitrogen",
+        "depths": [
+          {
+            "label": "0-5cm",
+            "values": {
+              "mean": 25
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

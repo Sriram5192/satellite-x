@@ -1,0 +1,126 @@
+{
+  "$defs": {
+    "GroundVerification": {
+      "additionalProperties": false,
+      "properties": {
+        "captured_at": {
+          "format": "date-time",
+          "title": "Captured At",
+          "type": "string"
+        },
+        "field_id": {
+          "title": "Field Id",
+          "type": "string"
+        },
+        "latitude": {
+          "maximum": 90,
+          "minimum": -90,
+          "title": "Latitude",
+          "type": "number"
+        },
+        "longitude": {
+          "maximum": 180,
+          "minimum": -180,
+          "title": "Longitude",
+          "type": "number"
+        },
+        "notes": {
+          "title": "Notes",
+          "type": "string"
+        },
+        "observation": {
+          "enum": [
+            "confirmed",
+            "not_confirmed",
+            "inconclusive"
+          ],
+          "title": "Observation",
+          "type": "string"
+        },
+        "officer_id": {
+          "title": "Officer Id",
+          "type": "string"
+        },
+        "photo_sha256": {
+          "pattern": "^[0-9a-f]{64}$",
+          "title": "Photo Sha256",
+          "type": "string"
+        },
+        "task_id": {
+          "title": "Task Id",
+          "type": "string"
+        }
+      },
+      "required": [
+        "task_id",
+        "field_id",
+        "officer_id",
+        "captured_at",
+        "latitude",
+        "longitude",
+        "observation",
+        "photo_sha256",
+        "notes"
+      ],
+      "title": "GroundVerification",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "device_id": {
+      "minLength": 3,
+      "title": "Device Id",
+      "type": "string"
+    },
+    "event_id": {
+      "minLength": 8,
+      "title": "Event Id",
+      "type": "string"
+    },
+    "evidence": {
+      "$ref": "#/$defs/GroundVerification"
+    },
+    "payload_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "title": "Payload Sha256",
+      "type": "string"
+    },
+    "queued_at": {
+      "format": "date-time",
+      "title": "Queued At",
+      "type": "string"
+    },
+    "server_receipt": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Server Receipt"
+    },
+    "sync_status": {
+      "default": "pending",
+      "enum": [
+        "pending",
+        "synced",
+        "rejected"
+      ],
+      "title": "Sync Status",
+      "type": "string"
+    }
+  },
+  "required": [
+    "event_id",
+    "device_id",
+    "queued_at",
+    "evidence",
+    "payload_sha256"
+  ],
+  "title": "OfflineEvidenceEnvelope",
+  "type": "object"
+}

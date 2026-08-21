@@ -1,0 +1,25 @@
+{
+  "source_file": "colab_verification_summary.json",
+  "source_sha256": "59ce475bf61afb3673281aa00e926eaa85a8851cc67b36d29cac42741b7196ce",
+  "checks": {
+    "version_0_7_0": true,
+    "deterministic_pass": true,
+    "live_pass": true,
+    "schemas_pass": true,
+    "set2_oracle": true,
+    "set3_set4_oracle": true,
+    "timeseries_oracle": true,
+    "sar_oracle": true,
+    "mobile_security": true,
+    "api_security": true,
+    "streamlit_demo": true,
+    "streamlit_authenticated": true,
+    "weather_scene_aligned": true,
+    "privacy_small_group_suppressed": true,
+    "external_activation_honest_false": true,
+    "external_note_present": true
+  },
+  "all_colab_software_gates_passed": true,
+  "production_external_activation_complete": false,
+  "decision": "COLAB_SOFTWARE_VERIFICATION_ACCEPTED"
+}

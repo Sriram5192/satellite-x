@@ -1,0 +1,16 @@
+{
+  "assumptions": [
+    "Transmit EIRP, receiver noise temperature, antenna efficiency and required Eb/N0 are caller-supplied calibration inputs.",
+    "No live beacon measurement is inferred from this calculation."
+  ],
+  "c_n0_db_hz": 132.118776,
+  "calibration_status": "caller_supplied_validation_fixture",
+  "doppler_shift_hz": -136761.279,
+  "eb_n0_db": 44.636895,
+  "free_space_path_loss_db": 170.726277,
+  "link_margin_db": 38.636895,
+  "noise_density_dbw_hz": -206.838255,
+  "receive_antenna_gain_dbi": 46.006798,
+  "received_carrier_power_dbw": -74.719479,
+  "status": "margin_positive"
+}

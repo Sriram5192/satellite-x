@@ -1,0 +1,14 @@
+{
+  "latitude": 16.3067,
+  "longitude": 80.4365,
+  "frequency_ghz": 8.2,
+  "elevation_deg": 30.0,
+  "exceedance_probability_pct": 0.01,
+  "antenna_diameter_m": 3.0,
+  "station_altitude_km": null,
+  "water_vapour_density_g_m3": null,
+  "rainfall_rate_001_mm_h": null,
+  "temperature_k": null,
+  "pressure_hpa": null,
+  "measured_ionospheric_fade_db": null
+}

@@ -1,0 +1,116 @@
+{
+  "$defs": {
+    "ManagementZoneFeature": {
+      "additionalProperties": false,
+      "properties": {
+        "approximate_acres": {
+          "exclusiveMinimum": 0,
+          "title": "Approximate Acres",
+          "type": "number"
+        },
+        "geometry_geojson": {
+          "additionalProperties": true,
+          "title": "Geometry Geojson",
+          "type": "object"
+        },
+        "ndvi_mean": {
+          "title": "Ndvi Mean",
+          "type": "number"
+        },
+        "pixel_count": {
+          "exclusiveMinimum": 0,
+          "title": "Pixel Count",
+          "type": "integer"
+        },
+        "zone": {
+          "enum": [
+            "low_relative_ndvi",
+            "medium_relative_ndvi",
+            "high_relative_ndvi"
+          ],
+          "title": "Zone",
+          "type": "string"
+        }
+      },
+      "required": [
+        "zone",
+        "pixel_count",
+        "approximate_acres",
+        "ndvi_mean",
+        "geometry_geojson"
+      ],
+      "title": "ManagementZoneFeature",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "application_rates": {
+      "default": null,
+      "title": "Application Rates",
+      "type": "null"
+    },
+    "field_id": {
+      "title": "Field Id",
+      "type": "string"
+    },
+    "generated_at": {
+      "format": "date-time",
+      "title": "Generated At",
+      "type": "string"
+    },
+    "human_approval_required": {
+      "const": true,
+      "default": true,
+      "title": "Human Approval Required",
+      "type": "boolean"
+    },
+    "scene_id": {
+      "title": "Scene Id",
+      "type": "string"
+    },
+    "status": {
+      "const": "experimental_requires_approval",
+      "default": "experimental_requires_approval",
+      "title": "Status",
+      "type": "string"
+    },
+    "thresholds": {
+      "additionalProperties": {
+        "type": "number"
+      },
+      "title": "Thresholds",
+      "type": "object"
+    },
+    "warnings": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Warnings",
+      "type": "array"
+    },
+    "zones": {
+      "items": {
+        "$ref": "#/$defs/ManagementZoneFeature"
+      },
+      "title": "Zones",
+      "type": "array"
+    },
+    "zoning_basis": {
+      "const": "within_field_ndvi_tertiles",
+      "default": "within_field_ndvi_tertiles",
+      "title": "Zoning Basis",
+      "type": "string"
+    }
+  },
+  "required": [
+    "field_id",
+    "scene_id",
+    "generated_at",
+    "thresholds",
+    "zones",
+    "warnings"
+  ],
+  "title": "ManagementZoneResult",
+  "type": "object"
+}

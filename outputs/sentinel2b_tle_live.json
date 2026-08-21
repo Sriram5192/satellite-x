@@ -1,0 +1,12 @@
+{
+  "age_hours_at_fetch": 13.205365,
+  "epoch": "2026-08-19T21:55:49.046295Z",
+  "fetched_at": "2026-08-20T11:08:08.361498Z",
+  "freshness": "fresh",
+  "line1": "1 42063U 17013A   26231.91376211 -.00000176  00000+0 -50674-4 0  9992",
+  "line2": "2 42063  98.5650 305.7768 0001257  88.6251 271.5076 14.30822032493752",
+  "maximum_age_hours": 72.0,
+  "name": "SENTINEL-2B",
+  "norad_id": 42063,
+  "source_url": "https://celestrak.org/NORAD/elements/gp.php?CATNR=42063&FORMAT=TLE"
+}

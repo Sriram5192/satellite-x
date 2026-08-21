@@ -1,0 +1,82 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "absolute_epoch_gap_hours": {
+      "title": "Absolute Epoch Gap Hours",
+      "type": "number"
+    },
+    "expected_norad_id": {
+      "anyOf": [
+        {
+          "type": "integer"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "title": "Expected Norad Id"
+    },
+    "scene_id": {
+      "title": "Scene Id",
+      "type": "string"
+    },
+    "scene_time_utc": {
+      "format": "date-time",
+      "title": "Scene Time Utc",
+      "type": "string"
+    },
+    "spacecraft_code": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "title": "Spacecraft Code"
+    },
+    "status": {
+      "enum": [
+        "validated_epoch_near_scene",
+        "historical_tle_required",
+        "spacecraft_or_norad_mismatch"
+      ],
+      "title": "Status",
+      "type": "string"
+    },
+    "tle_epoch": {
+      "format": "date-time",
+      "title": "Tle Epoch",
+      "type": "string"
+    },
+    "tle_norad_id": {
+      "title": "Tle Norad Id",
+      "type": "integer"
+    },
+    "usable_for_pass_validation": {
+      "title": "Usable For Pass Validation",
+      "type": "boolean"
+    },
+    "warnings": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Warnings",
+      "type": "array"
+    }
+  },
+  "required": [
+    "scene_id",
+    "spacecraft_code",
+    "expected_norad_id",
+    "tle_norad_id",
+    "scene_time_utc",
+    "tle_epoch",
+    "absolute_epoch_gap_hours",
+    "status",
+    "usable_for_pass_validation"
+  ],
+  "title": "SceneOrbitProvenance",
+  "type": "object"
+}

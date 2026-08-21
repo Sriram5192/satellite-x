@@ -1,0 +1,14 @@
+{
+  "pages": {
+    "Executive overview": true,
+    "Agriculture intelligence": true,
+    "Orbit & Doppler": true,
+    "Atmosphere & link": true,
+    "Dynamic traffic": true,
+    "Security & governance": true,
+    "Verification & activation": true
+  },
+  "passed": true,
+  "explicit_external_activation_warning": true,
+  "scope": "read_only_release_artifact_demo"
+}

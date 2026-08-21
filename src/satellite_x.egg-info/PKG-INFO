@@ -1,0 +1,423 @@
+Metadata-Version: 2.4
+Name: satellite-x
+Version: 0.8.0
+Summary: SATELLITE-X field intelligence, governance, TLE/Doppler and calibrated communications simulation engine
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+Requires-Dist: pydantic<3,>=2.8
+Requires-Dist: requests<3,>=2.31
+Requires-Dist: duckdb<2,>=1.5
+Requires-Dist: shapely<3,>=2.1
+Requires-Dist: pyproj<4,>=3.7
+Requires-Dist: numpy<3,>=2
+Requires-Dist: rasterio<2,>=1.4
+Requires-Dist: cryptography<47,>=43
+Provides-Extra: dev
+Requires-Dist: pytest<10,>=8; extra == "dev"
+Provides-Extra: web
+Requires-Dist: streamlit<2,>=1.40; extra == "web"
+Requires-Dist: folium<1,>=0.18; extra == "web"
+Requires-Dist: streamlit-folium<1,>=0.24; extra == "web"
+Provides-Extra: api
+Requires-Dist: fastapi<1,>=0.115; extra == "api"
+Requires-Dist: uvicorn<1,>=0.30; extra == "api"
+Provides-Extra: communications
+Requires-Dist: skyfield<2,>=1.49; extra == "communications"
+Requires-Dist: itur<1,>=0.4.0; extra == "communications"
+Provides-Extra: audit
+Requires-Dist: numpy<3,>=2; extra == "audit"
+Requires-Dist: pyproj<4,>=3.7; extra == "audit"
+Requires-Dist: rasterio<2,>=1.4; extra == "audit"
+
+# SATELLITE-X — Transparent Field Intelligence v0.8.0
+
+Working implementation of **Set 1 acquisition**, consent-bound **Polygon Recovery**, **Set 2 quality preprocessing**, **Set 3 seven-index/phenology/water and multi-scene analytics**, **Set 4 differential diagnosis**, Sentinel-1 RTC evidence, authenticated individual-field controls, and privacy-safe government aggregation. Real sources, calibration, fallbacks, permissions and uncertainty remain explicit.
+
+## Implemented sources
+
+| Stream | Primary | Fallback | Output |
+|---|---|---|---|
+| Satellite | AWS Earth Search STAC (`sentinel-2-l2a`) | 30-day expansion, then Copernicus CDSE STAC | B02, B03, B04, B05, B08, B11, SCL asset contracts |
+| Weather | Open-Meteo Archive or Forecast API | Exact persisted response cache | 30 daily records, 15/30-day totals, 7-day forecast when current |
+| Soil | ISRIC SoilGrids REST, 0–5 cm mean | Exact cache, then frozen regional baseline | pH ÷ 10; nitrogen ÷ 100 g/kg |
+| IoT | Strict ESP32 JSON + HMAC-SHA256 | Unverified/stale gate; never silently trusted | Moisture, temperature, pH, NPK, battery, authenticity/freshness |
+
+## Safety and provenance rules
+
+- No random or silently fabricated values.
+- Weather failure without an exact cache is a hard error.
+- Soil baseline (`pH=6.8`, `N=0.25 g/kg`) is used only after both SoilGrids and cache fail. The result is marked `degraded`, `fallback_used=true`, and `source=regional_ag_zone_baseline`.
+- Satellite processing stops if AWS and CDSE both fail or return no complete scene.
+- All seven satellite assets are mandatory.
+- Every HTTP call has bounded connect/read timeouts and retries.
+- IoT timestamps must contain a timezone and all physical ranges are validated.
+- An IoT JSON cannot declare itself live. `live` requires a valid HMAC-SHA256 signature and age ≤ 24 hours; otherwise it is `unverified` or `stale`.
+- STAC radiometric `scale`, `offset`, and `nodata` are retained so later indices use surface reflectance rather than raw DN.
+
+## Project layout
+
+```text
+src/satellite_x/
+├── acquisition/
+│   ├── pipeline.py       # Set 1 orchestration
+│   ├── satellite.py      # AWS STAC + CDSE fallback
+│   ├── weather.py        # Open-Meteo + exact cache
+│   └── soil.py           # SoilGrids + explicit fallback
+├── cache.py              # Atomic JSON response cache
+├── cli.py                # acquire / validate-iot / export-schemas
+├── config.py             # Environment configuration
+├── http.py               # Retry/timeout JSON transport
+├── iot_security.py       # HMAC-SHA256 authenticity
+├── models.py             # Strict Set 1 Pydantic contracts
+└── polygon/
+    ├── location.py       # Consent-bound road/structure/water preflight
+    ├── ftw.py            # Open FTW GeoParquet query
+    ├── geometry.py       # Topology repair and metric validation
+    ├── scoring.py        # Transparent GPS/acreage scoring
+    ├── models.py         # Polygon input/output contracts
+    └── service.py        # Recovery and confirmation orchestration
+├── preprocessing/
+│   ├── catalog.py        # All Sentinel-2 candidates for a field/date range
+│   ├── quality.py        # SCL, calibrated spectral and urban gates
+│   ├── models.py         # Set 2 contracts
+│   └── service.py        # Retry/expansion/selection orchestration
+
+apps/
+└── polygon_app.py        # Streamlit + Folium Draw confirmation website
+
+audit/
+├── reality_check.py      # Independent API/raster/soil/IoT gate
+├── polygon_recovery_reality.py # Independent FTW/location/area oracle
+└── scene_quality_study.py # Expanded candidate SCL study
+
+tests/
+├── fixtures/             # Independently fixed API responses
+├── golden/               # Exact expected Set 1 output
+└── test_*.py              # Unit, fallback, regression, live tests
+```
+
+## Installation
+
+Python 3.11 or later is required.
+
+```bash
+cd satellite-x
+python -m venv .venv
+source .venv/bin/activate             # Windows: .venv\Scripts\activate
+pip install -r requirements.txt
+pip install -e . --no-deps
+```
+
+Without installation, prepend `PYTHONPATH=src` to the commands below.
+
+## Execute Set 1
+
+```bash
+satellite-x acquire \
+  --input examples/guntur_field.json \
+  --iot examples/iot_payload.json \
+  --output outputs/set1_guntur_live.json
+```
+
+Equivalent source-tree command:
+
+```bash
+PYTHONPATH=src python -m satellite_x acquire \
+  --input examples/guntur_field.json \
+  --iot examples/iot_payload.json \
+  --output outputs/set1_guntur_live.json
+```
+
+An unsigned IoT file is retained for inspection but marked `unverified`. For authenticated hardware, sign the exact request/file bytes with HMAC-SHA256 and provide the signature separately:
+
+```bash
+export SATELLITE_X_IOT_HMAC_SECRET='device-specific-secret'
+PYTHONPATH=src python -m satellite_x acquire \
+  --input field.json --iot payload.json \
+  --iot-signature '<64-hex-hmac>' --output outputs/result.json
+```
+
+Validate an ESP32 payload:
+
+```bash
+satellite-x validate-iot --input examples/iot_payload.json
+```
+
+Export input/output JSON Schemas:
+
+```bash
+satellite-x export-schemas --directory schemas
+```
+
+## Polygon Recovery CLI
+
+Negative road test (an exit code of `3` is expected because the point is correctly rejected):
+
+```bash
+PYTHONPATH=src python -m satellite_x recover-polygon \
+  --input examples/polygon_road_request.json \
+  --output outputs/polygon_road_result.json
+```
+
+Positive open-data FTW integration test:
+
+```bash
+PYTHONPATH=src python -m satellite_x recover-polygon \
+  --input examples/polygon_open_field_request.json \
+  --output outputs/polygon_open_field_result.json
+
+PYTHONPATH=src python -m satellite_x confirm-polygon \
+  --recovery outputs/polygon_open_field_result.json \
+  --candidate-id ftw-IN-AP-1537149-2025-545a8a4ecb \
+  --output outputs/polygon_open_field_confirmed.json
+```
+
+A confirmed FTW polygon is explicitly `legal_boundary=false`. An uploaded FMB is also kept unverified until a later authorized legal-record/survey verification step.
+
+## Polygon Confirmation Website
+
+```bash
+export SATELLITE_X_IDENTITY_DB='data/api/identity.db'
+PYTHONPATH=src streamlit run apps/polygon_app.py \
+  --server.address 0.0.0.0 --server.port 8501
+```
+
+For non-production integration testing only, explicitly use `SATELLITE_X_DEMO_MODE=1`. Without identity configuration or that explicit demo flag, the app fails closed. Authenticated farmer mode requires a confirmed field link before Set 2–4 analysis.
+
+The website supports GPS consent, open FTW candidate recovery, comparison, Folium drawing/editing, GeoJSON upload, topology/area validation, and explicit confirmation. It does not collect Aadhaar or owner name.
+
+## Set 2 Field Preprocessing
+
+Run the confirmed open crop-field example through exact SCL clipping, candidate retry, calibrated reflectance and the urban gate:
+
+```bash
+PYTHONPATH=src python -m satellite_x preprocess-field \
+  --input examples/preprocessing_crop_field_request.json \
+  --output outputs/preprocessing_crop_field_result.json
+```
+
+Verified live result:
+
+```text
+Original-range scene S2C_44PMC_20260723: spectral-validity 7.69% → rejected
+Expanded scene S2B_44PMC_20260628: field-valid 100%, spectral-valid 100%
+Quality: MEDIUM
+Urban gate: pass
+Final status: accepted
+```
+
+A blocked GPS input stops before any catalog/raster work:
+
+```bash
+PYTHONPATH=src python -m satellite_x preprocess-field \
+  --input examples/preprocessing_blocked_location_request.json \
+  --output outputs/preprocessing_blocked_location_result.json
+```
+
+## Sentinel-1 RTC Cloud Fallback
+
+```bash
+PYTHONPATH=src python -m satellite_x sar-fallback \
+  --input examples/sar_fallback_crop_field_request.json \
+  --output outputs/sar_fallback_crop_field_result.json
+```
+
+The live fallback reports terrain-corrected VV/VH dB evidence and never pretends SAR is an optical vegetation index.
+
+## Orbit, Doppler, ITU-R and Scheduled-contact Simulation
+
+This is split into two honest scopes:
+
+1. agriculture scene provenance/pass planning through live TLE + SGP4;
+2. a separate X-band link/contact simulator that requires calibrated inputs and never claims to control Sentinel transponders.
+
+```bash
+PYTHONPATH=src python -m satellite_x fetch-tle \
+  --norad-id 40697 --output outputs/sentinel2a_tle_live.json
+
+PYTHONPATH=src python -m satellite_x predict-passes \
+  --input examples/sentinel2a_guntur_pass_request.json \
+  --output outputs/sentinel2a_guntur_passes.json
+
+PYTHONPATH=src python -m satellite_x atmospheric-loss \
+  --input examples/atmospheric_loss_guntur_xband_validation.json \
+  --output outputs/atmospheric_loss_guntur_xband_validation.json
+
+PYTHONPATH=src python -m satellite_x simulate-contact-traffic \
+  --input examples/traffic_120_station_validation_only.json \
+  --output outputs/traffic_120_station_validation_only.json
+```
+
+The Sentinel reference uses documented X-band mission context; `8.2 GHz`, EIRP, noise temperature and 120-station traffic in the included examples are explicitly caller-supplied validation fixtures, not operational ESA parameters. Latest TLEs are rejected for the historical 2026-06-28 scene because the epoch gap exceeds seven days; an authorized historical TLE is required. TLE/SGP4 is orbital prediction, not live beacon telemetry.
+
+## Set 3 Analytics & Set 4 Diagnosis
+
+```bash
+PYTHONPATH=src python -m satellite_x analyze-field \
+  --preprocessing outputs/preprocessing_crop_field_result.json \
+  --set1 outputs/set1_crop_field_scene_aligned.json \
+  --output outputs/analytics_crop_field_result.json
+
+PYTHONPATH=src python -m satellite_x diagnose-field \
+  --analytics outputs/analytics_crop_field_result.json \
+  --quality MEDIUM \
+  --sowing-date-quality known \
+  --output outputs/diagnosis_crop_field_result.json
+```
+
+The current real run computes all seven indices, chilli DAS/stage, rain–ET0 deficit, transparent evidence, Telugu action and confidence. See `SET3_SET4_GOVERNANCE_REPORT.md`.
+
+## Real Multi-scene Trends
+
+```bash
+PYTHONPATH=src python -m satellite_x analyze-timeseries \
+  --input examples/timeseries_live_request.json \
+  --output outputs/timeseries_live_result.json
+```
+
+The included request contains three genuinely processed Sentinel-2/Set 3 observations (2026-03-20, 2026-04-06, and 2026-05-09). Output quality is honestly `limited` because the largest cloud-driven scene gap is 33 days. The independent OLS audit passes 16/16 checks.
+
+## Experimental Management Zones
+
+```bash
+PYTHONPATH=src python -m satellite_x management-zones \
+  --preprocessing outputs/preprocessing_crop_field_result.json \
+  --output outputs/management_zones_live.json
+```
+
+This produces relative within-field NDVI zones only. Application rates remain `null`; prescription export requires named human approval and still sets `machinery_execution_authorized=false`. Yield similarly remains unavailable without a validated local model.
+
+## Multimodal Resilience Routing
+
+```bash
+PYTHONPATH=src python -m satellite_x resilience-route \
+  --preprocessing outputs/preprocessing_crop_field_result.json \
+  --sar outputs/sar_fallback_crop_field_result.json \
+  --output outputs/resilience_multimodal_live.json
+```
+
+Accepted optical data remains primary and SAR is ancillary. If optical data is unavailable, the route becomes `SAR_ONLY_UNRESOLVED`: optical indices and diagnosis are explicitly disabled.
+
+## Governance, OTP and Offline PWA
+
+- Authenticated accounts use salted password hashes, hashed revocable sessions, single-use provider OTP proofs, and confirmed field links.
+- OTP challenges are HMAC-hashed, rate-limited, attempt-limited, expiring and replay-protected; raw phone numbers are not stored.
+- Village, mandal and district summaries contain no personal data and are separately jurisdiction-gated.
+- The `mobile/` PWA captures GPS and a photo into IndexedDB, uploads the photo into AES-256-GCM encrypted storage, then synchronizes its digest-bound envelope.
+- Server synchronization verifies officer identity, encrypted photo existence and payload hash, rejects collisions, and returns Ed25519 receipts verified by the PWA.
+- Official government JSON adapters require a signed authoritative authorization/case registry by default. They enforce validity, purpose, jurisdiction, HTTPS and environment-held credentials without CAPTCHA/OTP bypass.
+
+Create an account and link a confirmed field without placing a password on the command line:
+
+```bash
+export SATELLITE_X_INITIAL_PASSWORD='use-a-secret-manager-value'
+PYTHONPATH=src python -m satellite_x identity-register \
+  --db data/api/identity.db --user-id farmer-1 --role farmer
+PYTHONPATH=src python -m satellite_x identity-link-field \
+  --db data/api/identity.db --user-id farmer-1 \
+  --confirmation outputs/polygon_crop_field_confirmed.json
+```
+
+Serve the API and offline PWA:
+
+```bash
+# Required secrets must come from a secret manager:
+export SATELLITE_X_RECEIPT_ED25519_PRIVATE_KEY_BASE64='<32-byte Ed25519 private key, base64>'
+export SATELLITE_X_EVIDENCE_AES256_KEY_BASE64='<32-byte AES key, base64>'
+# To activate real OTP also configure SATELLITE_X_SMS_ENDPOINT,
+# SATELLITE_X_SMS_TOKEN and SATELLITE_X_OTP_SECRET.
+PYTHONPATH=src python -m satellite_x serve-api --host 0.0.0.0 --port 8080
+```
+
+`government-fetch` is fully wired but returns `activation_required` until an official API/MoU and credentials are supplied. The deterministic example never contacts the placeholder domain because its connector is disabled.
+
+## Verified-label Yield Training
+
+`train-yield-candidate` requires at least 100 records across at least two seasons, rejects duplicate field/season labels, and evaluates by leave-one-season-out validation. Deterministic fixtures are labeled `validation_fixture_only` and cannot be approved. Production labels must carry a trusted issuer Ed25519 signature; model candidates and human-approved models are also signed. Intervals use the held-out absolute-residual q95 rather than `1.96 × MAE`.
+
+## v0.6–v0.7 Power-engine Hardening
+
+- Weather evidence must end exactly on the selected optical scene date and include 15 contiguous days.
+- Weather summaries are recomputed from daily rows; a swapped/tampered summary is rejected.
+- Government village/mandal/district metrics are suppressed below five fields.
+- Farmer Streamlit fails closed unless identity is configured or `SATELLITE_X_DEMO_MODE=1` is explicitly set.
+- Authenticated farmer mode requires the confirmed field to be linked to that account.
+- PWA evidence is rendered with safe DOM text nodes; the service worker never caches/intercepts `/api/`.
+- Set 2 requires at least nine calibrated valid pixels as well as the percentage threshold.
+
+The real scene-alignment correction changed the 2026-06-28 climatic balance from the previously mismatched `-35.41 mm` to `-12.67 mm`, and changed `deficit_flag` from `true` to `false`.
+
+Machine-readable activation gates:
+
+```bash
+PYTHONPATH=src python -m satellite_x capability-status \
+  --output outputs/capability_status.json
+```
+
+## Tests and output comparison
+
+Deterministic suite (live API test excluded):
+
+```bash
+PYTHONPATH=src pytest -q
+```
+
+This includes exact equality of the full pipeline output against `tests/golden/set1_expected.json`.
+
+Live integration test:
+
+```bash
+PYTHONPATH=src pytest -m live -o addopts='' -q -vv
+```
+
+Current validation passes **93/93 deterministic** and **7/7 live** tests. It also includes executed OTP/API/PWA synchronization, local authorized HTTP adapters, cross-language digest equality, SAR-only safety routing, verified-label training gates, and operator-controlled machinery transfer.
+
+## Current verified execution
+
+The included `outputs/set1_guntur_live.json` was generated from the example input. At verification time:
+
+- AWS scene: `S2C_44QMD_20260802_0_L2A`
+- Scene cloud cover: `31.020102%`
+- Weather history: 30 days; forecast: 7 days
+- Rain 15d: `33.3 mm`; ET0 15d: `87.62 mm`
+- All seven public AWS COG asset URLs returned HTTP `206 Partial Content`
+- SoilGrids timed out, so the output correctly used the frozen baseline and is marked `degraded`
+
+See `TEST_REPORT.md` for software/API tests. The stricter independent field-reality audit is in `REALITY_CHECK_REPORT.md`.
+
+## Independent field-reality gate
+
+Install the optional audit dependencies and compare the generated output directly with fresh source APIs and raster pixels:
+
+```bash
+pip install -r requirements-audit.txt
+python audit/reality_check.py \
+  --input outputs/set1_guntur_live.json \
+  --report outputs/reality_check.json
+```
+
+The audit intentionally does not import the `satellite_x` package. Exit code `0` means full reality pass; exit code `3` means the API acquisition can be correct but one or more field-reality conditions failed.
+
+For the included example, the API acquisition passed, but the full reality gate did **not** pass: the exact Sentinel pixel is SCL class 8, the exact SoilGrids point is NoData, the soil output is a declared baseline, and the IoT JSON is an example rather than authenticated device telemetry.
+
+## Polygon Recovery Reality Audit
+
+```bash
+python audit/polygon_recovery_reality.py \
+  --road outputs/polygon_road_result.json \
+  --recovery outputs/polygon_open_field_result.json \
+  --confirmed outputs/polygon_open_field_confirmed.json \
+  --report outputs/polygon_recovery_reality.json
+```
+
+The independent oracle does not import `satellite_x`. It directly re-queries Nominatim and FTW GeoParquet, re-measures polygon area, and checks that predicted geometry is not claimed as legal. The included audit passed all nine checks.
+
+Set 2 has a separate independent COG oracle:
+
+```bash
+python audit/preprocessing_reality.py \
+  --input outputs/preprocessing_crop_field_result.json \
+  --report outputs/preprocessing_reality.json
+```
+
+It directly re-reads SCL/B04/B08/B11, reprojects calibrated reflectance and recomputes field-valid percentage, spectral-valid percentage, NDVI, NDBI and built-pixel percentage. All 13 comparisons pass.

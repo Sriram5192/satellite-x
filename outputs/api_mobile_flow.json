@@ -1,0 +1,21 @@
+{
+  "mode": "deterministic_test_sms_adapter_no_real_message",
+  "checks": {
+    "health_200": true,
+    "api_no_store": true,
+    "frame_denied": true,
+    "csp_present": true,
+    "pwa_200": true,
+    "service_worker_200": true,
+    "otp_request_200": true,
+    "otp_verify_200": true,
+    "unauthenticated_sync_401": true,
+    "missing_photo_rejected": true,
+    "encrypted_photo_upload_200": true,
+    "authenticated_sync_200": true,
+    "idempotent_same_receipt": true,
+    "replay_labeled": true,
+    "ed25519_receipt_key": true
+  },
+  "passed": true
+}

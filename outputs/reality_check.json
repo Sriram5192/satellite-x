@@ -1,0 +1,98 @@
+{
+  "checked_at": "2026-08-17T06:05:57.233123+00:00",
+  "field_pixel": {
+    "ndbi": 0.16083916083916075,
+    "ndvi": 0.06666666666666672,
+    "pass": false,
+    "raw_pixel": {
+      "B04": 1630,
+      "B08": 1720,
+      "B11": 1996,
+      "SCL": 8
+    },
+    "scl_is_valid_for_set2": false,
+    "surface_reflectance": {
+      "B04": 0.063,
+      "B08": 0.07200000000000001,
+      "B11": 0.0996
+    }
+  },
+  "full_reality_pass": false,
+  "input_output": "outputs/set1_guntur_live.json",
+  "iot": {
+    "contract_validated": true,
+    "cryptographic_signature_verified": false,
+    "fresh": false,
+    "real_hardware_independently_verified": false,
+    "reason": "Payload is unsigned/unverified or outside the configured freshness window."
+  },
+  "satellite_catalog": {
+    "asset_hrefs_equal": {
+      "B02": true,
+      "B03": true,
+      "B04": true,
+      "B05": true,
+      "B08": true,
+      "B11": true,
+      "SCL": true
+    },
+    "cloud_equal": true,
+    "oracle_cloud_pct": 31.020102,
+    "oracle_scene_id": "S2C_44QMD_20260802_0_L2A",
+    "output_cloud_pct": 31.020102,
+    "output_scene_id": "S2C_44QMD_20260802_0_L2A",
+    "pass": true,
+    "scene_id_equal": true
+  },
+  "set1_api_acquisition_pass": true,
+  "soil": {
+    "exact_point_has_soilgrids_data": false,
+    "exact_point_raw": {
+      "nitrogen": 0,
+      "phh2o": 0
+    },
+    "nearest_valid": {
+      "nitrogen": {
+        "distance_m_approx": 1274.755,
+        "raw_value": 212
+      },
+      "phh2o": {
+        "distance_m_approx": 1274.755,
+        "raw_value": 68
+      }
+    },
+    "output_is_live_soil": false,
+    "output_source": "regional_ag_zone_baseline",
+    "output_values": {
+      "nitrogen_g_kg": 0.25,
+      "ph_h2o": 6.8
+    },
+    "pass": false
+  },
+  "verdict": "NOT_FULL_REALITY_PASS",
+  "weather": {
+    "all_30_daily_rows_equal": true,
+    "oracle_summary": {
+      "et0_15d_mm": 87.62,
+      "et0_30d_mm": 168.56,
+      "humidity_mean_5d_pct": 62.017,
+      "rain_15d_mm": 33.3,
+      "rain_30d_mm": 76.1
+    },
+    "output_summary": {
+      "et0_15d_mm": 87.62,
+      "et0_30d_mm": 168.56,
+      "humidity_mean_5d_pct": 62.017,
+      "rain_15d_mm": 33.3,
+      "rain_30d_mm": 76.1
+    },
+    "pass": true,
+    "summary_equal": {
+      "et0_15d_mm": true,
+      "et0_30d_mm": true,
+      "humidity_mean_5d_pct": true,
+      "rain_15d_mm": true,
+      "rain_30d_mm": true
+    }
+  }
+}

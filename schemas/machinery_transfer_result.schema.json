@@ -1,0 +1,122 @@
+{
+  "$defs": {
+    "SignedArtifact": {
+      "additionalProperties": false,
+      "properties": {
+        "artifact_id": {
+          "title": "Artifact Id",
+          "type": "string"
+        },
+        "artifact_type": {
+          "title": "Artifact Type",
+          "type": "string"
+        },
+        "issued_at": {
+          "format": "date-time",
+          "title": "Issued At",
+          "type": "string"
+        },
+        "key_id": {
+          "title": "Key Id",
+          "type": "string"
+        },
+        "parent_sha256": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Parent Sha256",
+          "type": "array"
+        },
+        "payload_sha256": {
+          "pattern": "^[0-9a-f]{64}$",
+          "title": "Payload Sha256",
+          "type": "string"
+        },
+        "public_key_base64": {
+          "title": "Public Key Base64",
+          "type": "string"
+        },
+        "signature_base64": {
+          "title": "Signature Base64",
+          "type": "string"
+        }
+      },
+      "required": [
+        "artifact_type",
+        "artifact_id",
+        "issued_at",
+        "payload_sha256",
+        "key_id",
+        "public_key_base64",
+        "signature_base64"
+      ],
+      "title": "SignedArtifact",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "automatic_execution_authorized": {
+      "const": false,
+      "default": false,
+      "title": "Automatic Execution Authorized",
+      "type": "boolean"
+    },
+    "equipment_id": {
+      "title": "Equipment Id",
+      "type": "string"
+    },
+    "field_id": {
+      "title": "Field Id",
+      "type": "string"
+    },
+    "format": {
+      "const": "geojson_feature_collection",
+      "default": "geojson_feature_collection",
+      "title": "Format",
+      "type": "string"
+    },
+    "generated_at": {
+      "format": "date-time",
+      "title": "Generated At",
+      "type": "string"
+    },
+    "operator_signature": {
+      "$ref": "#/$defs/SignedArtifact"
+    },
+    "payload": {
+      "additionalProperties": true,
+      "title": "Payload",
+      "type": "object"
+    },
+    "payload_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "title": "Payload Sha256",
+      "type": "string"
+    },
+    "status": {
+      "const": "operator_transfer_package",
+      "default": "operator_transfer_package",
+      "title": "Status",
+      "type": "string"
+    },
+    "warnings": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Warnings",
+      "type": "array"
+    }
+  },
+  "required": [
+    "field_id",
+    "equipment_id",
+    "generated_at",
+    "payload",
+    "payload_sha256",
+    "operator_signature",
+    "warnings"
+  ],
+  "title": "MachineryTransferResult",
+  "type": "object"
+}

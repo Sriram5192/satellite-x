@@ -1,0 +1,57 @@
+{
+  "action_english": "No confirmed stress cause. Continue monitoring and inspect the field if the trend remains abnormal.",
+  "action_telugu": "తక్షణ నిర్ధారిత ఒత్తిడి లేదు. ట్రెండ్‌ను కొనసాగించి, అసాధారణత ఉంటే క్షేత్ర పరిశీలన చేయండి.",
+  "confidence": {
+    "agreement_factor": 0.333333,
+    "completeness_factor": 1.0,
+    "final_confidence_pct": 64.0,
+    "quality_factor": 0.6,
+    "raw_confidence_pct": 64.0,
+    "sowing_penalty_pct": 0.0
+  },
+  "confidence_tag": "MEDIUM_CONFIDENCE",
+  "diagnosed_at": "2026-08-18T16:18:58.354165Z",
+  "evidence": [
+    {
+      "code": "NDVI_STAGE_POSITION",
+      "observed": "ABOVE_EXPECTED",
+      "rule": "NDVI < 0.1",
+      "source": "sentinel2",
+      "vote": "OPPOSES"
+    },
+    {
+      "code": "CANOPY_MOISTURE",
+      "observed": -0.224481,
+      "rule": "NDMI < 0.10",
+      "source": "sentinel2",
+      "vote": "SUPPORTS"
+    },
+    {
+      "code": "WATER_BALANCE",
+      "observed": -12.67,
+      "rule": "Rain15d - ET0_15d < -30 mm",
+      "source": "open_meteo",
+      "vote": "OPPOSES"
+    },
+    {
+      "code": "HUMIDITY",
+      "observed": 65.208,
+      "rule": "5-day mean humidity > 85%",
+      "source": "open_meteo",
+      "vote": "NEUTRAL"
+    },
+    {
+      "code": "SOIL_NITROGEN",
+      "observed": 2.3,
+      "rule": "Trusted soil N < 0.20 g/kg",
+      "source": "soilgrids_live",
+      "vote": "OPPOSES"
+    }
+  ],
+  "false_alarm_suppressed": false,
+  "field_id": "AP_GNT_FTW_CROP_TEST",
+  "ground_verification_required": true,
+  "schema_version": "1.0.0",
+  "verdict": "NORMAL_OR_UNRESOLVED",
+  "warnings": []
+}

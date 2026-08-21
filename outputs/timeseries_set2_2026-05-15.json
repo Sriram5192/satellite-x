@@ -1,0 +1,439 @@
+{
+  "schema_version": "1.0.0",
+  "request": {
+    "field_id": "AP_GNT_FTW_CROP_TEST",
+    "latitude": 16.064444813421694,
+    "longitude": 80.6059204280875,
+    "boundary_geojson": {
+      "coordinates": [
+        [
+          [
+            80.60524669410101,
+            16.065028716209998
+          ],
+          [
+            80.60524669410101,
+            16.064669391417198
+          ],
+          [
+            80.6051568629028,
+            16.064669391417198
+          ],
+          [
+            80.6051568629028,
+            16.0642202354262
+          ],
+          [
+            80.6050670317046,
+            16.0642202354262
+          ],
+          [
+            80.6050670317046,
+            16.063950741831597
+          ],
+          [
+            80.60497720050641,
+            16.063950741831597
+          ],
+          [
+            80.60497720050641,
+            16.0637710794352
+          ],
+          [
+            80.6054263564974,
+            16.0637710794352
+          ],
+          [
+            80.6054263564974,
+            16.063860910633398
+          ],
+          [
+            80.60524669410101,
+            16.063860910633398
+          ],
+          [
+            80.60524669410101,
+            16.063950741831597
+          ],
+          [
+            80.605695850092,
+            16.063950741831597
+          ],
+          [
+            80.605695850092,
+            16.063860910633398
+          ],
+          [
+            80.6062348372812,
+            16.063860910633398
+          ],
+          [
+            80.6062348372812,
+            16.064130404227996
+          ],
+          [
+            80.6059653436866,
+            16.064130404227996
+          ],
+          [
+            80.6059653436866,
+            16.0642202354262
+          ],
+          [
+            80.6063246684794,
+            16.0642202354262
+          ],
+          [
+            80.6063246684794,
+            16.064579560219
+          ],
+          [
+            80.6059653436866,
+            16.064579560219
+          ],
+          [
+            80.6059653436866,
+            16.064669391417198
+          ],
+          [
+            80.60560601889381,
+            16.064669391417198
+          ],
+          [
+            80.60560601889381,
+            16.064489729020796
+          ],
+          [
+            80.60551618769561,
+            16.064489729020796
+          ],
+          [
+            80.60551618769561,
+            16.064310066624397
+          ],
+          [
+            80.605695850092,
+            16.064310066624397
+          ],
+          [
+            80.605695850092,
+            16.064399897822597
+          ],
+          [
+            80.60578568129021,
+            16.064399897822597
+          ],
+          [
+            80.60578568129021,
+            16.064310066624397
+          ],
+          [
+            80.60587551248841,
+            16.064310066624397
+          ],
+          [
+            80.60587551248841,
+            16.064130404227996
+          ],
+          [
+            80.605695850092,
+            16.064130404227996
+          ],
+          [
+            80.605695850092,
+            16.064040573029796
+          ],
+          [
+            80.60560601889381,
+            16.064040573029796
+          ],
+          [
+            80.60560601889381,
+            16.064130404227996
+          ],
+          [
+            80.60533652529921,
+            16.064130404227996
+          ],
+          [
+            80.60533652529921,
+            16.064310066624397
+          ],
+          [
+            80.6054263564974,
+            16.064310066624397
+          ],
+          [
+            80.6054263564974,
+            16.064669391417198
+          ],
+          [
+            80.60551618769561,
+            16.064669391417198
+          ],
+          [
+            80.60551618769561,
+            16.064849053813596
+          ],
+          [
+            80.60560601889381,
+            16.064849053813596
+          ],
+          [
+            80.60560601889381,
+            16.065028716209998
+          ],
+          [
+            80.60524669410101,
+            16.065028716209998
+          ]
+        ]
+      ],
+      "type": "Polygon"
+    },
+    "analysis_date": "2026-05-15",
+    "scan_range_days": 30,
+    "expansion_days": 30,
+    "location_blocking": false,
+    "location_reason": null
+  },
+  "processed_at": "2026-08-17T13:26:10.906624Z",
+  "status": "accepted",
+  "selected_scene": {
+    "scene_id": "S2B_44PMC_20260509_0_L2A",
+    "provider": "aws_earth_search",
+    "collection": "sentinel-2-l2a",
+    "acquired_at": "2026-05-09T05:14:26.318000Z",
+    "cloud_cover_pct": 26.473969,
+    "bbox": [
+      80.063709,
+      15.286247,
+      81.091341,
+      16.280805
+    ],
+    "assets": {
+      "B02": {
+        "band_code": "B02",
+        "source_key": "blue",
+        "href": "https://sentinel-cogs.s3.us-west-2.amazonaws.com/sentinel-s2-l2a-cogs/44/P/MC/2026/5/S2B_44PMC_20260509_0_L2A/B02.tif",
+        "resolution_m": 10,
+        "media_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+        "scale": 0.0001,
+        "offset": -0.1,
+        "nodata": 0.0,
+        "requires_authentication": false
+      },
+      "B03": {
+        "band_code": "B03",
+        "source_key": "green",
+        "href": "https://sentinel-cogs.s3.us-west-2.amazonaws.com/sentinel-s2-l2a-cogs/44/P/MC/2026/5/S2B_44PMC_20260509_0_L2A/B03.tif",
+        "resolution_m": 10,
+        "media_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+        "scale": 0.0001,
+        "offset": -0.1,
+        "nodata": 0.0,
+        "requires_authentication": false
+      },
+      "B04": {
+        "band_code": "B04",
+        "source_key": "red",
+        "href": "https://sentinel-cogs.s3.us-west-2.amazonaws.com/sentinel-s2-l2a-cogs/44/P/MC/2026/5/S2B_44PMC_20260509_0_L2A/B04.tif",
+        "resolution_m": 10,
+        "media_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+        "scale": 0.0001,
+        "offset": -0.1,
+        "nodata": 0.0,
+        "requires_authentication": false
+      },
+      "B05": {
+        "band_code": "B05",
+        "source_key": "rededge1",
+        "href": "https://sentinel-cogs.s3.us-west-2.amazonaws.com/sentinel-s2-l2a-cogs/44/P/MC/2026/5/S2B_44PMC_20260509_0_L2A/B05.tif",
+        "resolution_m": 20,
+        "media_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+        "scale": 0.0001,
+        "offset": -0.1,
+        "nodata": 0.0,
+        "requires_authentication": false
+      },
+      "B08": {
+        "band_code": "B08",
+        "source_key": "nir",
+        "href": "https://sentinel-cogs.s3.us-west-2.amazonaws.com/sentinel-s2-l2a-cogs/44/P/MC/2026/5/S2B_44PMC_20260509_0_L2A/B08.tif",
+        "resolution_m": 10,
+        "media_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+        "scale": 0.0001,
+        "offset": -0.1,
+        "nodata": 0.0,
+        "requires_authentication": false
+      },
+      "B11": {
+        "band_code": "B11",
+        "source_key": "swir16",
+        "href": "https://sentinel-cogs.s3.us-west-2.amazonaws.com/sentinel-s2-l2a-cogs/44/P/MC/2026/5/S2B_44PMC_20260509_0_L2A/B11.tif",
+        "resolution_m": 20,
+        "media_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+        "scale": 0.0001,
+        "offset": -0.1,
+        "nodata": 0.0,
+        "requires_authentication": false
+      },
+      "SCL": {
+        "band_code": "SCL",
+        "source_key": "scl",
+        "href": "https://sentinel-cogs.s3.us-west-2.amazonaws.com/sentinel-s2-l2a-cogs/44/P/MC/2026/5/S2B_44PMC_20260509_0_L2A/SCL.tif",
+        "resolution_m": 20,
+        "media_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+        "scale": null,
+        "offset": null,
+        "nodata": 0.0,
+        "requires_authentication": false
+      }
+    }
+  },
+  "selected_quality": {
+    "scene_id": "S2B_44PMC_20260509_0_L2A",
+    "acquired_at": "2026-05-09T05:14:26.318000Z",
+    "scene_cloud_pct": 26.473969,
+    "in_original_range": true,
+    "total_field_pixels": 26,
+    "valid_field_pixels": 26,
+    "field_valid_pct": 100.0,
+    "scl_counts": {
+      "5": 26
+    },
+    "quality": "MEDIUM",
+    "rejection_reasons": []
+  },
+  "urban_gate": {
+    "spectral_valid_pixels": 26,
+    "spectral_valid_pct": 100.0,
+    "mean_ndvi": 0.383041,
+    "mean_ndbi": 0.146315,
+    "built_pixel_pct": 0.0,
+    "urban_rejected": false,
+    "condition": "URBAN_MEAN_CONDITION_NOT_MET"
+  },
+  "candidates": [
+    {
+      "scene_id": "S2B_44PMC_20260419_0_L2A",
+      "acquired_at": "2026-04-19T05:14:25.987000Z",
+      "scene_cloud_pct": 1.804397,
+      "in_original_range": true,
+      "total_field_pixels": 26,
+      "valid_field_pixels": 26,
+      "field_valid_pct": 100.0,
+      "scl_counts": {
+        "5": 26
+      },
+      "quality": "HIGH",
+      "rejection_reasons": []
+    },
+    {
+      "scene_id": "S2C_44PMC_20260424_0_L2A",
+      "acquired_at": "2026-04-24T05:14:29.781000Z",
+      "scene_cloud_pct": 4.888985,
+      "in_original_range": true,
+      "total_field_pixels": 26,
+      "valid_field_pixels": 26,
+      "field_valid_pct": 100.0,
+      "scl_counts": {
+        "5": 26
+      },
+      "quality": "HIGH",
+      "rejection_reasons": []
+    },
+    {
+      "scene_id": "S2A_44PMC_20260426_0_L2A",
+      "acquired_at": "2026-04-26T05:14:45.867000Z",
+      "scene_cloud_pct": 21.755426,
+      "in_original_range": true,
+      "total_field_pixels": 26,
+      "valid_field_pixels": 26,
+      "field_valid_pct": 100.0,
+      "scl_counts": {
+        "5": 26
+      },
+      "quality": "MEDIUM",
+      "rejection_reasons": []
+    },
+    {
+      "scene_id": "S2B_44PMC_20260429_1_L2A",
+      "acquired_at": "2026-04-29T05:14:25.814000Z",
+      "scene_cloud_pct": 95.108736,
+      "in_original_range": true,
+      "total_field_pixels": 26,
+      "valid_field_pixels": 0,
+      "field_valid_pct": 0.0,
+      "scl_counts": {
+        "9": 26
+      },
+      "quality": "LOW",
+      "rejection_reasons": [
+        "FIELD_VALID_PIXELS_BELOW_60_PERCENT",
+        "SCENE_CLOUD_ABOVE_40_PERCENT"
+      ]
+    },
+    {
+      "scene_id": "S2C_44PMC_20260504_0_L2A",
+      "acquired_at": "2026-05-04T05:14:30.091000Z",
+      "scene_cloud_pct": 86.71729,
+      "in_original_range": true,
+      "total_field_pixels": 26,
+      "valid_field_pixels": 0,
+      "field_valid_pct": 0.0,
+      "scl_counts": {
+        "10": 26
+      },
+      "quality": "LOW",
+      "rejection_reasons": [
+        "FIELD_VALID_PIXELS_BELOW_60_PERCENT",
+        "SCENE_CLOUD_ABOVE_40_PERCENT"
+      ]
+    },
+    {
+      "scene_id": "S2B_44PMC_20260509_0_L2A",
+      "acquired_at": "2026-05-09T05:14:26.318000Z",
+      "scene_cloud_pct": 26.473969,
+      "in_original_range": true,
+      "total_field_pixels": 26,
+      "valid_field_pixels": 26,
+      "field_valid_pct": 100.0,
+      "scl_counts": {
+        "5": 26
+      },
+      "quality": "MEDIUM",
+      "rejection_reasons": []
+    },
+    {
+      "scene_id": "S2C_44PMC_20260514_0_L2A",
+      "acquired_at": "2026-05-14T05:14:29.171000Z",
+      "scene_cloud_pct": 96.093804,
+      "in_original_range": true,
+      "total_field_pixels": 26,
+      "valid_field_pixels": 0,
+      "field_valid_pct": 0.0,
+      "scl_counts": {
+        "8": 26
+      },
+      "quality": "LOW",
+      "rejection_reasons": [
+        "FIELD_VALID_PIXELS_BELOW_60_PERCENT",
+        "SCENE_CLOUD_ABOVE_40_PERCENT"
+      ]
+    }
+  ],
+  "expanded_search_used": false,
+  "valid_scl_classes": [
+    4,
+    5,
+    6,
+    7
+  ],
+  "warnings": [
+    "S2B_44PMC_20260419_0_L2A: calibrated spectral-validity 0.00% is below 60.00%.",
+    "S2C_44PMC_20260424_0_L2A: calibrated spectral-validity 0.00% is below 60.00%.",
+    "S2A_44PMC_20260426_0_L2A: calibrated spectral-validity 0.00% is below 60.00%.",
+    "Scene passed SCL quality, calibrated spectral-validity, and NDBI/NDVI mean gates."
+  ]
+}

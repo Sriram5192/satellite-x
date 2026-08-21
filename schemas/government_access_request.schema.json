@@ -1,0 +1,92 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "action": {
+      "enum": [
+        "VIEW_OWN_FIELD",
+        "VIEW_VILLAGE_SUMMARY",
+        "VIEW_MANDAL_SUMMARY",
+        "VIEW_DISTRICT_SUMMARY",
+        "VIEW_DAMAGE_HEATMAP",
+        "VIEW_CROP_STATISTICS",
+        "VIEW_PARCEL_ANOMALIES",
+        "VIEW_PARCEL_DETAILS",
+        "CREATE_FIELD_VERIFICATION",
+        "EXPORT_AGGREGATE_REPORT",
+        "EXPORT_CASE_EVIDENCE"
+      ],
+      "title": "Action",
+      "type": "string"
+    },
+    "case_id": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Case Id"
+    },
+    "district_code": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "District Code"
+    },
+    "field_id": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Field Id"
+    },
+    "mandal_code": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Mandal Code"
+    },
+    "purpose": {
+      "title": "Purpose",
+      "type": "string"
+    },
+    "village_code": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Village Code"
+    }
+  },
+  "required": [
+    "action",
+    "purpose"
+  ],
+  "title": "AccessRequest",
+  "type": "object"
+}

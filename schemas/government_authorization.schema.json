@@ -1,0 +1,112 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "approved_by": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Approved By"
+    },
+    "authorization_id": {
+      "title": "Authorization Id",
+      "type": "string"
+    },
+    "department": {
+      "title": "Department",
+      "type": "string"
+    },
+    "designation": {
+      "title": "Designation",
+      "type": "string"
+    },
+    "district_codes": {
+      "items": {
+        "type": "string"
+      },
+      "title": "District Codes",
+      "type": "array"
+    },
+    "mandal_codes": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Mandal Codes",
+      "type": "array"
+    },
+    "officer_id": {
+      "title": "Officer Id",
+      "type": "string"
+    },
+    "order_reference": {
+      "title": "Order Reference",
+      "type": "string"
+    },
+    "permission_status": {
+      "enum": [
+        "pending",
+        "approved",
+        "rejected",
+        "revoked",
+        "expired"
+      ],
+      "title": "Permission Status",
+      "type": "string"
+    },
+    "permissions": {
+      "items": {
+        "enum": [
+          "VIEW_OWN_FIELD",
+          "VIEW_VILLAGE_SUMMARY",
+          "VIEW_MANDAL_SUMMARY",
+          "VIEW_DISTRICT_SUMMARY",
+          "VIEW_DAMAGE_HEATMAP",
+          "VIEW_CROP_STATISTICS",
+          "VIEW_PARCEL_ANOMALIES",
+          "VIEW_PARCEL_DETAILS",
+          "CREATE_FIELD_VERIFICATION",
+          "EXPORT_AGGREGATE_REPORT",
+          "EXPORT_CASE_EVIDENCE"
+        ],
+        "type": "string"
+      },
+      "title": "Permissions",
+      "type": "array"
+    },
+    "valid_from": {
+      "format": "date-time",
+      "title": "Valid From",
+      "type": "string"
+    },
+    "valid_until": {
+      "format": "date-time",
+      "title": "Valid Until",
+      "type": "string"
+    },
+    "village_codes": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Village Codes",
+      "type": "array"
+    }
+  },
+  "required": [
+    "authorization_id",
+    "officer_id",
+    "department",
+    "designation",
+    "permission_status",
+    "permissions",
+    "order_reference",
+    "valid_from",
+    "valid_until"
+  ],
+  "title": "GovernmentAuthorization",
+  "type": "object"
+}

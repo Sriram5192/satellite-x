@@ -1,0 +1,38 @@
+{
+  "candidate_id": "yield-chilli-GNT-7e3387cd9677",
+  "crop_type": "chilli",
+  "district_code": "GNT",
+  "feature_names": [
+    "ndvi_peak",
+    "rain_mm"
+  ],
+  "coefficients": {
+    "ndvi_peak": 691.8981135073,
+    "rain_mm": 0.4086308191
+  },
+  "intercept_kg_per_acre": 200.1027102725,
+  "validation_method": "leave_one_season_out",
+  "validation_r2": 0.999478,
+  "validation_mae_kg_per_acre": 2.07787,
+  "validation_rmse_kg_per_acre": 2.52028,
+  "validation_abs_residual_q95_kg_per_acre": 4.450734,
+  "training_records": 100,
+  "independent_seasons": 2,
+  "dataset_sha256": "7e3387cd9677a476f0d53c9b67185207f96e2def74129b6cc1e365b44bb464d8",
+  "dataset_purpose": "deterministic_validation_fixture",
+  "generated_at": "2026-08-19T12:38:56.056248Z",
+  "status": "validation_fixture_only",
+  "model_signature": {
+    "artifact_type": "yield_model_candidate",
+    "artifact_id": "yield-chilli-GNT-7e3387cd9677",
+    "issued_at": "2026-08-19T12:38:56.056248Z",
+    "payload_sha256": "2d804ad1d3017b95fb83f4b60d343841a40d02bb1ef65de0f49cb1be695dd29c",
+    "parent_sha256": [
+      "7e3387cd9677a476f0d53c9b67185207f96e2def74129b6cc1e365b44bb464d8"
+    ],
+    "key_id": "0aec34755e9eb64e",
+    "public_key_base64": "NFODYM/ofxDTsNbLtqKDup4p9KtKOmt5wHVmqDq/3r8=",
+    "signature_base64": "JADB3WmhfwGN/oFo/Kxd68DlRli2QnPk/KZvrxsse5TPxhtbsYBZnJ5E5ZQJ5Ls57nm4vXrLw4YcTS568Bq5DQ=="
+  },
+  "production_authorized": false
+}

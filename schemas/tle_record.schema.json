@@ -1,0 +1,66 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "age_hours_at_fetch": {
+      "title": "Age Hours At Fetch",
+      "type": "number"
+    },
+    "epoch": {
+      "format": "date-time",
+      "title": "Epoch",
+      "type": "string"
+    },
+    "fetched_at": {
+      "format": "date-time",
+      "title": "Fetched At",
+      "type": "string"
+    },
+    "freshness": {
+      "enum": [
+        "fresh",
+        "stale"
+      ],
+      "title": "Freshness",
+      "type": "string"
+    },
+    "line1": {
+      "title": "Line1",
+      "type": "string"
+    },
+    "line2": {
+      "title": "Line2",
+      "type": "string"
+    },
+    "maximum_age_hours": {
+      "title": "Maximum Age Hours",
+      "type": "number"
+    },
+    "name": {
+      "title": "Name",
+      "type": "string"
+    },
+    "norad_id": {
+      "exclusiveMinimum": 0,
+      "title": "Norad Id",
+      "type": "integer"
+    },
+    "source_url": {
+      "title": "Source Url",
+      "type": "string"
+    }
+  },
+  "required": [
+    "name",
+    "norad_id",
+    "line1",
+    "line2",
+    "epoch",
+    "fetched_at",
+    "source_url",
+    "age_hours_at_fetch",
+    "freshness",
+    "maximum_age_hours"
+  ],
+  "title": "TleRecord",
+  "type": "object"
+}

@@ -1,0 +1,16 @@
+{
+  "field_id": "AP_GNT_FTW_CROP_TEST",
+  "orbit_state": "descending",
+  "processed_at": "2026-08-17T16:30:46.977811Z",
+  "scene_date": "2026-08-17",
+  "scene_id": "S1D_IW_GRDH_1SDV_20260817T003010_20260817T003035_004158_0079BF_rtc",
+  "schema_version": "1.0.0",
+  "status": "accepted",
+  "valid_pixels": 96,
+  "vh_db_mean": -21.678322,
+  "vv_db_mean": -13.138436,
+  "vv_minus_vh_db_mean": 8.539886,
+  "warnings": [
+    "SAR is cloud-independent evidence; it does not replace optical vegetation indices."
+  ]
+}

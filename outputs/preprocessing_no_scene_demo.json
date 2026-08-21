@@ -1,0 +1,485 @@
+{
+  "schema_version": "1.0.0",
+  "request": {
+    "field_id": "AP_GNT_FTW_CROP_TEST",
+    "latitude": 16.064444813421694,
+    "longitude": 80.6059204280875,
+    "boundary_geojson": {
+      "coordinates": [
+        [
+          [
+            80.60524669410101,
+            16.065028716209998
+          ],
+          [
+            80.60524669410101,
+            16.064669391417198
+          ],
+          [
+            80.6051568629028,
+            16.064669391417198
+          ],
+          [
+            80.6051568629028,
+            16.0642202354262
+          ],
+          [
+            80.6050670317046,
+            16.0642202354262
+          ],
+          [
+            80.6050670317046,
+            16.063950741831597
+          ],
+          [
+            80.60497720050641,
+            16.063950741831597
+          ],
+          [
+            80.60497720050641,
+            16.0637710794352
+          ],
+          [
+            80.6054263564974,
+            16.0637710794352
+          ],
+          [
+            80.6054263564974,
+            16.063860910633398
+          ],
+          [
+            80.60524669410101,
+            16.063860910633398
+          ],
+          [
+            80.60524669410101,
+            16.063950741831597
+          ],
+          [
+            80.605695850092,
+            16.063950741831597
+          ],
+          [
+            80.605695850092,
+            16.063860910633398
+          ],
+          [
+            80.6062348372812,
+            16.063860910633398
+          ],
+          [
+            80.6062348372812,
+            16.064130404227996
+          ],
+          [
+            80.6059653436866,
+            16.064130404227996
+          ],
+          [
+            80.6059653436866,
+            16.0642202354262
+          ],
+          [
+            80.6063246684794,
+            16.0642202354262
+          ],
+          [
+            80.6063246684794,
+            16.064579560219
+          ],
+          [
+            80.6059653436866,
+            16.064579560219
+          ],
+          [
+            80.6059653436866,
+            16.064669391417198
+          ],
+          [
+            80.60560601889381,
+            16.064669391417198
+          ],
+          [
+            80.60560601889381,
+            16.064489729020796
+          ],
+          [
+            80.60551618769561,
+            16.064489729020796
+          ],
+          [
+            80.60551618769561,
+            16.064310066624397
+          ],
+          [
+            80.605695850092,
+            16.064310066624397
+          ],
+          [
+            80.605695850092,
+            16.064399897822597
+          ],
+          [
+            80.60578568129021,
+            16.064399897822597
+          ],
+          [
+            80.60578568129021,
+            16.064310066624397
+          ],
+          [
+            80.60587551248841,
+            16.064310066624397
+          ],
+          [
+            80.60587551248841,
+            16.064130404227996
+          ],
+          [
+            80.605695850092,
+            16.064130404227996
+          ],
+          [
+            80.605695850092,
+            16.064040573029796
+          ],
+          [
+            80.60560601889381,
+            16.064040573029796
+          ],
+          [
+            80.60560601889381,
+            16.064130404227996
+          ],
+          [
+            80.60533652529921,
+            16.064130404227996
+          ],
+          [
+            80.60533652529921,
+            16.064310066624397
+          ],
+          [
+            80.6054263564974,
+            16.064310066624397
+          ],
+          [
+            80.6054263564974,
+            16.064669391417198
+          ],
+          [
+            80.60551618769561,
+            16.064669391417198
+          ],
+          [
+            80.60551618769561,
+            16.064849053813596
+          ],
+          [
+            80.60560601889381,
+            16.064849053813596
+          ],
+          [
+            80.60560601889381,
+            16.065028716209998
+          ],
+          [
+            80.60524669410101,
+            16.065028716209998
+          ]
+        ]
+      ],
+      "type": "Polygon"
+    },
+    "analysis_date": "2026-08-17",
+    "scan_range_days": 30,
+    "expansion_days": 30,
+    "location_blocking": false,
+    "location_reason": null
+  },
+  "processed_at": "2026-08-17T13:35:34.177232Z",
+  "status": "no_acceptable_scene",
+  "selected_scene": null,
+  "selected_quality": null,
+  "urban_gate": null,
+  "candidates": [
+    {
+      "scene_id": "S2C_44PMC_20260623_0_L2A",
+      "acquired_at": "2026-06-23T05:14:28.849000Z",
+      "scene_cloud_pct": 100.0,
+      "in_original_range": false,
+      "total_field_pixels": 26,
+      "valid_field_pixels": 0,
+      "field_valid_pct": 0.0,
+      "scl_counts": {
+        "8": 26
+      },
+      "quality": "LOW",
+      "rejection_reasons": [
+        "FIELD_VALID_PIXELS_BELOW_60_PERCENT",
+        "SCENE_CLOUD_ABOVE_40_PERCENT"
+      ]
+    },
+    {
+      "scene_id": "S2A_44PMC_20260625_0_L2A",
+      "acquired_at": "2026-06-25T05:14:45.872000Z",
+      "scene_cloud_pct": 79.373997,
+      "in_original_range": false,
+      "total_field_pixels": 26,
+      "valid_field_pixels": 0,
+      "field_valid_pct": 0.0,
+      "scl_counts": {
+        "8": 10,
+        "9": 16
+      },
+      "quality": "LOW",
+      "rejection_reasons": [
+        "FIELD_VALID_PIXELS_BELOW_60_PERCENT",
+        "SCENE_CLOUD_ABOVE_40_PERCENT"
+      ]
+    },
+    {
+      "scene_id": "S2B_44PMC_20260628_0_L2A",
+      "acquired_at": "2026-06-28T05:14:27.094000Z",
+      "scene_cloud_pct": 25.91446,
+      "in_original_range": false,
+      "total_field_pixels": 26,
+      "valid_field_pixels": 26,
+      "field_valid_pct": 100.0,
+      "scl_counts": {
+        "5": 26
+      },
+      "quality": "MEDIUM",
+      "rejection_reasons": []
+    },
+    {
+      "scene_id": "S2C_44PMC_20260703_0_L2A",
+      "acquired_at": "2026-07-03T05:14:28.019000Z",
+      "scene_cloud_pct": 99.999142,
+      "in_original_range": false,
+      "total_field_pixels": 26,
+      "valid_field_pixels": 0,
+      "field_valid_pct": 0.0,
+      "scl_counts": {
+        "9": 26
+      },
+      "quality": "LOW",
+      "rejection_reasons": [
+        "FIELD_VALID_PIXELS_BELOW_60_PERCENT",
+        "SCENE_CLOUD_ABOVE_40_PERCENT"
+      ]
+    },
+    {
+      "scene_id": "S2B_44PMC_20260708_0_L2A",
+      "acquired_at": "2026-07-08T05:14:27.767000Z",
+      "scene_cloud_pct": 53.74164,
+      "in_original_range": false,
+      "total_field_pixels": 26,
+      "valid_field_pixels": 10,
+      "field_valid_pct": 38.462,
+      "scl_counts": {
+        "7": 10,
+        "8": 16
+      },
+      "quality": "LOW",
+      "rejection_reasons": [
+        "FIELD_VALID_PIXELS_BELOW_60_PERCENT",
+        "SCENE_CLOUD_ABOVE_40_PERCENT"
+      ]
+    },
+    {
+      "scene_id": "S2C_44PMC_20260713_0_L2A",
+      "acquired_at": "2026-07-13T05:14:30.022000Z",
+      "scene_cloud_pct": 43.585512,
+      "in_original_range": false,
+      "total_field_pixels": 26,
+      "valid_field_pixels": 0,
+      "field_valid_pct": 0.0,
+      "scl_counts": {
+        "10": 26
+      },
+      "quality": "LOW",
+      "rejection_reasons": [
+        "FIELD_VALID_PIXELS_BELOW_60_PERCENT",
+        "SCENE_CLOUD_ABOVE_40_PERCENT"
+      ]
+    },
+    {
+      "scene_id": "S2A_44PMC_20260715_0_L2A",
+      "acquired_at": "2026-07-15T05:14:45.798000Z",
+      "scene_cloud_pct": 26.851735,
+      "in_original_range": false,
+      "total_field_pixels": 26,
+      "valid_field_pixels": 6,
+      "field_valid_pct": 23.077,
+      "scl_counts": {
+        "10": 20,
+        "5": 6
+      },
+      "quality": "LOW",
+      "rejection_reasons": [
+        "FIELD_VALID_PIXELS_BELOW_60_PERCENT"
+      ]
+    },
+    {
+      "scene_id": "S2B_44PMC_20260718_0_L2A",
+      "acquired_at": "2026-07-18T05:14:29.449000Z",
+      "scene_cloud_pct": 100.0,
+      "in_original_range": false,
+      "total_field_pixels": 26,
+      "valid_field_pixels": 0,
+      "field_valid_pct": 0.0,
+      "scl_counts": {
+        "9": 26
+      },
+      "quality": "LOW",
+      "rejection_reasons": [
+        "FIELD_VALID_PIXELS_BELOW_60_PERCENT",
+        "SCENE_CLOUD_ABOVE_40_PERCENT"
+      ]
+    },
+    {
+      "scene_id": "S2C_44PMC_20260723_0_L2A",
+      "acquired_at": "2026-07-23T05:14:30.918000Z",
+      "scene_cloud_pct": 12.280248,
+      "in_original_range": true,
+      "total_field_pixels": 26,
+      "valid_field_pixels": 26,
+      "field_valid_pct": 100.0,
+      "scl_counts": {
+        "5": 26
+      },
+      "quality": "MEDIUM",
+      "rejection_reasons": []
+    },
+    {
+      "scene_id": "S2B_44PMC_20260728_1_L2A",
+      "acquired_at": "2026-07-28T05:14:29.885000Z",
+      "scene_cloud_pct": 100.0,
+      "in_original_range": true,
+      "total_field_pixels": 26,
+      "valid_field_pixels": 0,
+      "field_valid_pct": 0.0,
+      "scl_counts": {
+        "9": 26
+      },
+      "quality": "LOW",
+      "rejection_reasons": [
+        "FIELD_VALID_PIXELS_BELOW_60_PERCENT",
+        "SCENE_CLOUD_ABOVE_40_PERCENT"
+      ]
+    },
+    {
+      "scene_id": "S2C_44PMC_20260802_0_L2A",
+      "acquired_at": "2026-08-02T05:14:30.384000Z",
+      "scene_cloud_pct": 82.097989,
+      "in_original_range": true,
+      "total_field_pixels": 26,
+      "valid_field_pixels": 0,
+      "field_valid_pct": 0.0,
+      "scl_counts": {
+        "10": 26
+      },
+      "quality": "LOW",
+      "rejection_reasons": [
+        "FIELD_VALID_PIXELS_BELOW_60_PERCENT",
+        "SCENE_CLOUD_ABOVE_40_PERCENT"
+      ]
+    },
+    {
+      "scene_id": "S2A_44PMC_20260804_0_L2A",
+      "acquired_at": "2026-08-04T05:14:46.791000Z",
+      "scene_cloud_pct": 66.508788,
+      "in_original_range": true,
+      "total_field_pixels": 26,
+      "valid_field_pixels": 0,
+      "field_valid_pct": 0.0,
+      "scl_counts": {
+        "9": 26
+      },
+      "quality": "LOW",
+      "rejection_reasons": [
+        "FIELD_VALID_PIXELS_BELOW_60_PERCENT",
+        "SCENE_CLOUD_ABOVE_40_PERCENT"
+      ]
+    },
+    {
+      "scene_id": "S2B_44PMC_20260807_0_L2A",
+      "acquired_at": "2026-08-07T05:14:28.687000Z",
+      "scene_cloud_pct": 97.015661,
+      "in_original_range": true,
+      "total_field_pixels": 26,
+      "valid_field_pixels": 0,
+      "field_valid_pct": 0.0,
+      "scl_counts": {
+        "9": 26
+      },
+      "quality": "LOW",
+      "rejection_reasons": [
+        "FIELD_VALID_PIXELS_BELOW_60_PERCENT",
+        "SCENE_CLOUD_ABOVE_40_PERCENT"
+      ]
+    },
+    {
+      "scene_id": "S2C_44PMC_20260812_0_L2A",
+      "acquired_at": "2026-08-12T05:14:23.174000Z",
+      "scene_cloud_pct": 99.998158,
+      "in_original_range": true,
+      "total_field_pixels": 26,
+      "valid_field_pixels": 0,
+      "field_valid_pct": 0.0,
+      "scl_counts": {
+        "1": 26
+      },
+      "quality": "LOW",
+      "rejection_reasons": [
+        "FIELD_VALID_PIXELS_BELOW_60_PERCENT",
+        "SCENE_CLOUD_ABOVE_40_PERCENT"
+      ]
+    },
+    {
+      "scene_id": "S2C_44PMC_20260812_1_L2A",
+      "acquired_at": "2026-08-12T05:14:28.435000Z",
+      "scene_cloud_pct": 98.749804,
+      "in_original_range": true,
+      "total_field_pixels": 26,
+      "valid_field_pixels": 0,
+      "field_valid_pct": 0.0,
+      "scl_counts": {
+        "9": 26
+      },
+      "quality": "LOW",
+      "rejection_reasons": [
+        "FIELD_VALID_PIXELS_BELOW_60_PERCENT",
+        "SCENE_CLOUD_ABOVE_40_PERCENT"
+      ]
+    },
+    {
+      "scene_id": "S2B_44PMC_20260817_0_L2A",
+      "acquired_at": "2026-08-17T05:14:26.406000Z",
+      "scene_cloud_pct": 99.792314,
+      "in_original_range": true,
+      "total_field_pixels": 26,
+      "valid_field_pixels": 0,
+      "field_valid_pct": 0.0,
+      "scl_counts": {
+        "9": 26
+      },
+      "quality": "LOW",
+      "rejection_reasons": [
+        "FIELD_VALID_PIXELS_BELOW_60_PERCENT",
+        "SCENE_CLOUD_ABOVE_40_PERCENT"
+      ]
+    }
+  ],
+  "expanded_search_used": true,
+  "valid_scl_classes": [
+    4,
+    5,
+    6,
+    7
+  ],
+  "warnings": [
+    "DEMO ONLY: optical no-scene route validation."
+  ]
+}

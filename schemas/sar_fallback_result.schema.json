@@ -1,0 +1,122 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "field_id": {
+      "title": "Field Id",
+      "type": "string"
+    },
+    "orbit_state": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Orbit State"
+    },
+    "processed_at": {
+      "format": "date-time",
+      "title": "Processed At",
+      "type": "string"
+    },
+    "scene_date": {
+      "anyOf": [
+        {
+          "format": "date",
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Scene Date"
+    },
+    "scene_id": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Scene Id"
+    },
+    "schema_version": {
+      "const": "1.0.0",
+      "default": "1.0.0",
+      "title": "Schema Version",
+      "type": "string"
+    },
+    "status": {
+      "enum": [
+        "accepted",
+        "no_scene",
+        "processing_error"
+      ],
+      "title": "Status",
+      "type": "string"
+    },
+    "valid_pixels": {
+      "default": 0,
+      "minimum": 0,
+      "title": "Valid Pixels",
+      "type": "integer"
+    },
+    "vh_db_mean": {
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Vh Db Mean"
+    },
+    "vv_db_mean": {
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Vv Db Mean"
+    },
+    "vv_minus_vh_db_mean": {
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Vv Minus Vh Db Mean"
+    },
+    "warnings": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Warnings",
+      "type": "array"
+    }
+  },
+  "required": [
+    "field_id",
+    "processed_at",
+    "status"
+  ],
+  "title": "SarFallbackResult",
+  "type": "object"
+}

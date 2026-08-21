@@ -1,0 +1,165 @@
+{
+  "$defs": {
+    "PassSample": {
+      "additionalProperties": false,
+      "properties": {
+        "azimuth_deg": {
+          "title": "Azimuth Deg",
+          "type": "number"
+        },
+        "doppler_shift_hz": {
+          "title": "Doppler Shift Hz",
+          "type": "number"
+        },
+        "elevation_deg": {
+          "title": "Elevation Deg",
+          "type": "number"
+        },
+        "range_km": {
+          "title": "Range Km",
+          "type": "number"
+        },
+        "range_rate_km_s": {
+          "title": "Range Rate Km S",
+          "type": "number"
+        },
+        "timestamp": {
+          "format": "date-time",
+          "title": "Timestamp",
+          "type": "string"
+        }
+      },
+      "required": [
+        "timestamp",
+        "elevation_deg",
+        "azimuth_deg",
+        "range_km",
+        "range_rate_km_s",
+        "doppler_shift_hz"
+      ],
+      "title": "PassSample",
+      "type": "object"
+    },
+    "PassWindow": {
+      "additionalProperties": false,
+      "properties": {
+        "aos": {
+          "format": "date-time",
+          "title": "Aos",
+          "type": "string"
+        },
+        "duration_seconds": {
+          "exclusiveMinimum": 0,
+          "title": "Duration Seconds",
+          "type": "number"
+        },
+        "los": {
+          "format": "date-time",
+          "title": "Los",
+          "type": "string"
+        },
+        "max_absolute_doppler_hz": {
+          "title": "Max Absolute Doppler Hz",
+          "type": "number"
+        },
+        "max_elevation_deg": {
+          "title": "Max Elevation Deg",
+          "type": "number"
+        },
+        "samples": {
+          "items": {
+            "$ref": "#/$defs/PassSample"
+          },
+          "title": "Samples",
+          "type": "array"
+        },
+        "tca": {
+          "format": "date-time",
+          "title": "Tca",
+          "type": "string"
+        }
+      },
+      "required": [
+        "aos",
+        "tca",
+        "los",
+        "duration_seconds",
+        "max_elevation_deg",
+        "max_absolute_doppler_hz",
+        "samples"
+      ],
+      "title": "PassWindow",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "norad_id": {
+      "title": "Norad Id",
+      "type": "integer"
+    },
+    "passes": {
+      "items": {
+        "$ref": "#/$defs/PassWindow"
+      },
+      "title": "Passes",
+      "type": "array"
+    },
+    "prediction_end": {
+      "format": "date-time",
+      "title": "Prediction End",
+      "type": "string"
+    },
+    "prediction_start": {
+      "format": "date-time",
+      "title": "Prediction Start",
+      "type": "string"
+    },
+    "satellite_name": {
+      "title": "Satellite Name",
+      "type": "string"
+    },
+    "station_id": {
+      "title": "Station Id",
+      "type": "string"
+    },
+    "status": {
+      "enum": [
+        "accepted",
+        "tle_epoch_out_of_policy",
+        "no_pass"
+      ],
+      "title": "Status",
+      "type": "string"
+    },
+    "tle_epoch": {
+      "format": "date-time",
+      "title": "Tle Epoch",
+      "type": "string"
+    },
+    "tle_epoch_gap_hours": {
+      "title": "Tle Epoch Gap Hours",
+      "type": "number"
+    },
+    "warnings": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Warnings",
+      "type": "array"
+    }
+  },
+  "required": [
+    "norad_id",
+    "satellite_name",
+    "station_id",
+    "tle_epoch",
+    "prediction_start",
+    "prediction_end",
+    "tle_epoch_gap_hours",
+    "status",
+    "passes"
+  ],
+  "title": "PassPredictionResult",
+  "type": "object"
+}

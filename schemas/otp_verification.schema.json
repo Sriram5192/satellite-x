@@ -1,0 +1,30 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "challenge_id": {
+      "title": "Challenge Id",
+      "type": "string"
+    },
+    "user_id": {
+      "title": "User Id",
+      "type": "string"
+    },
+    "verification_id": {
+      "title": "Verification Id",
+      "type": "string"
+    },
+    "verified_at": {
+      "format": "date-time",
+      "title": "Verified At",
+      "type": "string"
+    }
+  },
+  "required": [
+    "verification_id",
+    "challenge_id",
+    "user_id",
+    "verified_at"
+  ],
+  "title": "OtpVerification",
+  "type": "object"
+}

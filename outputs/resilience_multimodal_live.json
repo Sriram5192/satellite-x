@@ -1,0 +1,12 @@
+{
+  "decided_at": "2026-08-17T16:30:58.239787Z",
+  "diagnosis_allowed": true,
+  "field_id": "AP_GNT_FTW_CROP_TEST",
+  "optical_analytics_allowed": true,
+  "optical_indices_available": true,
+  "sar_evidence_available": true,
+  "status": "OPTICAL_PRIMARY_SAR_ANCILLARY",
+  "warnings": [
+    "SAR is ancillary context only; optical Set 3 indices remain the diagnosis input."
+  ]
+}

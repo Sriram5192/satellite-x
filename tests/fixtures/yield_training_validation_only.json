@@ -1,0 +1,1308 @@
+{
+  "crop_type": "chilli",
+  "district_code": "GNT",
+  "dataset_purpose": "deterministic_validation_fixture",
+  "records": [
+    {
+      "field_id": "2024-kharif-F0",
+      "crop_type": "chilli",
+      "district_code": "GNT",
+      "season": "2024-kharif",
+      "yield_kg_per_acre": 458.0,
+      "features": {
+        "ndvi_peak": 0.2,
+        "rain_mm": 300
+      },
+      "verification_source": "crop_cutting_experiment",
+      "evidence_reference": "DETERMINISTIC-FIXTURE-2024-kharif-0"
+    },
+    {
+      "field_id": "2024-kharif-F1",
+      "crop_type": "chilli",
+      "district_code": "GNT",
+      "season": "2024-kharif",
+      "yield_kg_per_acre": 480.8,
+      "features": {
+        "ndvi_peak": 0.22,
+        "rain_mm": 317
+      },
+      "verification_source": "crop_cutting_experiment",
+      "evidence_reference": "DETERMINISTIC-FIXTURE-2024-kharif-1"
+    },
+    {
+      "field_id": "2024-kharif-F2",
+      "crop_type": "chilli",
+      "district_code": "GNT",
+      "season": "2024-kharif",
+      "yield_kg_per_acre": 503.6,
+      "features": {
+        "ndvi_peak": 0.24000000000000002,
+        "rain_mm": 334
+      },
+      "verification_source": "crop_cutting_experiment",
+      "evidence_reference": "DETERMINISTIC-FIXTURE-2024-kharif-2"
+    },
+    {
+      "field_id": "2024-kharif-F3",
+      "crop_type": "chilli",
+      "district_code": "GNT",
+      "season": "2024-kharif",
+      "yield_kg_per_acre": 520.4,
+      "features": {
+        "ndvi_peak": 0.26,
+        "rain_mm": 351
+      },
+      "verification_source": "crop_cutting_experiment",
+      "evidence_reference": "DETERMINISTIC-FIXTURE-2024-kharif-3"
+    },
+    {
+      "field_id": "2024-kharif-F4",
+      "crop_type": "chilli",
+      "district_code": "GNT",
+      "season": "2024-kharif",
+      "yield_kg_per_acre": 543.2,
+      "features": {
+        "ndvi_peak": 0.28,
+        "rain_mm": 368
+      },
+      "verification_source": "crop_cutting_experiment",
+      "evidence_reference": "DETERMINISTIC-FIXTURE-2024-kharif-4"
+    },
+    {
+      "field_id": "2024-kharif-F5",
+      "crop_type": "chilli",
+      "district_code": "GNT",
+      "season": "2024-kharif",
+      "yield_kg_per_acre": 566.0,
+      "features": {
+        "ndvi_peak": 0.30000000000000004,
+        "rain_mm": 385
+      },
+      "verification_source": "crop_cutting_experiment",
+      "evidence_reference": "DETERMINISTIC-FIXTURE-2024-kharif-5"
+    },
+    {
+      "field_id": "2024-kharif-F6",
+      "crop_type": "chilli",
+      "district_code": "GNT",
+      "season": "2024-kharif",
+      "yield_kg_per_acre": 582.8,
+      "features": {
+        "ndvi_peak": 0.32,
+        "rain_mm": 402
+      },
+      "verification_source": "crop_cutting_experiment",
+      "evidence_reference": "DETERMINISTIC-FIXTURE-2024-kharif-6"
+    },
+    {
+      "field_id": "2024-kharif-F7",
+      "crop_type": "chilli",
+      "district_code": "GNT",
+      "season": "2024-kharif",
+      "yield_kg_per_acre": 605.6,
+      "features": {
+        "ndvi_peak": 0.34,
+        "rain_mm": 419
+      },
+      "verification_source": "crop_cutting_experiment",
+      "evidence_reference": "DETERMINISTIC-FIXTURE-2024-kharif-7"
+    },
+    {
+      "field_id": "2024-kharif-F8",
+      "crop_type": "chilli",
+      "district_code": "GNT",
+      "season": "2024-kharif",
+      "yield_kg_per_acre": 628.4,
+      "features": {
+        "ndvi_peak": 0.36,
+        "rain_mm": 436
+      },
+      "verification_source": "crop_cutting_experiment",
+      "evidence_reference": "DETERMINISTIC-FIXTURE-2024-kharif-8"
+    },
+    {
+      "field_id": "2024-kharif-F9",
+      "crop_type": "chilli",
+      "district_code": "GNT",
+      "season": "2024-kharif",
+      "yield_kg_per_acre": 645.2,
+      "features": {
+        "ndvi_peak": 0.38,
+        "rain_mm": 453
+      },
+      "verification_source": "crop_cutting_experiment",
+      "evidence_reference": "DETERMINISTIC-FIXTURE-2024-kharif-9"
+    },
+    {
+      "field_id": "2024-kharif-F10",
+      "crop_type": "chilli",
+      "district_code": "GNT",
+      "season": "2024-kharif",
+      "yield_kg_per_acre": 668.0,
+      "features": {
+        "ndvi_peak": 0.4,
+        "rain_mm": 470
+      },
+      "verification_source": "crop_cutting_experiment",
+      "evidence_reference": "DETERMINISTIC-FIXTURE-2024-kharif-10"
+    },
+    {
+      "field_id": "2024-kharif-F11",
+      "crop_type": "chilli",
+      "district_code": "GNT",
+      "season": "2024-kharif",
+      "yield_kg_per_acre": 690.8,
+      "features": {
+        "ndvi_peak": 0.42000000000000004,
+        "rain_mm": 487
+      },
+      "verification_source": "crop_cutting_experiment",
+      "evidence_reference": "DETERMINISTIC-FIXTURE-2024-kharif-11"
+    },
+    {
+      "field_id": "2024-kharif-F12",
+      "crop_type": "chilli",
+      "district_code": "GNT",
+      "season": "2024-kharif",
+      "yield_kg_per_acre": 627.6,
+      "features": {
+        "ndvi_peak": 0.44,
+        "rain_mm": 304
+      },
+      "verification_source": "crop_cutting_experiment",
+      "evidence_reference": "DETERMINISTIC-FIXTURE-2024-kharif-12"
+    },
+    {
+      "field_id": "2024-kharif-F13",
+      "crop_type": "chilli",
+      "district_code": "GNT",
+      "season": "2024-kharif",
+      "yield_kg_per_acre": 650.4,
+      "features": {
+        "ndvi_peak": 0.46,
+        "rain_mm": 321
+      },
+      "verification_source": "crop_cutting_experiment",
+      "evidence_reference": "DETERMINISTIC-FIXTURE-2024-kharif-13"
+    },
+    {
+      "field_id": "2024-kharif-F14",
+      "crop_type": "chilli",
+      "district_code": "GNT",
+      "season": "2024-kharif",
+      "yield_kg_per_acre": 673.2,
+      "features": {
+        "ndvi_peak": 0.48000000000000004,
+        "rain_mm": 338
+      },
+      "verification_source": "crop_cutting_experiment",
+      "evidence_reference": "DETERMINISTIC-FIXTURE-2024-kharif-14"
+    },
+    {
+      "field_id": "2024-kharif-F15",
+      "crop_type": "chilli",
+      "district_code": "GNT",
+      "season": "2024-kharif",
+      "yield_kg_per_acre": 690.0,
+      "features": {
+        "ndvi_peak": 0.5,
+        "rain_mm": 355
+      },
+      "verification_source": "crop_cutting_experiment",
+      "evidence_reference": "DETERMINISTIC-FIXTURE-2024-kharif-15"
+    },
+    {
+      "field_id": "2024-kharif-F16",
+      "crop_type": "chilli",
+      "district_code": "GNT",
+      "season": "2024-kharif",
+      "yield_kg_per_acre": 712.8,
+      "features": {
+        "ndvi_peak": 0.52,
+        "rain_mm": 372
+      },
+      "verification_source": "crop_cutting_experiment",
+      "evidence_reference": "DETERMINISTIC-FIXTURE-2024-kharif-16"
+    },
+    {
+      "field_id": "2024-kharif-F17",
+      "crop_type": "chilli",
+      "district_code": "GNT",
+      "season": "2024-kharif",
+      "yield_kg_per_acre": 735.6,
+      "features": {
+        "ndvi_peak": 0.54,
+        "rain_mm": 389
+      },
+      "verification_source": "crop_cutting_experiment",
+      "evidence_reference": "DETERMINISTIC-FIXTURE-2024-kharif-17"
+    },
+    {
+      "field_id": "2024-kharif-F18",
+      "crop_type": "chilli",
+      "district_code": "GNT",
+      "season": "2024-kharif",
+      "yield_kg_per_acre": 752.4,
+      "features": {
+        "ndvi_peak": 0.56,
+        "rain_mm": 406
+      },
+      "verification_source": "crop_cutting_experiment",
+      "evidence_reference": "DETERMINISTIC-FIXTURE-2024-kharif-18"
+    },
+    {
+      "field_id": "2024-kharif-F19",
+      "crop_type": "chilli",
+      "district_code": "GNT",
+      "season": "2024-kharif",
+      "yield_kg_per_acre": 775.2,
+      "features": {
+        "ndvi_peak": 0.5800000000000001,
+        "rain_mm": 423
+      },
+      "verification_source": "crop_cutting_experiment",
+      "evidence_reference": "DETERMINISTIC-FIXTURE-2024-kharif-19"
+    },
+    {
+      "field_id": "2024-kharif-F20",
+      "crop_type": "chilli",
+      "district_code": "GNT",
+      "season": "2024-kharif",
+      "yield_kg_per_acre": 798.0,
+      "features": {
+        "ndvi_peak": 0.6000000000000001,
+        "rain_mm": 440
+      },
+      "verification_source": "crop_cutting_experiment",
+      "evidence_reference": "DETERMINISTIC-FIXTURE-2024-kharif-20"
+    },
+    {
+      "field_id": "2024-kharif-F21",
+      "crop_type": "chilli",
+      "district_code": "GNT",
+      "season": "2024-kharif",
+      "yield_kg_per_acre": 814.8,
+      "features": {
+        "ndvi_peak": 0.62,
+        "rain_mm": 457
+      },
+      "verification_source": "crop_cutting_experiment",
+      "evidence_reference": "DETERMINISTIC-FIXTURE-2024-kharif-21"
+    },
+    {
+      "field_id": "2024-kharif-F22",
+      "crop_type": "chilli",
+      "district_code": "GNT",
+      "season": "2024-kharif",
+      "yield_kg_per_acre": 837.6,
+      "features": {
+        "ndvi_peak": 0.64,
+        "rain_mm": 474
+      },
+      "verification_source": "crop_cutting_experiment",
+      "evidence_reference": "DETERMINISTIC-FIXTURE-2024-kharif-22"
+    },
+    {
+      "field_id": "2024-kharif-F23",
+      "crop_type": "chilli",
+      "district_code": "GNT",
+      "season": "2024-kharif",
+      "yield_kg_per_acre": 860.4,
+      "features": {
+        "ndvi_peak": 0.66,
+        "rain_mm": 491
+      },
+      "verification_source": "crop_cutting_experiment",
+      "evidence_reference": "DETERMINISTIC-FIXTURE-2024-kharif-23"
+    },
+    {
+      "field_id": "2024-kharif-F24",
+      "crop_type": "chilli",
+      "district_code": "GNT",
+      "season": "2024-kharif",
+      "yield_kg_per_acre": 797.2,
+      "features": {
+        "ndvi_peak": 0.6799999999999999,
+        "rain_mm": 308
+      },
+      "verification_source": "crop_cutting_experiment",
+      "evidence_reference": "DETERMINISTIC-FIXTURE-2024-kharif-24"
+    },
+    {
+      "field_id": "2024-kharif-F25",
+      "crop_type": "chilli",
+      "district_code": "GNT",
+      "season": "2024-kharif",
+      "yield_kg_per_acre": 470.0,
+      "features": {
+        "ndvi_peak": 0.2,
+        "rain_mm": 325
+      },
+      "verification_source": "crop_cutting_experiment",
+      "evidence_reference": "DETERMINISTIC-FIXTURE-2024-kharif-25"
+    },
+    {
+      "field_id": "2024-kharif-F26",
+      "crop_type": "chilli",
+      "district_code": "GNT",
+      "season": "2024-kharif",
+      "yield_kg_per_acre": 492.8,
+      "features": {
+        "ndvi_peak": 0.22,
+        "rain_mm": 342
+      },
+      "verification_source": "crop_cutting_experiment",
+      "evidence_reference": "DETERMINISTIC-FIXTURE-2024-kharif-26"
+    },
+    {
+      "field_id": "2024-kharif-F27",
+      "crop_type": "chilli",
+      "district_code": "GNT",
+      "season": "2024-kharif",
+      "yield_kg_per_acre": 509.6,
+      "features": {
+        "ndvi_peak": 0.24000000000000002,
+        "rain_mm": 359
+      },
+      "verification_source": "crop_cutting_experiment",
+      "evidence_reference": "DETERMINISTIC-FIXTURE-2024-kharif-27"
+    },
+    {
+      "field_id": "2024-kharif-F28",
+      "crop_type": "chilli",
+      "district_code": "GNT",
+      "season": "2024-kharif",
+      "yield_kg_per_acre": 532.4,
+      "features": {
+        "ndvi_peak": 0.26,
+        "rain_mm": 376
+      },
+      "verification_source": "crop_cutting_experiment",
+      "evidence_reference": "DETERMINISTIC-FIXTURE-2024-kharif-28"
+    },
+    {
+      "field_id": "2024-kharif-F29",
+      "crop_type": "chilli",
+      "district_code": "GNT",
+      "season": "2024-kharif",
+      "yield_kg_per_acre": 555.2,
+      "features": {
+        "ndvi_peak": 0.28,
+        "rain_mm": 393
+      },
+      "verification_source": "crop_cutting_experiment",
+      "evidence_reference": "DETERMINISTIC-FIXTURE-2024-kharif-29"
+    },
+    {
+      "field_id": "2024-kharif-F30",
+      "crop_type": "chilli",
+      "district_code": "GNT",
+      "season": "2024-kharif",
+      "yield_kg_per_acre": 572.0,
+      "features": {
+        "ndvi_peak": 0.30000000000000004,
+        "rain_mm": 410
+      },
+      "verification_source": "crop_cutting_experiment",
+      "evidence_reference": "DETERMINISTIC-FIXTURE-2024-kharif-30"
+    },
+    {
+      "field_id": "2024-kharif-F31",
+      "crop_type": "chilli",
+      "district_code": "GNT",
+      "season": "2024-kharif",
+      "yield_kg_per_acre": 594.8,
+      "features": {
+        "ndvi_peak": 0.32,
+        "rain_mm": 427
+      },
+      "verification_source": "crop_cutting_experiment",
+      "evidence_reference": "DETERMINISTIC-FIXTURE-2024-kharif-31"
+    },
+    {
+      "field_id": "2024-kharif-F32",
+      "crop_type": "chilli",
+      "district_code": "GNT",
+      "season": "2024-kharif",
+      "yield_kg_per_acre": 617.6,
+      "features": {
+        "ndvi_peak": 0.34,
+        "rain_mm": 444
+      },
+      "verification_source": "crop_cutting_experiment",
+      "evidence_reference": "DETERMINISTIC-FIXTURE-2024-kharif-32"
+    },
+    {
+      "field_id": "2024-kharif-F33",
+      "crop_type": "chilli",
+      "district_code": "GNT",
+      "season": "2024-kharif",
+      "yield_kg_per_acre": 634.4,
+      "features": {
+        "ndvi_peak": 0.36,
+        "rain_mm": 461
+      },
+      "verification_source": "crop_cutting_experiment",
+      "evidence_reference": "DETERMINISTIC-FIXTURE-2024-kharif-33"
+    },
+    {
+      "field_id": "2024-kharif-F34",
+      "crop_type": "chilli",
+      "district_code": "GNT",
+      "season": "2024-kharif",
+      "yield_kg_per_acre": 657.2,
+      "features": {
+        "ndvi_peak": 0.38,
+        "rain_mm": 478
+      },
+      "verification_source": "crop_cutting_experiment",
+      "evidence_reference": "DETERMINISTIC-FIXTURE-2024-kharif-34"
+    },
+    {
+      "field_id": "2024-kharif-F35",
+      "crop_type": "chilli",
+      "district_code": "GNT",
+      "season": "2024-kharif",
+      "yield_kg_per_acre": 680.0,
+      "features": {
+        "ndvi_peak": 0.4,
+        "rain_mm": 495
+      },
+      "verification_source": "crop_cutting_experiment",
+      "evidence_reference": "DETERMINISTIC-FIXTURE-2024-kharif-35"
+    },
+    {
+      "field_id": "2024-kharif-F36",
+      "crop_type": "chilli",
+      "district_code": "GNT",
+      "season": "2024-kharif",
+      "yield_kg_per_acre": 616.8,
+      "features": {
+        "ndvi_peak": 0.42000000000000004,
+        "rain_mm": 312
+      },
+      "verification_source": "crop_cutting_experiment",
+      "evidence_reference": "DETERMINISTIC-FIXTURE-2024-kharif-36"
+    },
+    {
+      "field_id": "2024-kharif-F37",
+      "crop_type": "chilli",
+      "district_code": "GNT",
+      "season": "2024-kharif",
+      "yield_kg_per_acre": 639.6,
+      "features": {
+        "ndvi_peak": 0.44,
+        "rain_mm": 329
+      },
+      "verification_source": "crop_cutting_experiment",
+      "evidence_reference": "DETERMINISTIC-FIXTURE-2024-kharif-37"
+    },
+    {
+      "field_id": "2024-kharif-F38",
+      "crop_type": "chilli",
+      "district_code": "GNT",
+      "season": "2024-kharif",
+      "yield_kg_per_acre": 662.4,
+      "features": {
+        "ndvi_peak": 0.46,
+        "rain_mm": 346
+      },
+      "verification_source": "crop_cutting_experiment",
+      "evidence_reference": "DETERMINISTIC-FIXTURE-2024-kharif-38"
+    },
+    {
+      "field_id": "2024-kharif-F39",
+      "crop_type": "chilli",
+      "district_code": "GNT",
+      "season": "2024-kharif",
+      "yield_kg_per_acre": 679.2,
+      "features": {
+        "ndvi_peak": 0.48000000000000004,
+        "rain_mm": 363
+      },
+      "verification_source": "crop_cutting_experiment",
+      "evidence_reference": "DETERMINISTIC-FIXTURE-2024-kharif-39"
+    },
+    {
+      "field_id": "2024-kharif-F40",
+      "crop_type": "chilli",
+      "district_code": "GNT",
+      "season": "2024-kharif",
+      "yield_kg_per_acre": 702.0,
+      "features": {
+        "ndvi_peak": 0.5,
+        "rain_mm": 380
+      },
+      "verification_source": "crop_cutting_experiment",
+      "evidence_reference": "DETERMINISTIC-FIXTURE-2024-kharif-40"
+    },
+    {
+      "field_id": "2024-kharif-F41",
+      "crop_type": "chilli",
+      "district_code": "GNT",
+      "season": "2024-kharif",
+      "yield_kg_per_acre": 724.8,
+      "features": {
+        "ndvi_peak": 0.52,
+        "rain_mm": 397
+      },
+      "verification_source": "crop_cutting_experiment",
+      "evidence_reference": "DETERMINISTIC-FIXTURE-2024-kharif-41"
+    },
+    {
+      "field_id": "2024-kharif-F42",
+      "crop_type": "chilli",
+      "district_code": "GNT",
+      "season": "2024-kharif",
+      "yield_kg_per_acre": 741.6,
+      "features": {
+        "ndvi_peak": 0.54,
+        "rain_mm": 414
+      },
+      "verification_source": "crop_cutting_experiment",
+      "evidence_reference": "DETERMINISTIC-FIXTURE-2024-kharif-42"
+    },
+    {
+      "field_id": "2024-kharif-F43",
+      "crop_type": "chilli",
+      "district_code": "GNT",
+      "season": "2024-kharif",
+      "yield_kg_per_acre": 764.4,
+      "features": {
+        "ndvi_peak": 0.56,
+        "rain_mm": 431
+      },
+      "verification_source": "crop_cutting_experiment",
+      "evidence_reference": "DETERMINISTIC-FIXTURE-2024-kharif-43"
+    },
+    {
+      "field_id": "2024-kharif-F44",
+      "crop_type": "chilli",
+      "district_code": "GNT",
+      "season": "2024-kharif",
+      "yield_kg_per_acre": 787.2,
+      "features": {
+        "ndvi_peak": 0.5800000000000001,
+        "rain_mm": 448
+      },
+      "verification_source": "crop_cutting_experiment",
+      "evidence_reference": "DETERMINISTIC-FIXTURE-2024-kharif-44"
+    },
+    {
+      "field_id": "2024-kharif-F45",
+      "crop_type": "chilli",
+      "district_code": "GNT",
+      "season": "2024-kharif",
+      "yield_kg_per_acre": 804.0,
+      "features": {
+        "ndvi_peak": 0.6000000000000001,
+        "rain_mm": 465
+      },
+      "verification_source": "crop_cutting_experiment",
+      "evidence_reference": "DETERMINISTIC-FIXTURE-2024-kharif-45"
+    },
+    {
+      "field_id": "2024-kharif-F46",
+      "crop_type": "chilli",
+      "district_code": "GNT",
+      "season": "2024-kharif",
+      "yield_kg_per_acre": 826.8,
+      "features": {
+        "ndvi_peak": 0.62,
+        "rain_mm": 482
+      },
+      "verification_source": "crop_cutting_experiment",
+      "evidence_reference": "DETERMINISTIC-FIXTURE-2024-kharif-46"
+    },
+    {
+      "field_id": "2024-kharif-F47",
+      "crop_type": "chilli",
+      "district_code": "GNT",
+      "season": "2024-kharif",
+      "yield_kg_per_acre": 849.6,
+      "features": {
+        "ndvi_peak": 0.64,
+        "rain_mm": 499
+      },
+      "verification_source": "crop_cutting_experiment",
+      "evidence_reference": "DETERMINISTIC-FIXTURE-2024-kharif-47"
+    },
+    {
+      "field_id": "2024-kharif-F48",
+      "crop_type": "chilli",
+      "district_code": "GNT",
+      "season": "2024-kharif",
+      "yield_kg_per_acre": 786.4,
+      "features": {
+        "ndvi_peak": 0.66,
+        "rain_mm": 316
+      },
+      "verification_source": "crop_cutting_experiment",
+      "evidence_reference": "DETERMINISTIC-FIXTURE-2024-kharif-48"
+    },
+    {
+      "field_id": "2024-kharif-F49",
+      "crop_type": "chilli",
+      "district_code": "GNT",
+      "season": "2024-kharif",
+      "yield_kg_per_acre": 809.2,
+      "features": {
+        "ndvi_peak": 0.6799999999999999,
+        "rain_mm": 333
+      },
+      "verification_source": "crop_cutting_experiment",
+      "evidence_reference": "DETERMINISTIC-FIXTURE-2024-kharif-49"
+    },
+    {
+      "field_id": "2025-kharif-F0",
+      "crop_type": "chilli",
+      "district_code": "GNT",
+      "season": "2025-kharif",
+      "yield_kg_per_acre": 458.0,
+      "features": {
+        "ndvi_peak": 0.2,
+        "rain_mm": 300
+      },
+      "verification_source": "crop_cutting_experiment",
+      "evidence_reference": "DETERMINISTIC-FIXTURE-2025-kharif-0"
+    },
+    {
+      "field_id": "2025-kharif-F1",
+      "crop_type": "chilli",
+      "district_code": "GNT",
+      "season": "2025-kharif",
+      "yield_kg_per_acre": 480.8,
+      "features": {
+        "ndvi_peak": 0.22,
+        "rain_mm": 317
+      },
+      "verification_source": "crop_cutting_experiment",
+      "evidence_reference": "DETERMINISTIC-FIXTURE-2025-kharif-1"
+    },
+    {
+      "field_id": "2025-kharif-F2",
+      "crop_type": "chilli",
+      "district_code": "GNT",
+      "season": "2025-kharif",
+      "yield_kg_per_acre": 503.6,
+      "features": {
+        "ndvi_peak": 0.24000000000000002,
+        "rain_mm": 334
+      },
+      "verification_source": "crop_cutting_experiment",
+      "evidence_reference": "DETERMINISTIC-FIXTURE-2025-kharif-2"
+    },
+    {
+      "field_id": "2025-kharif-F3",
+      "crop_type": "chilli",
+      "district_code": "GNT",
+      "season": "2025-kharif",
+      "yield_kg_per_acre": 520.4,
+      "features": {
+        "ndvi_peak": 0.26,
+        "rain_mm": 351
+      },
+      "verification_source": "crop_cutting_experiment",
+      "evidence_reference": "DETERMINISTIC-FIXTURE-2025-kharif-3"
+    },
+    {
+      "field_id": "2025-kharif-F4",
+      "crop_type": "chilli",
+      "district_code": "GNT",
+      "season": "2025-kharif",
+      "yield_kg_per_acre": 543.2,
+      "features": {
+        "ndvi_peak": 0.28,
+        "rain_mm": 368
+      },
+      "verification_source": "crop_cutting_experiment",
+      "evidence_reference": "DETERMINISTIC-FIXTURE-2025-kharif-4"
+    },
+    {
+      "field_id": "2025-kharif-F5",
+      "crop_type": "chilli",
+      "district_code": "GNT",
+      "season": "2025-kharif",
+      "yield_kg_per_acre": 566.0,
+      "features": {
+        "ndvi_peak": 0.30000000000000004,
+        "rain_mm": 385
+      },
+      "verification_source": "crop_cutting_experiment",
+      "evidence_reference": "DETERMINISTIC-FIXTURE-2025-kharif-5"
+    },
+    {
+      "field_id": "2025-kharif-F6",
+      "crop_type": "chilli",
+      "district_code": "GNT",
+      "season": "2025-kharif",
+      "yield_kg_per_acre": 582.8,
+      "features": {
+        "ndvi_peak": 0.32,
+        "rain_mm": 402
+      },
+      "verification_source": "crop_cutting_experiment",
+      "evidence_reference": "DETERMINISTIC-FIXTURE-2025-kharif-6"
+    },
+    {
+      "field_id": "2025-kharif-F7",
+      "crop_type": "chilli",
+      "district_code": "GNT",
+      "season": "2025-kharif",
+      "yield_kg_per_acre": 605.6,
+      "features": {
+        "ndvi_peak": 0.34,
+        "rain_mm": 419
+      },
+      "verification_source": "crop_cutting_experiment",
+      "evidence_reference": "DETERMINISTIC-FIXTURE-2025-kharif-7"
+    },
+    {
+      "field_id": "2025-kharif-F8",
+      "crop_type": "chilli",
+      "district_code": "GNT",
+      "season": "2025-kharif",
+      "yield_kg_per_acre": 628.4,
+      "features": {
+        "ndvi_peak": 0.36,
+        "rain_mm": 436
+      },
+      "verification_source": "crop_cutting_experiment",
+      "evidence_reference": "DETERMINISTIC-FIXTURE-2025-kharif-8"
+    },
+    {
+      "field_id": "2025-kharif-F9",
+      "crop_type": "chilli",
+      "district_code": "GNT",
+      "season": "2025-kharif",
+      "yield_kg_per_acre": 645.2,
+      "features": {
+        "ndvi_peak": 0.38,
+        "rain_mm": 453
+      },
+      "verification_source": "crop_cutting_experiment",
+      "evidence_reference": "DETERMINISTIC-FIXTURE-2025-kharif-9"
+    },
+    {
+      "field_id": "2025-kharif-F10",
+      "crop_type": "chilli",
+      "district_code": "GNT",
+      "season": "2025-kharif",
+      "yield_kg_per_acre": 668.0,
+      "features": {
+        "ndvi_peak": 0.4,
+        "rain_mm": 470
+      },
+      "verification_source": "crop_cutting_experiment",
+      "evidence_reference": "DETERMINISTIC-FIXTURE-2025-kharif-10"
+    },
+    {
+      "field_id": "2025-kharif-F11",
+      "crop_type": "chilli",
+      "district_code": "GNT",
+      "season": "2025-kharif",
+      "yield_kg_per_acre": 690.8,
+      "features": {
+        "ndvi_peak": 0.42000000000000004,
+        "rain_mm": 487
+      },
+      "verification_source": "crop_cutting_experiment",
+      "evidence_reference": "DETERMINISTIC-FIXTURE-2025-kharif-11"
+    },
+    {
+      "field_id": "2025-kharif-F12",
+      "crop_type": "chilli",
+      "district_code": "GNT",
+      "season": "2025-kharif",
+      "yield_kg_per_acre": 627.6,
+      "features": {
+        "ndvi_peak": 0.44,
+        "rain_mm": 304
+      },
+      "verification_source": "crop_cutting_experiment",
+      "evidence_reference": "DETERMINISTIC-FIXTURE-2025-kharif-12"
+    },
+    {
+      "field_id": "2025-kharif-F13",
+      "crop_type": "chilli",
+      "district_code": "GNT",
+      "season": "2025-kharif",
+      "yield_kg_per_acre": 650.4,
+      "features": {
+        "ndvi_peak": 0.46,
+        "rain_mm": 321
+      },
+      "verification_source": "crop_cutting_experiment",
+      "evidence_reference": "DETERMINISTIC-FIXTURE-2025-kharif-13"
+    },
+    {
+      "field_id": "2025-kharif-F14",
+      "crop_type": "chilli",
+      "district_code": "GNT",
+      "season": "2025-kharif",
+      "yield_kg_per_acre": 673.2,
+      "features": {
+        "ndvi_peak": 0.48000000000000004,
+        "rain_mm": 338
+      },
+      "verification_source": "crop_cutting_experiment",
+      "evidence_reference": "DETERMINISTIC-FIXTURE-2025-kharif-14"
+    },
+    {
+      "field_id": "2025-kharif-F15",
+      "crop_type": "chilli",
+      "district_code": "GNT",
+      "season": "2025-kharif",
+      "yield_kg_per_acre": 690.0,
+      "features": {
+        "ndvi_peak": 0.5,
+        "rain_mm": 355
+      },
+      "verification_source": "crop_cutting_experiment",
+      "evidence_reference": "DETERMINISTIC-FIXTURE-2025-kharif-15"
+    },
+    {
+      "field_id": "2025-kharif-F16",
+      "crop_type": "chilli",
+      "district_code": "GNT",
+      "season": "2025-kharif",
+      "yield_kg_per_acre": 712.8,
+      "features": {
+        "ndvi_peak": 0.52,
+        "rain_mm": 372
+      },
+      "verification_source": "crop_cutting_experiment",
+      "evidence_reference": "DETERMINISTIC-FIXTURE-2025-kharif-16"
+    },
+    {
+      "field_id": "2025-kharif-F17",
+      "crop_type": "chilli",
+      "district_code": "GNT",
+      "season": "2025-kharif",
+      "yield_kg_per_acre": 735.6,
+      "features": {
+        "ndvi_peak": 0.54,
+        "rain_mm": 389
+      },
+      "verification_source": "crop_cutting_experiment",
+      "evidence_reference": "DETERMINISTIC-FIXTURE-2025-kharif-17"
+    },
+    {
+      "field_id": "2025-kharif-F18",
+      "crop_type": "chilli",
+      "district_code": "GNT",
+      "season": "2025-kharif",
+      "yield_kg_per_acre": 752.4,
+      "features": {
+        "ndvi_peak": 0.56,
+        "rain_mm": 406
+      },
+      "verification_source": "crop_cutting_experiment",
+      "evidence_reference": "DETERMINISTIC-FIXTURE-2025-kharif-18"
+    },
+    {
+      "field_id": "2025-kharif-F19",
+      "crop_type": "chilli",
+      "district_code": "GNT",
+      "season": "2025-kharif",
+      "yield_kg_per_acre": 775.2,
+      "features": {
+        "ndvi_peak": 0.5800000000000001,
+        "rain_mm": 423
+      },
+      "verification_source": "crop_cutting_experiment",
+      "evidence_reference": "DETERMINISTIC-FIXTURE-2025-kharif-19"
+    },
+    {
+      "field_id": "2025-kharif-F20",
+      "crop_type": "chilli",
+      "district_code": "GNT",
+      "season": "2025-kharif",
+      "yield_kg_per_acre": 798.0,
+      "features": {
+        "ndvi_peak": 0.6000000000000001,
+        "rain_mm": 440
+      },
+      "verification_source": "crop_cutting_experiment",
+      "evidence_reference": "DETERMINISTIC-FIXTURE-2025-kharif-20"
+    },
+    {
+      "field_id": "2025-kharif-F21",
+      "crop_type": "chilli",
+      "district_code": "GNT",
+      "season": "2025-kharif",
+      "yield_kg_per_acre": 814.8,
+      "features": {
+        "ndvi_peak": 0.62,
+        "rain_mm": 457
+      },
+      "verification_source": "crop_cutting_experiment",
+      "evidence_reference": "DETERMINISTIC-FIXTURE-2025-kharif-21"
+    },
+    {
+      "field_id": "2025-kharif-F22",
+      "crop_type": "chilli",
+      "district_code": "GNT",
+      "season": "2025-kharif",
+      "yield_kg_per_acre": 837.6,
+      "features": {
+        "ndvi_peak": 0.64,
+        "rain_mm": 474
+      },
+      "verification_source": "crop_cutting_experiment",
+      "evidence_reference": "DETERMINISTIC-FIXTURE-2025-kharif-22"
+    },
+    {
+      "field_id": "2025-kharif-F23",
+      "crop_type": "chilli",
+      "district_code": "GNT",
+      "season": "2025-kharif",
+      "yield_kg_per_acre": 860.4,
+      "features": {
+        "ndvi_peak": 0.66,
+        "rain_mm": 491
+      },
+      "verification_source": "crop_cutting_experiment",
+      "evidence_reference": "DETERMINISTIC-FIXTURE-2025-kharif-23"
+    },
+    {
+      "field_id": "2025-kharif-F24",
+      "crop_type": "chilli",
+      "district_code": "GNT",
+      "season": "2025-kharif",
+      "yield_kg_per_acre": 797.2,
+      "features": {
+        "ndvi_peak": 0.6799999999999999,
+        "rain_mm": 308
+      },
+      "verification_source": "crop_cutting_experiment",
+      "evidence_reference": "DETERMINISTIC-FIXTURE-2025-kharif-24"
+    },
+    {
+      "field_id": "2025-kharif-F25",
+      "crop_type": "chilli",
+      "district_code": "GNT",
+      "season": "2025-kharif",
+      "yield_kg_per_acre": 470.0,
+      "features": {
+        "ndvi_peak": 0.2,
+        "rain_mm": 325
+      },
+      "verification_source": "crop_cutting_experiment",
+      "evidence_reference": "DETERMINISTIC-FIXTURE-2025-kharif-25"
+    },
+    {
+      "field_id": "2025-kharif-F26",
+      "crop_type": "chilli",
+      "district_code": "GNT",
+      "season": "2025-kharif",
+      "yield_kg_per_acre": 492.8,
+      "features": {
+        "ndvi_peak": 0.22,
+        "rain_mm": 342
+      },
+      "verification_source": "crop_cutting_experiment",
+      "evidence_reference": "DETERMINISTIC-FIXTURE-2025-kharif-26"
+    },
+    {
+      "field_id": "2025-kharif-F27",
+      "crop_type": "chilli",
+      "district_code": "GNT",
+      "season": "2025-kharif",
+      "yield_kg_per_acre": 509.6,
+      "features": {
+        "ndvi_peak": 0.24000000000000002,
+        "rain_mm": 359
+      },
+      "verification_source": "crop_cutting_experiment",
+      "evidence_reference": "DETERMINISTIC-FIXTURE-2025-kharif-27"
+    },
+    {
+      "field_id": "2025-kharif-F28",
+      "crop_type": "chilli",
+      "district_code": "GNT",
+      "season": "2025-kharif",
+      "yield_kg_per_acre": 532.4,
+      "features": {
+        "ndvi_peak": 0.26,
+        "rain_mm": 376
+      },
+      "verification_source": "crop_cutting_experiment",
+      "evidence_reference": "DETERMINISTIC-FIXTURE-2025-kharif-28"
+    },
+    {
+      "field_id": "2025-kharif-F29",
+      "crop_type": "chilli",
+      "district_code": "GNT",
+      "season": "2025-kharif",
+      "yield_kg_per_acre": 555.2,
+      "features": {
+        "ndvi_peak": 0.28,
+        "rain_mm": 393
+      },
+      "verification_source": "crop_cutting_experiment",
+      "evidence_reference": "DETERMINISTIC-FIXTURE-2025-kharif-29"
+    },
+    {
+      "field_id": "2025-kharif-F30",
+      "crop_type": "chilli",
+      "district_code": "GNT",
+      "season": "2025-kharif",
+      "yield_kg_per_acre": 572.0,
+      "features": {
+        "ndvi_peak": 0.30000000000000004,
+        "rain_mm": 410
+      },
+      "verification_source": "crop_cutting_experiment",
+      "evidence_reference": "DETERMINISTIC-FIXTURE-2025-kharif-30"
+    },
+    {
+      "field_id": "2025-kharif-F31",
+      "crop_type": "chilli",
+      "district_code": "GNT",
+      "season": "2025-kharif",
+      "yield_kg_per_acre": 594.8,
+      "features": {
+        "ndvi_peak": 0.32,
+        "rain_mm": 427
+      },
+      "verification_source": "crop_cutting_experiment",
+      "evidence_reference": "DETERMINISTIC-FIXTURE-2025-kharif-31"
+    },
+    {
+      "field_id": "2025-kharif-F32",
+      "crop_type": "chilli",
+      "district_code": "GNT",
+      "season": "2025-kharif",
+      "yield_kg_per_acre": 617.6,
+      "features": {
+        "ndvi_peak": 0.34,
+        "rain_mm": 444
+      },
+      "verification_source": "crop_cutting_experiment",
+      "evidence_reference": "DETERMINISTIC-FIXTURE-2025-kharif-32"
+    },
+    {
+      "field_id": "2025-kharif-F33",
+      "crop_type": "chilli",
+      "district_code": "GNT",
+      "season": "2025-kharif",
+      "yield_kg_per_acre": 634.4,
+      "features": {
+        "ndvi_peak": 0.36,
+        "rain_mm": 461
+      },
+      "verification_source": "crop_cutting_experiment",
+      "evidence_reference": "DETERMINISTIC-FIXTURE-2025-kharif-33"
+    },
+    {
+      "field_id": "2025-kharif-F34",
+      "crop_type": "chilli",
+      "district_code": "GNT",
+      "season": "2025-kharif",
+      "yield_kg_per_acre": 657.2,
+      "features": {
+        "ndvi_peak": 0.38,
+        "rain_mm": 478
+      },
+      "verification_source": "crop_cutting_experiment",
+      "evidence_reference": "DETERMINISTIC-FIXTURE-2025-kharif-34"
+    },
+    {
+      "field_id": "2025-kharif-F35",
+      "crop_type": "chilli",
+      "district_code": "GNT",
+      "season": "2025-kharif",
+      "yield_kg_per_acre": 680.0,
+      "features": {
+        "ndvi_peak": 0.4,
+        "rain_mm": 495
+      },
+      "verification_source": "crop_cutting_experiment",
+      "evidence_reference": "DETERMINISTIC-FIXTURE-2025-kharif-35"
+    },
+    {
+      "field_id": "2025-kharif-F36",
+      "crop_type": "chilli",
+      "district_code": "GNT",
+      "season": "2025-kharif",
+      "yield_kg_per_acre": 616.8,
+      "features": {
+        "ndvi_peak": 0.42000000000000004,
+        "rain_mm": 312
+      },
+      "verification_source": "crop_cutting_experiment",
+      "evidence_reference": "DETERMINISTIC-FIXTURE-2025-kharif-36"
+    },
+    {
+      "field_id": "2025-kharif-F37",
+      "crop_type": "chilli",
+      "district_code": "GNT",
+      "season": "2025-kharif",
+      "yield_kg_per_acre": 639.6,
+      "features": {
+        "ndvi_peak": 0.44,
+        "rain_mm": 329
+      },
+      "verification_source": "crop_cutting_experiment",
+      "evidence_reference": "DETERMINISTIC-FIXTURE-2025-kharif-37"
+    },
+    {
+      "field_id": "2025-kharif-F38",
+      "crop_type": "chilli",
+      "district_code": "GNT",
+      "season": "2025-kharif",
+      "yield_kg_per_acre": 662.4,
+      "features": {
+        "ndvi_peak": 0.46,
+        "rain_mm": 346
+      },
+      "verification_source": "crop_cutting_experiment",
+      "evidence_reference": "DETERMINISTIC-FIXTURE-2025-kharif-38"
+    },
+    {
+      "field_id": "2025-kharif-F39",
+      "crop_type": "chilli",
+      "district_code": "GNT",
+      "season": "2025-kharif",
+      "yield_kg_per_acre": 679.2,
+      "features": {
+        "ndvi_peak": 0.48000000000000004,
+        "rain_mm": 363
+      },
+      "verification_source": "crop_cutting_experiment",
+      "evidence_reference": "DETERMINISTIC-FIXTURE-2025-kharif-39"
+    },
+    {
+      "field_id": "2025-kharif-F40",
+      "crop_type": "chilli",
+      "district_code": "GNT",
+      "season": "2025-kharif",
+      "yield_kg_per_acre": 702.0,
+      "features": {
+        "ndvi_peak": 0.5,
+        "rain_mm": 380
+      },
+      "verification_source": "crop_cutting_experiment",
+      "evidence_reference": "DETERMINISTIC-FIXTURE-2025-kharif-40"
+    },
+    {
+      "field_id": "2025-kharif-F41",
+      "crop_type": "chilli",
+      "district_code": "GNT",
+      "season": "2025-kharif",
+      "yield_kg_per_acre": 724.8,
+      "features": {
+        "ndvi_peak": 0.52,
+        "rain_mm": 397
+      },
+      "verification_source": "crop_cutting_experiment",
+      "evidence_reference": "DETERMINISTIC-FIXTURE-2025-kharif-41"
+    },
+    {
+      "field_id": "2025-kharif-F42",
+      "crop_type": "chilli",
+      "district_code": "GNT",
+      "season": "2025-kharif",
+      "yield_kg_per_acre": 741.6,
+      "features": {
+        "ndvi_peak": 0.54,
+        "rain_mm": 414
+      },
+      "verification_source": "crop_cutting_experiment",
+      "evidence_reference": "DETERMINISTIC-FIXTURE-2025-kharif-42"
+    },
+    {
+      "field_id": "2025-kharif-F43",
+      "crop_type": "chilli",
+      "district_code": "GNT",
+      "season": "2025-kharif",
+      "yield_kg_per_acre": 764.4,
+      "features": {
+        "ndvi_peak": 0.56,
+        "rain_mm": 431
+      },
+      "verification_source": "crop_cutting_experiment",
+      "evidence_reference": "DETERMINISTIC-FIXTURE-2025-kharif-43"
+    },
+    {
+      "field_id": "2025-kharif-F44",
+      "crop_type": "chilli",
+      "district_code": "GNT",
+      "season": "2025-kharif",
+      "yield_kg_per_acre": 787.2,
+      "features": {
+        "ndvi_peak": 0.5800000000000001,
+        "rain_mm": 448
+      },
+      "verification_source": "crop_cutting_experiment",
+      "evidence_reference": "DETERMINISTIC-FIXTURE-2025-kharif-44"
+    },
+    {
+      "field_id": "2025-kharif-F45",
+      "crop_type": "chilli",
+      "district_code": "GNT",
+      "season": "2025-kharif",
+      "yield_kg_per_acre": 804.0,
+      "features": {
+        "ndvi_peak": 0.6000000000000001,
+        "rain_mm": 465
+      },
+      "verification_source": "crop_cutting_experiment",
+      "evidence_reference": "DETERMINISTIC-FIXTURE-2025-kharif-45"
+    },
+    {
+      "field_id": "2025-kharif-F46",
+      "crop_type": "chilli",
+      "district_code": "GNT",
+      "season": "2025-kharif",
+      "yield_kg_per_acre": 826.8,
+      "features": {
+        "ndvi_peak": 0.62,
+        "rain_mm": 482
+      },
+      "verification_source": "crop_cutting_experiment",
+      "evidence_reference": "DETERMINISTIC-FIXTURE-2025-kharif-46"
+    },
+    {
+      "field_id": "2025-kharif-F47",
+      "crop_type": "chilli",
+      "district_code": "GNT",
+      "season": "2025-kharif",
+      "yield_kg_per_acre": 849.6,
+      "features": {
+        "ndvi_peak": 0.64,
+        "rain_mm": 499
+      },
+      "verification_source": "crop_cutting_experiment",
+      "evidence_reference": "DETERMINISTIC-FIXTURE-2025-kharif-47"
+    },
+    {
+      "field_id": "2025-kharif-F48",
+      "crop_type": "chilli",
+      "district_code": "GNT",
+      "season": "2025-kharif",
+      "yield_kg_per_acre": 786.4,
+      "features": {
+        "ndvi_peak": 0.66,
+        "rain_mm": 316
+      },
+      "verification_source": "crop_cutting_experiment",
+      "evidence_reference": "DETERMINISTIC-FIXTURE-2025-kharif-48"
+    },
+    {
+      "field_id": "2025-kharif-F49",
+      "crop_type": "chilli",
+      "district_code": "GNT",
+      "season": "2025-kharif",
+      "yield_kg_per_acre": 809.2,
+      "features": {
+        "ndvi_peak": 0.6799999999999999,
+        "rain_mm": 333
+      },
+      "verification_source": "crop_cutting_experiment",
+      "evidence_reference": "DETERMINISTIC-FIXTURE-2025-kharif-49"
+    }
+  ],
+  "ridge_alpha": 1.0
+}

@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "exceptions": [],
+  "authenticated_user": "AUDIT-FARMER",
+  "role": "farmer",
+  "owned_field_ids": [
+    "AP_GNT_FTW_CROP_TEST"
+  ],
+  "analyzed_field": "AP_GNT_FTW_CROP_TEST",
+  "weather_reference_end": "2026-06-28",
+  "scene_date": "2026-06-28",
+  "set4_verdict": "NORMAL_OR_UNRESOLVED"
+}

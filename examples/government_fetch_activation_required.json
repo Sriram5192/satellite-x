@@ -1,0 +1,37 @@
+{
+  "config": {
+    "provider": "agristack",
+    "base_url": "https://authorized-api.example.gov.in/",
+    "credential_env": "SATELLITE_X_AGRISTACK_TOKEN",
+    "enabled": false,
+    "timeout_seconds": 20
+  },
+  "user": {
+    "user_id": "DEMO-OFFICER-1",
+    "role": "government_officer",
+    "consent_active": true,
+    "owned_field_ids": []
+  },
+  "access": {
+    "action": "VIEW_VILLAGE_SUMMARY",
+    "village_code": "DEMO-V1",
+    "purpose": "authorized aggregate crop monitoring"
+  },
+  "authorization": {
+    "authorization_id": "DEMO-AUTH-1",
+    "officer_id": "DEMO-OFFICER-1",
+    "department": "Agriculture",
+    "designation": "Demo officer",
+    "permission_status": "approved",
+    "permissions": ["VIEW_VILLAGE_SUMMARY"],
+    "village_codes": ["DEMO-V1"],
+    "mandal_codes": [],
+    "district_codes": [],
+    "order_reference": "DEMO-ORDER-NOT-OFFICIAL",
+    "valid_from": "2026-08-16T00:00:00Z",
+    "valid_until": "2026-09-17T00:00:00Z",
+    "approved_by": "DEMO-ONLY"
+  },
+  "resource_path": "v1/aggregate/village/DEMO-V1",
+  "params": {}
+}

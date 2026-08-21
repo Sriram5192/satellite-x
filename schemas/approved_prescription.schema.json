@@ -1,0 +1,177 @@
+{
+  "$defs": {
+    "PrescriptionApproval": {
+      "additionalProperties": false,
+      "properties": {
+        "approval_id": {
+          "minLength": 4,
+          "title": "Approval Id",
+          "type": "string"
+        },
+        "approved_at": {
+          "format": "date-time",
+          "title": "Approved At",
+          "type": "string"
+        },
+        "approved_by": {
+          "minLength": 3,
+          "title": "Approved By",
+          "type": "string"
+        },
+        "input_name": {
+          "minLength": 2,
+          "title": "Input Name",
+          "type": "string"
+        },
+        "rate_unit": {
+          "enum": [
+            "kg_per_acre",
+            "litre_per_acre"
+          ],
+          "title": "Rate Unit",
+          "type": "string"
+        },
+        "trial_reference": {
+          "minLength": 3,
+          "title": "Trial Reference",
+          "type": "string"
+        },
+        "zone_rates": {
+          "additionalProperties": {
+            "type": "number"
+          },
+          "propertyNames": {
+            "enum": [
+              "low_relative_ndvi",
+              "medium_relative_ndvi",
+              "high_relative_ndvi"
+            ]
+          },
+          "title": "Zone Rates",
+          "type": "object"
+        }
+      },
+      "required": [
+        "approval_id",
+        "approved_by",
+        "approved_at",
+        "input_name",
+        "rate_unit",
+        "zone_rates",
+        "trial_reference"
+      ],
+      "title": "PrescriptionApproval",
+      "type": "object"
+    },
+    "SignedArtifact": {
+      "additionalProperties": false,
+      "properties": {
+        "artifact_id": {
+          "title": "Artifact Id",
+          "type": "string"
+        },
+        "artifact_type": {
+          "title": "Artifact Type",
+          "type": "string"
+        },
+        "issued_at": {
+          "format": "date-time",
+          "title": "Issued At",
+          "type": "string"
+        },
+        "key_id": {
+          "title": "Key Id",
+          "type": "string"
+        },
+        "parent_sha256": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Parent Sha256",
+          "type": "array"
+        },
+        "payload_sha256": {
+          "pattern": "^[0-9a-f]{64}$",
+          "title": "Payload Sha256",
+          "type": "string"
+        },
+        "public_key_base64": {
+          "title": "Public Key Base64",
+          "type": "string"
+        },
+        "signature_base64": {
+          "title": "Signature Base64",
+          "type": "string"
+        }
+      },
+      "required": [
+        "artifact_type",
+        "artifact_id",
+        "issued_at",
+        "payload_sha256",
+        "key_id",
+        "public_key_base64",
+        "signature_base64"
+      ],
+      "title": "SignedArtifact",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "approval": {
+      "$ref": "#/$defs/PrescriptionApproval"
+    },
+    "approval_signature": {
+      "$ref": "#/$defs/SignedArtifact"
+    },
+    "field_id": {
+      "title": "Field Id",
+      "type": "string"
+    },
+    "generated_at": {
+      "format": "date-time",
+      "title": "Generated At",
+      "type": "string"
+    },
+    "geojson_feature_collection": {
+      "additionalProperties": true,
+      "title": "Geojson Feature Collection",
+      "type": "object"
+    },
+    "machinery_execution_authorized": {
+      "const": false,
+      "default": false,
+      "title": "Machinery Execution Authorized",
+      "type": "boolean"
+    },
+    "scene_id": {
+      "title": "Scene Id",
+      "type": "string"
+    },
+    "status": {
+      "const": "human_approved_experimental",
+      "default": "human_approved_experimental",
+      "title": "Status",
+      "type": "string"
+    },
+    "warnings": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Warnings",
+      "type": "array"
+    }
+  },
+  "required": [
+    "field_id",
+    "scene_id",
+    "generated_at",
+    "approval",
+    "approval_signature",
+    "geojson_feature_collection",
+    "warnings"
+  ],
+  "title": "ApprovedPrescription",
+  "type": "object"
+}

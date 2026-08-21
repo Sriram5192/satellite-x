@@ -1,0 +1,34 @@
+{
+  "place_id": 249133065,
+  "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+  "osm_type": "way",
+  "osm_id": 848767149,
+  "lat": "16.3066111",
+  "lon": "80.4365517",
+  "category": "highway",
+  "type": "primary",
+  "place_rank": 26,
+  "importance": 0.05339178072785531,
+  "addresstype": "road",
+  "name": "SH288",
+  "display_name": "SH288, Guntur Urban, Arundelpet, Brodipet, Guntur, Andhra Pradesh, 522001, India",
+  "address": {
+    "road": "SH288",
+    "residential": "Guntur Urban",
+    "suburb": "Arundelpet",
+    "village": "Brodipet",
+    "county": "Guntur",
+    "state_district": "Guntur",
+    "state": "Andhra Pradesh",
+    "ISO3166-2-lvl4": "IN-AP",
+    "postcode": "522001",
+    "country": "India",
+    "country_code": "in"
+  },
+  "boundingbox": [
+    "16.3064923",
+    "16.3067372",
+    "80.4364235",
+    "80.4366787"
+  ]
+}

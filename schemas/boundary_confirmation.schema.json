@@ -1,0 +1,148 @@
+{
+  "$defs": {
+    "GeometryValidation": {
+      "additionalProperties": false,
+      "properties": {
+        "area_acres": {
+          "exclusiveMinimum": 0,
+          "title": "Area Acres",
+          "type": "number"
+        },
+        "area_difference_pct": {
+          "minimum": 0,
+          "title": "Area Difference Pct",
+          "type": "number"
+        },
+        "area_m2": {
+          "exclusiveMinimum": 0,
+          "title": "Area M2",
+          "type": "number"
+        },
+        "contains_input_point": {
+          "title": "Contains Input Point",
+          "type": "boolean"
+        },
+        "geometry_type": {
+          "enum": [
+            "Polygon",
+            "MultiPolygon"
+          ],
+          "title": "Geometry Type",
+          "type": "string"
+        },
+        "perimeter_m": {
+          "exclusiveMinimum": 0,
+          "title": "Perimeter M",
+          "type": "number"
+        },
+        "point_distance_m": {
+          "minimum": 0,
+          "title": "Point Distance M",
+          "type": "number"
+        },
+        "repaired": {
+          "title": "Repaired",
+          "type": "boolean"
+        },
+        "valid": {
+          "title": "Valid",
+          "type": "boolean"
+        },
+        "warnings": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Warnings",
+          "type": "array"
+        }
+      },
+      "required": [
+        "valid",
+        "geometry_type",
+        "area_m2",
+        "area_acres",
+        "perimeter_m",
+        "contains_input_point",
+        "point_distance_m",
+        "area_difference_pct",
+        "repaired"
+      ],
+      "title": "GeometryValidation",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "boundary_geojson": {
+      "additionalProperties": true,
+      "title": "Boundary Geojson",
+      "type": "object"
+    },
+    "boundary_source": {
+      "enum": [
+        "ftw_global_2024",
+        "ftw_global_2025",
+        "user_drawn",
+        "official_fmb"
+      ],
+      "title": "Boundary Source",
+      "type": "string"
+    },
+    "confirmed_at": {
+      "format": "date-time",
+      "title": "Confirmed At",
+      "type": "string"
+    },
+    "field_id": {
+      "title": "Field Id",
+      "type": "string"
+    },
+    "legal_boundary": {
+      "title": "Legal Boundary",
+      "type": "boolean"
+    },
+    "provenance": {
+      "additionalProperties": true,
+      "title": "Provenance",
+      "type": "object"
+    },
+    "schema_version": {
+      "const": "1.0.0",
+      "default": "1.0.0",
+      "title": "Schema Version",
+      "type": "string"
+    },
+    "source_candidate_id": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Source Candidate Id"
+    },
+    "user_confirmed": {
+      "const": true,
+      "title": "User Confirmed",
+      "type": "boolean"
+    },
+    "validation": {
+      "$ref": "#/$defs/GeometryValidation"
+    }
+  },
+  "required": [
+    "field_id",
+    "confirmed_at",
+    "boundary_source",
+    "boundary_geojson",
+    "validation",
+    "user_confirmed",
+    "legal_boundary",
+    "provenance"
+  ],
+  "title": "BoundaryConfirmation",
+  "type": "object"
+}

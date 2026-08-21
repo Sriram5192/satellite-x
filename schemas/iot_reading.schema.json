@@ -1,0 +1,80 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "battery_v": {
+      "maximum": 6,
+      "minimum": 0,
+      "title": "Battery V",
+      "type": "number"
+    },
+    "device_id": {
+      "maxLength": 128,
+      "minLength": 1,
+      "title": "Device Id",
+      "type": "string"
+    },
+    "field_id": {
+      "pattern": "^[A-Za-z0-9_-]{1,64}$",
+      "title": "Field Id",
+      "type": "string"
+    },
+    "k_mg_kg": {
+      "minimum": 0,
+      "title": "K Mg Kg",
+      "type": "number"
+    },
+    "n_mg_kg": {
+      "minimum": 0,
+      "title": "N Mg Kg",
+      "type": "number"
+    },
+    "p_mg_kg": {
+      "minimum": 0,
+      "title": "P Mg Kg",
+      "type": "number"
+    },
+    "soil_moisture_pct": {
+      "maximum": 100,
+      "minimum": 0,
+      "title": "Soil Moisture Pct",
+      "type": "number"
+    },
+    "soil_ph": {
+      "maximum": 14,
+      "minimum": 0,
+      "title": "Soil Ph",
+      "type": "number"
+    },
+    "soil_temp_c": {
+      "maximum": 80,
+      "minimum": -20,
+      "title": "Soil Temp C",
+      "type": "number"
+    },
+    "source": {
+      "const": "live_hardware",
+      "default": "live_hardware",
+      "title": "Source",
+      "type": "string"
+    },
+    "timestamp": {
+      "format": "date-time",
+      "title": "Timestamp",
+      "type": "string"
+    }
+  },
+  "required": [
+    "field_id",
+    "device_id",
+    "timestamp",
+    "soil_moisture_pct",
+    "soil_temp_c",
+    "soil_ph",
+    "n_mg_kg",
+    "p_mg_kg",
+    "k_mg_kg",
+    "battery_v"
+  ],
+  "title": "IoTReading",
+  "type": "object"
+}

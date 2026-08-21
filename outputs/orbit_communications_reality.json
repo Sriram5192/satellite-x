@@ -1,0 +1,23 @@
+{
+  "checks": {
+    "tle_line1_checksum": true,
+    "tle_line2_checksum": true,
+    "tle_norad_id": true,
+    "historical_scene_rejected_latest_tle": true,
+    "pass_elevation_equal": true,
+    "pass_range_equal": true,
+    "pass_doppler_equal": true,
+    "itu_gas_equal": true,
+    "itu_rain_equal": true,
+    "itu_total_equal": true,
+    "link_fspl_equal": true,
+    "link_margin_equal": true,
+    "link_doppler_equal": true,
+    "traffic_request_conservation": true,
+    "traffic_data_conservation": true,
+    "traffic_fixture_labeled": true
+  },
+  "passed": true,
+  "check_count": 16,
+  "important_scope": "TLE/SGP4 and ITU statistics are not live beacon telemetry; traffic is a labeled validation fixture."
+}

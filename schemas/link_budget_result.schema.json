@@ -1,0 +1,71 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "assumptions": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Assumptions",
+      "type": "array"
+    },
+    "c_n0_db_hz": {
+      "title": "C N0 Db Hz",
+      "type": "number"
+    },
+    "calibration_status": {
+      "title": "Calibration Status",
+      "type": "string"
+    },
+    "doppler_shift_hz": {
+      "title": "Doppler Shift Hz",
+      "type": "number"
+    },
+    "eb_n0_db": {
+      "title": "Eb N0 Db",
+      "type": "number"
+    },
+    "free_space_path_loss_db": {
+      "title": "Free Space Path Loss Db",
+      "type": "number"
+    },
+    "link_margin_db": {
+      "title": "Link Margin Db",
+      "type": "number"
+    },
+    "noise_density_dbw_hz": {
+      "title": "Noise Density Dbw Hz",
+      "type": "number"
+    },
+    "receive_antenna_gain_dbi": {
+      "title": "Receive Antenna Gain Dbi",
+      "type": "number"
+    },
+    "received_carrier_power_dbw": {
+      "title": "Received Carrier Power Dbw",
+      "type": "number"
+    },
+    "status": {
+      "enum": [
+        "margin_positive",
+        "margin_negative"
+      ],
+      "title": "Status",
+      "type": "string"
+    }
+  },
+  "required": [
+    "calibration_status",
+    "free_space_path_loss_db",
+    "receive_antenna_gain_dbi",
+    "received_carrier_power_dbw",
+    "noise_density_dbw_hz",
+    "c_n0_db_hz",
+    "eb_n0_db",
+    "link_margin_db",
+    "doppler_shift_hz",
+    "status",
+    "assumptions"
+  ],
+  "title": "LinkBudgetResult",
+  "type": "object"
+}

@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#14532d"><link rel="manifest" href="/manifest.webmanifest">
+  <title>SATELLITE-X Field Verification</title>
+  <style>
+    :root{font-family:system-ui,sans-serif;color:#17251c;background:#eef5ef}body{margin:0}.wrap{max-width:720px;margin:auto;padding:16px}header{background:#14532d;color:#fff;padding:18px;border-radius:0 0 18px 18px}h1{font-size:1.35rem;margin:0}.card{background:#fff;padding:16px;border-radius:14px;margin:14px 0;box-shadow:0 2px 10px #17351f18}label{font-weight:650;display:block;margin-top:12px}input,select,textarea,button{box-sizing:border-box;width:100%;padding:12px;margin-top:6px;border:1px solid #b8c8bb;border-radius:9px;font:inherit}button{background:#166534;color:#fff;border:0;font-weight:700;margin-top:16px}button.secondary{background:#334155}.status{padding:10px;border-radius:8px;background:#ecfdf5;margin-top:10px;white-space:pre-wrap}.warn{background:#fff7ed}.item{border-left:4px solid #16a34a;padding:8px 12px;margin:8px 0;background:#f8fafc}.small{font-size:.85rem;color:#526358}code{word-break:break-all}</style>
+</head>
+<body>
+<header><div class="wrap"><h1>🛰️ SATELLITE-X Field Verification</h1><div>Offline-first evidence capture · authenticated sync</div></div></header>
+<main class="wrap">
+  <section class="card">
+    <h2>Device & session</h2>
+    <label>Officer ID<input id="officer" autocomplete="username" required></label>
+    <label>Device ID<input id="device" value="FIELD-PHONE-1" required></label>
+    <label>Authorized phone (E.164)<input id="phone" type="tel" autocomplete="tel" placeholder="+919876543210"></label>
+    <button id="sendOtp" type="button">Send provider OTP</button>
+    <label>OTP code<input id="otpCode" inputmode="numeric" maxlength="6" autocomplete="one-time-code"></label>
+    <button id="verifyOtp" type="button" class="secondary">Verify OTP & create session</button>
+    <input id="challenge" type="hidden">
+    <label>Session token<input id="token" type="password" autocomplete="off" placeholder="Filled after OTP; never stored"></label>
+    <div id="authStatus" class="status" hidden></div>
+    <p class="small">The phone is sent only to the configured SMS provider and is not stored in the offline queue. Session tokens stay only in page memory. Aadhaar and owner names are not collected.</p>
+  </section>
+  <form id="capture" class="card">
+    <h2>Capture evidence</h2>
+    <label>Task ID<input id="task" required></label>
+    <label>Field ID<input id="field" required></label>
+    <label>Observation<select id="observation"><option value="confirmed">Confirmed</option><option value="not_confirmed">Not confirmed</option><option value="inconclusive">Inconclusive</option></select></label>
+    <label>Notes<textarea id="notes" required maxlength="1000"></textarea></label>
+    <label>Photo<input id="photo" type="file" accept="image/*" capture="environment" required></label>
+    <button type="submit">Capture GPS & queue offline</button>
+    <div id="captureStatus" class="status" hidden></div>
+  </form>
+  <section class="card">
+    <h2>Synchronization</h2>
+    <button id="sync">Sync pending evidence</button>
+    <button id="refresh" class="secondary">Refresh queue</button>
+    <div id="syncStatus" class="status" hidden></div>
+    <div id="queue"></div>
+  </section>
+</main>
+<script src="/app.js"></script>
+</body></html>

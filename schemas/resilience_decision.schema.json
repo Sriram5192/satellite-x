@@ -1,0 +1,60 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "decided_at": {
+      "format": "date-time",
+      "title": "Decided At",
+      "type": "string"
+    },
+    "diagnosis_allowed": {
+      "title": "Diagnosis Allowed",
+      "type": "boolean"
+    },
+    "field_id": {
+      "title": "Field Id",
+      "type": "string"
+    },
+    "optical_analytics_allowed": {
+      "title": "Optical Analytics Allowed",
+      "type": "boolean"
+    },
+    "optical_indices_available": {
+      "title": "Optical Indices Available",
+      "type": "boolean"
+    },
+    "sar_evidence_available": {
+      "title": "Sar Evidence Available",
+      "type": "boolean"
+    },
+    "status": {
+      "enum": [
+        "OPTICAL_PRIMARY",
+        "OPTICAL_PRIMARY_SAR_ANCILLARY",
+        "SAR_ONLY_UNRESOLVED",
+        "NO_USABLE_REMOTE_SENSING_EVIDENCE",
+        "LOCATION_OR_URBAN_REJECTED"
+      ],
+      "title": "Status",
+      "type": "string"
+    },
+    "warnings": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Warnings",
+      "type": "array"
+    }
+  },
+  "required": [
+    "field_id",
+    "decided_at",
+    "status",
+    "optical_analytics_allowed",
+    "optical_indices_available",
+    "sar_evidence_available",
+    "diagnosis_allowed",
+    "warnings"
+  ],
+  "title": "ResilienceDecision",
+  "type": "object"
+}

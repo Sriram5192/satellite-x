@@ -1,0 +1,603 @@
+{
+  "schema_version": "1.0.0",
+  "field": {
+    "field_id": "AP_GNT_FTW_CROP_TEST",
+    "latitude": 16.1895796725143,
+    "longitude": 80.3434336669471,
+    "crop_type": "chilli",
+    "sowing_date": "2026-05-01",
+    "analysis_date": "2026-06-30",
+    "scan_range_days": 30,
+    "acres": 2.477249,
+    "boundary_geojson": {
+      "coordinates": [
+        [
+          [
+            80.60524669410101,
+            16.065028716209998
+          ],
+          [
+            80.60524669410101,
+            16.064669391417198
+          ],
+          [
+            80.6051568629028,
+            16.064669391417198
+          ],
+          [
+            80.6051568629028,
+            16.0642202354262
+          ],
+          [
+            80.6050670317046,
+            16.0642202354262
+          ],
+          [
+            80.6050670317046,
+            16.063950741831597
+          ],
+          [
+            80.60497720050641,
+            16.063950741831597
+          ],
+          [
+            80.60497720050641,
+            16.0637710794352
+          ],
+          [
+            80.6054263564974,
+            16.0637710794352
+          ],
+          [
+            80.6054263564974,
+            16.063860910633398
+          ],
+          [
+            80.60524669410101,
+            16.063860910633398
+          ],
+          [
+            80.60524669410101,
+            16.063950741831597
+          ],
+          [
+            80.605695850092,
+            16.063950741831597
+          ],
+          [
+            80.605695850092,
+            16.063860910633398
+          ],
+          [
+            80.6062348372812,
+            16.063860910633398
+          ],
+          [
+            80.6062348372812,
+            16.064130404227996
+          ],
+          [
+            80.6059653436866,
+            16.064130404227996
+          ],
+          [
+            80.6059653436866,
+            16.0642202354262
+          ],
+          [
+            80.6063246684794,
+            16.0642202354262
+          ],
+          [
+            80.6063246684794,
+            16.064579560219
+          ],
+          [
+            80.6059653436866,
+            16.064579560219
+          ],
+          [
+            80.6059653436866,
+            16.064669391417198
+          ],
+          [
+            80.60560601889381,
+            16.064669391417198
+          ],
+          [
+            80.60560601889381,
+            16.064489729020796
+          ],
+          [
+            80.60551618769561,
+            16.064489729020796
+          ],
+          [
+            80.60551618769561,
+            16.064310066624397
+          ],
+          [
+            80.605695850092,
+            16.064310066624397
+          ],
+          [
+            80.605695850092,
+            16.064399897822597
+          ],
+          [
+            80.60578568129021,
+            16.064399897822597
+          ],
+          [
+            80.60578568129021,
+            16.064310066624397
+          ],
+          [
+            80.60587551248841,
+            16.064310066624397
+          ],
+          [
+            80.60587551248841,
+            16.064130404227996
+          ],
+          [
+            80.605695850092,
+            16.064130404227996
+          ],
+          [
+            80.605695850092,
+            16.064040573029796
+          ],
+          [
+            80.60560601889381,
+            16.064040573029796
+          ],
+          [
+            80.60560601889381,
+            16.064130404227996
+          ],
+          [
+            80.60533652529921,
+            16.064130404227996
+          ],
+          [
+            80.60533652529921,
+            16.064310066624397
+          ],
+          [
+            80.6054263564974,
+            16.064310066624397
+          ],
+          [
+            80.6054263564974,
+            16.064669391417198
+          ],
+          [
+            80.60551618769561,
+            16.064669391417198
+          ],
+          [
+            80.60551618769561,
+            16.064849053813596
+          ],
+          [
+            80.60560601889381,
+            16.064849053813596
+          ],
+          [
+            80.60560601889381,
+            16.065028716209998
+          ],
+          [
+            80.60524669410101,
+            16.065028716209998
+          ]
+        ]
+      ],
+      "type": "Polygon"
+    }
+  },
+  "acquired_at": "2026-08-17T13:22:51.779290Z",
+  "status": "degraded",
+  "satellite": {
+    "scene": {
+      "scene_id": "S2C_44PMC_20260603_0_L2A",
+      "provider": "aws_earth_search",
+      "collection": "sentinel-2-l2a",
+      "acquired_at": "2026-06-03T05:14:27.577000Z",
+      "cloud_cover_pct": 7.503705,
+      "bbox": [
+        80.063709,
+        15.286247,
+        81.091341,
+        16.280805
+      ],
+      "assets": {
+        "B02": {
+          "band_code": "B02",
+          "source_key": "blue",
+          "href": "https://sentinel-cogs.s3.us-west-2.amazonaws.com/sentinel-s2-l2a-cogs/44/P/MC/2026/6/S2C_44PMC_20260603_0_L2A/B02.tif",
+          "resolution_m": 10,
+          "media_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "scale": 0.0001,
+          "offset": -0.1,
+          "nodata": 0.0,
+          "requires_authentication": false
+        },
+        "B03": {
+          "band_code": "B03",
+          "source_key": "green",
+          "href": "https://sentinel-cogs.s3.us-west-2.amazonaws.com/sentinel-s2-l2a-cogs/44/P/MC/2026/6/S2C_44PMC_20260603_0_L2A/B03.tif",
+          "resolution_m": 10,
+          "media_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "scale": 0.0001,
+          "offset": -0.1,
+          "nodata": 0.0,
+          "requires_authentication": false
+        },
+        "B04": {
+          "band_code": "B04",
+          "source_key": "red",
+          "href": "https://sentinel-cogs.s3.us-west-2.amazonaws.com/sentinel-s2-l2a-cogs/44/P/MC/2026/6/S2C_44PMC_20260603_0_L2A/B04.tif",
+          "resolution_m": 10,
+          "media_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "scale": 0.0001,
+          "offset": -0.1,
+          "nodata": 0.0,
+          "requires_authentication": false
+        },
+        "B05": {
+          "band_code": "B05",
+          "source_key": "rededge1",
+          "href": "https://sentinel-cogs.s3.us-west-2.amazonaws.com/sentinel-s2-l2a-cogs/44/P/MC/2026/6/S2C_44PMC_20260603_0_L2A/B05.tif",
+          "resolution_m": 20,
+          "media_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "scale": 0.0001,
+          "offset": -0.1,
+          "nodata": 0.0,
+          "requires_authentication": false
+        },
+        "B08": {
+          "band_code": "B08",
+          "source_key": "nir",
+          "href": "https://sentinel-cogs.s3.us-west-2.amazonaws.com/sentinel-s2-l2a-cogs/44/P/MC/2026/6/S2C_44PMC_20260603_0_L2A/B08.tif",
+          "resolution_m": 10,
+          "media_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "scale": 0.0001,
+          "offset": -0.1,
+          "nodata": 0.0,
+          "requires_authentication": false
+        },
+        "B11": {
+          "band_code": "B11",
+          "source_key": "swir16",
+          "href": "https://sentinel-cogs.s3.us-west-2.amazonaws.com/sentinel-s2-l2a-cogs/44/P/MC/2026/6/S2C_44PMC_20260603_0_L2A/B11.tif",
+          "resolution_m": 20,
+          "media_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "scale": 0.0001,
+          "offset": -0.1,
+          "nodata": 0.0,
+          "requires_authentication": false
+        },
+        "SCL": {
+          "band_code": "SCL",
+          "source_key": "scl",
+          "href": "https://sentinel-cogs.s3.us-west-2.amazonaws.com/sentinel-s2-l2a-cogs/44/P/MC/2026/6/S2C_44PMC_20260603_0_L2A/SCL.tif",
+          "resolution_m": 20,
+          "media_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "scale": null,
+          "offset": null,
+          "nodata": 0.0,
+          "requires_authentication": false
+        }
+      }
+    },
+    "attempts": [
+      {
+        "source": "aws_earth_search",
+        "date_start": "2026-06-01",
+        "date_end": "2026-06-30",
+        "outcome": "success",
+        "detail": "selected S2C_44PMC_20260603_0_L2A at 7.50% cloud"
+      }
+    ],
+    "expanded_date_range": false,
+    "fallback_used": false
+  },
+  "weather": {
+    "source": "open_meteo_archive",
+    "history": [
+      {
+        "observation_date": "2026-06-01",
+        "precipitation_mm": 0.0,
+        "et0_mm": 6.03,
+        "temperature_max_c": 37.3,
+        "temperature_min_c": 27.7,
+        "relative_humidity_mean_pct": 61.583
+      },
+      {
+        "observation_date": "2026-06-02",
+        "precipitation_mm": 0.2,
+        "et0_mm": 6.64,
+        "temperature_max_c": 39.2,
+        "temperature_min_c": 28.5,
+        "relative_humidity_mean_pct": 57.667
+      },
+      {
+        "observation_date": "2026-06-03",
+        "precipitation_mm": 3.9,
+        "et0_mm": 6.09,
+        "temperature_max_c": 38.6,
+        "temperature_min_c": 28.9,
+        "relative_humidity_mean_pct": 60.5
+      },
+      {
+        "observation_date": "2026-06-04",
+        "precipitation_mm": 5.0,
+        "et0_mm": 6.13,
+        "temperature_max_c": 38.8,
+        "temperature_min_c": 27.1,
+        "relative_humidity_mean_pct": 67.583
+      },
+      {
+        "observation_date": "2026-06-05",
+        "precipitation_mm": 1.1,
+        "et0_mm": 6.99,
+        "temperature_max_c": 38.0,
+        "temperature_min_c": 28.4,
+        "relative_humidity_mean_pct": 57.167
+      },
+      {
+        "observation_date": "2026-06-06",
+        "precipitation_mm": 0.6,
+        "et0_mm": 6.93,
+        "temperature_max_c": 39.0,
+        "temperature_min_c": 29.5,
+        "relative_humidity_mean_pct": 53.333
+      },
+      {
+        "observation_date": "2026-06-07",
+        "precipitation_mm": 10.4,
+        "et0_mm": 6.66,
+        "temperature_max_c": 39.2,
+        "temperature_min_c": 26.4,
+        "relative_humidity_mean_pct": 59.208
+      },
+      {
+        "observation_date": "2026-06-08",
+        "precipitation_mm": 0.7,
+        "et0_mm": 6.83,
+        "temperature_max_c": 37.3,
+        "temperature_min_c": 26.6,
+        "relative_humidity_mean_pct": 57.958
+      },
+      {
+        "observation_date": "2026-06-09",
+        "precipitation_mm": 3.0,
+        "et0_mm": 7.31,
+        "temperature_max_c": 37.5,
+        "temperature_min_c": 28.2,
+        "relative_humidity_mean_pct": 54.333
+      },
+      {
+        "observation_date": "2026-06-10",
+        "precipitation_mm": 9.0,
+        "et0_mm": 7.12,
+        "temperature_max_c": 39.0,
+        "temperature_min_c": 26.7,
+        "relative_humidity_mean_pct": 61.125
+      },
+      {
+        "observation_date": "2026-06-11",
+        "precipitation_mm": 0.5,
+        "et0_mm": 5.23,
+        "temperature_max_c": 37.3,
+        "temperature_min_c": 26.1,
+        "relative_humidity_mean_pct": 65.542
+      },
+      {
+        "observation_date": "2026-06-12",
+        "precipitation_mm": 0.0,
+        "et0_mm": 3.74,
+        "temperature_max_c": 34.0,
+        "temperature_min_c": 27.9,
+        "relative_humidity_mean_pct": 63.625
+      },
+      {
+        "observation_date": "2026-06-13",
+        "precipitation_mm": 0.0,
+        "et0_mm": 5.56,
+        "temperature_max_c": 35.8,
+        "temperature_min_c": 27.4,
+        "relative_humidity_mean_pct": 58.292
+      },
+      {
+        "observation_date": "2026-06-14",
+        "precipitation_mm": 0.0,
+        "et0_mm": 5.33,
+        "temperature_max_c": 34.5,
+        "temperature_min_c": 28.7,
+        "relative_humidity_mean_pct": 55.542
+      },
+      {
+        "observation_date": "2026-06-15",
+        "precipitation_mm": 2.3,
+        "et0_mm": 5.6,
+        "temperature_max_c": 38.1,
+        "temperature_min_c": 26.6,
+        "relative_humidity_mean_pct": 60.125
+      },
+      {
+        "observation_date": "2026-06-16",
+        "precipitation_mm": 0.2,
+        "et0_mm": 6.35,
+        "temperature_max_c": 38.1,
+        "temperature_min_c": 26.4,
+        "relative_humidity_mean_pct": 56.958
+      },
+      {
+        "observation_date": "2026-06-17",
+        "precipitation_mm": 8.0,
+        "et0_mm": 6.24,
+        "temperature_max_c": 38.9,
+        "temperature_min_c": 26.0,
+        "relative_humidity_mean_pct": 59.625
+      },
+      {
+        "observation_date": "2026-06-18",
+        "precipitation_mm": 1.1,
+        "et0_mm": 5.2,
+        "temperature_max_c": 37.2,
+        "temperature_min_c": 27.7,
+        "relative_humidity_mean_pct": 63.542
+      },
+      {
+        "observation_date": "2026-06-19",
+        "precipitation_mm": 0.9,
+        "et0_mm": 5.95,
+        "temperature_max_c": 37.4,
+        "temperature_min_c": 27.0,
+        "relative_humidity_mean_pct": 61.667
+      },
+      {
+        "observation_date": "2026-06-20",
+        "precipitation_mm": 0.2,
+        "et0_mm": 5.29,
+        "temperature_max_c": 36.0,
+        "temperature_min_c": 28.2,
+        "relative_humidity_mean_pct": 56.5
+      },
+      {
+        "observation_date": "2026-06-21",
+        "precipitation_mm": 4.2,
+        "et0_mm": 3.12,
+        "temperature_max_c": 33.3,
+        "temperature_min_c": 25.3,
+        "relative_humidity_mean_pct": 72.042
+      },
+      {
+        "observation_date": "2026-06-22",
+        "precipitation_mm": 1.6,
+        "et0_mm": 5.73,
+        "temperature_max_c": 37.2,
+        "temperature_min_c": 27.3,
+        "relative_humidity_mean_pct": 68.458
+      },
+      {
+        "observation_date": "2026-06-23",
+        "precipitation_mm": 0.0,
+        "et0_mm": 4.65,
+        "temperature_max_c": 33.8,
+        "temperature_min_c": 28.4,
+        "relative_humidity_mean_pct": 56.833
+      },
+      {
+        "observation_date": "2026-06-24",
+        "precipitation_mm": 0.3,
+        "et0_mm": 6.85,
+        "temperature_max_c": 35.7,
+        "temperature_min_c": 28.3,
+        "relative_humidity_mean_pct": 52.583
+      },
+      {
+        "observation_date": "2026-06-25",
+        "precipitation_mm": 0.1,
+        "et0_mm": 5.92,
+        "temperature_max_c": 35.3,
+        "temperature_min_c": 28.8,
+        "relative_humidity_mean_pct": 55.292
+      },
+      {
+        "observation_date": "2026-06-26",
+        "precipitation_mm": 4.3,
+        "et0_mm": 5.99,
+        "temperature_max_c": 35.5,
+        "temperature_min_c": 26.6,
+        "relative_humidity_mean_pct": 61.75
+      },
+      {
+        "observation_date": "2026-06-27",
+        "precipitation_mm": 5.1,
+        "et0_mm": 4.06,
+        "temperature_max_c": 33.1,
+        "temperature_min_c": 26.0,
+        "relative_humidity_mean_pct": 74.083
+      },
+      {
+        "observation_date": "2026-06-28",
+        "precipitation_mm": 15.5,
+        "et0_mm": 5.24,
+        "temperature_max_c": 36.7,
+        "temperature_min_c": 25.4,
+        "relative_humidity_mean_pct": 71.708
+      },
+      {
+        "observation_date": "2026-06-29",
+        "precipitation_mm": 5.0,
+        "et0_mm": 5.38,
+        "temperature_max_c": 35.0,
+        "temperature_min_c": 26.0,
+        "relative_humidity_mean_pct": 68.292
+      },
+      {
+        "observation_date": "2026-06-30",
+        "precipitation_mm": 0.6,
+        "et0_mm": 6.93,
+        "temperature_max_c": 35.6,
+        "temperature_min_c": 28.7,
+        "relative_humidity_mean_pct": 53.542
+      }
+    ],
+    "forecast": [],
+    "summary": {
+      "days_available_15d": 15,
+      "rain_15d_mm": 47.1,
+      "et0_15d_mm": 82.9,
+      "days_available_30d": 30,
+      "rain_30d_mm": 83.8,
+      "et0_30d_mm": 175.09,
+      "humidity_mean_5d_pct": 65.875,
+      "complete_15d": true,
+      "complete_30d": true
+    },
+    "cache_key": "weather-history-8cac32381d9d07c7bcd3f8dd43b2178a73860aa7d7b6f5c4c30595bd510000e2",
+    "fallback_used": false
+  },
+  "soil": {
+    "ph_h2o": 6.7,
+    "nitrogen_g_kg": 1.42,
+    "depth": "0-5cm",
+    "statistic": "mean",
+    "source": "cache",
+    "fallback_used": true,
+    "cache_key": "soilgrids-b6e20a1b30fbc0c545a23b2aade085a0248da1e5cf4956958c371a7ad56d5ee8"
+  },
+  "iot": null,
+  "iot_verified": false,
+  "iot_fresh": null,
+  "streams": [
+    {
+      "stream": "satellite",
+      "state": "live",
+      "detail": "aws_earth_search:S2C_44PMC_20260603_0_L2A"
+    },
+    {
+      "stream": "weather",
+      "state": "live",
+      "detail": "open_meteo_archive"
+    },
+    {
+      "stream": "soil",
+      "state": "cache",
+      "detail": "cache"
+    },
+    {
+      "stream": "iot",
+      "state": "not_supplied",
+      "detail": "optional stream not supplied"
+    }
+  ],
+  "warnings": [
+    "SoilGrids live request failed; cached response used: soilgrids: request failed: HTTPSConnectionPool(host='rest.isric.org', port=443): Max retries exceeded with url: /soilgrids/v2.0/properties/query?lat=16.1895796725143&lon=80.3434336669471&property=phh2o&property=nitrogen&depth=0-5cm&value=mean (Caused by ReadTimeoutError(\"HTTPSConnectionPool(host='rest.isric.org', port=443): Read timed out. (read timeout=30.0)\"))"
+  ]
+}

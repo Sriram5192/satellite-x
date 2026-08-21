@@ -1,0 +1,316 @@
+{
+  "$defs": {
+    "IndexStatistics": {
+      "additionalProperties": false,
+      "properties": {
+        "maximum": {
+          "title": "Maximum",
+          "type": "number"
+        },
+        "mean": {
+          "title": "Mean",
+          "type": "number"
+        },
+        "median": {
+          "title": "Median",
+          "type": "number"
+        },
+        "minimum": {
+          "title": "Minimum",
+          "type": "number"
+        },
+        "p10": {
+          "title": "P10",
+          "type": "number"
+        },
+        "p90": {
+          "title": "P90",
+          "type": "number"
+        },
+        "valid_pixels": {
+          "exclusiveMinimum": 0,
+          "title": "Valid Pixels",
+          "type": "integer"
+        }
+      },
+      "required": [
+        "mean",
+        "median",
+        "p10",
+        "p90",
+        "minimum",
+        "maximum",
+        "valid_pixels"
+      ],
+      "title": "IndexStatistics",
+      "type": "object"
+    },
+    "PhenologyState": {
+      "additionalProperties": false,
+      "properties": {
+        "criticality": {
+          "enum": [
+            "LOW",
+            "MEDIUM",
+            "HIGH",
+            "CRITICAL"
+          ],
+          "title": "Criticality",
+          "type": "string"
+        },
+        "crop_type": {
+          "title": "Crop Type",
+          "type": "string"
+        },
+        "das": {
+          "title": "Das",
+          "type": "integer"
+        },
+        "expected_ndvi_high": {
+          "title": "Expected Ndvi High",
+          "type": "number"
+        },
+        "expected_ndvi_low": {
+          "title": "Expected Ndvi Low",
+          "type": "number"
+        },
+        "ndvi_position": {
+          "enum": [
+            "BELOW_EXPECTED",
+            "WITHIN_EXPECTED",
+            "ABOVE_EXPECTED"
+          ],
+          "title": "Ndvi Position",
+          "type": "string"
+        },
+        "stage_end_das": {
+          "title": "Stage End Das",
+          "type": "integer"
+        },
+        "stage_name": {
+          "title": "Stage Name",
+          "type": "string"
+        },
+        "stage_start_das": {
+          "title": "Stage Start Das",
+          "type": "integer"
+        }
+      },
+      "required": [
+        "crop_type",
+        "das",
+        "stage_name",
+        "stage_start_das",
+        "stage_end_das",
+        "expected_ndvi_low",
+        "expected_ndvi_high",
+        "criticality",
+        "ndvi_position"
+      ],
+      "title": "PhenologyState",
+      "type": "object"
+    },
+    "SoilProperties": {
+      "additionalProperties": false,
+      "properties": {
+        "cache_key": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Cache Key"
+        },
+        "depth": {
+          "const": "0-5cm",
+          "default": "0-5cm",
+          "title": "Depth",
+          "type": "string"
+        },
+        "fallback_used": {
+          "default": false,
+          "title": "Fallback Used",
+          "type": "boolean"
+        },
+        "nitrogen_g_kg": {
+          "minimum": 0,
+          "title": "Nitrogen G Kg",
+          "type": "number"
+        },
+        "ph_h2o": {
+          "maximum": 14,
+          "minimum": 0,
+          "title": "Ph H2O",
+          "type": "number"
+        },
+        "source": {
+          "enum": [
+            "soilgrids_live",
+            "cache",
+            "regional_ag_zone_baseline"
+          ],
+          "title": "Source",
+          "type": "string"
+        },
+        "statistic": {
+          "const": "mean",
+          "default": "mean",
+          "title": "Statistic",
+          "type": "string"
+        }
+      },
+      "required": [
+        "ph_h2o",
+        "nitrogen_g_kg",
+        "source"
+      ],
+      "title": "SoilProperties",
+      "type": "object"
+    },
+    "WaterBalanceState": {
+      "additionalProperties": false,
+      "properties": {
+        "deficit_flag": {
+          "title": "Deficit Flag",
+          "type": "boolean"
+        },
+        "et0_15d_mm": {
+          "title": "Et0 15D Mm",
+          "type": "number"
+        },
+        "humidity_mean_5d_pct": {
+          "anyOf": [
+            {
+              "maximum": 100,
+              "minimum": 0,
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Humidity Mean 5D Pct"
+        },
+        "rain_15d_mm": {
+          "title": "Rain 15D Mm",
+          "type": "number"
+        },
+        "reference_end_date": {
+          "format": "date",
+          "title": "Reference End Date",
+          "type": "string"
+        },
+        "reference_start_date": {
+          "format": "date",
+          "title": "Reference Start Date",
+          "type": "string"
+        },
+        "scene_alignment_days": {
+          "const": 0,
+          "default": 0,
+          "title": "Scene Alignment Days",
+          "type": "integer"
+        },
+        "threshold_mm": {
+          "default": -30.0,
+          "title": "Threshold Mm",
+          "type": "number"
+        },
+        "water_balance_15d_mm": {
+          "title": "Water Balance 15D Mm",
+          "type": "number"
+        }
+      },
+      "required": [
+        "reference_start_date",
+        "reference_end_date",
+        "rain_15d_mm",
+        "et0_15d_mm",
+        "water_balance_15d_mm",
+        "deficit_flag"
+      ],
+      "title": "WaterBalanceState",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "computed_at": {
+      "format": "date-time",
+      "title": "Computed At",
+      "type": "string"
+    },
+    "data_warnings": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Data Warnings",
+      "type": "array"
+    },
+    "field_id": {
+      "title": "Field Id",
+      "type": "string"
+    },
+    "indices": {
+      "additionalProperties": {
+        "$ref": "#/$defs/IndexStatistics"
+      },
+      "title": "Indices",
+      "type": "object"
+    },
+    "phenology": {
+      "$ref": "#/$defs/PhenologyState"
+    },
+    "scene_date": {
+      "format": "date",
+      "title": "Scene Date",
+      "type": "string"
+    },
+    "scene_id": {
+      "title": "Scene Id",
+      "type": "string"
+    },
+    "schema_version": {
+      "const": "1.1.0",
+      "default": "1.1.0",
+      "title": "Schema Version",
+      "type": "string"
+    },
+    "soil": {
+      "$ref": "#/$defs/SoilProperties"
+    },
+    "spectral_valid_pct": {
+      "exclusiveMinimum": 0,
+      "maximum": 100,
+      "title": "Spectral Valid Pct",
+      "type": "number"
+    },
+    "spectral_valid_pixels": {
+      "exclusiveMinimum": 0,
+      "title": "Spectral Valid Pixels",
+      "type": "integer"
+    },
+    "water_balance": {
+      "$ref": "#/$defs/WaterBalanceState"
+    }
+  },
+  "required": [
+    "field_id",
+    "computed_at",
+    "scene_id",
+    "scene_date",
+    "spectral_valid_pixels",
+    "spectral_valid_pct",
+    "indices",
+    "phenology",
+    "water_balance",
+    "soil"
+  ],
+  "title": "AnalyticsResult",
+  "type": "object"
+}

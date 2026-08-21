@@ -1,0 +1,72 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "analysis_date": {
+      "format": "date",
+      "title": "Analysis Date",
+      "type": "string"
+    },
+    "boundary_geojson": {
+      "additionalProperties": true,
+      "title": "Boundary Geojson",
+      "type": "object"
+    },
+    "expansion_days": {
+      "default": 30,
+      "maximum": 180,
+      "minimum": 1,
+      "title": "Expansion Days",
+      "type": "integer"
+    },
+    "field_id": {
+      "pattern": "^[A-Za-z0-9_-]{1,64}$",
+      "title": "Field Id",
+      "type": "string"
+    },
+    "latitude": {
+      "maximum": 90,
+      "minimum": -90,
+      "title": "Latitude",
+      "type": "number"
+    },
+    "location_blocking": {
+      "default": false,
+      "title": "Location Blocking",
+      "type": "boolean"
+    },
+    "location_reason": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Location Reason"
+    },
+    "longitude": {
+      "maximum": 180,
+      "minimum": -180,
+      "title": "Longitude",
+      "type": "number"
+    },
+    "scan_range_days": {
+      "default": 30,
+      "maximum": 180,
+      "minimum": 1,
+      "title": "Scan Range Days",
+      "type": "integer"
+    }
+  },
+  "required": [
+    "field_id",
+    "latitude",
+    "longitude",
+    "boundary_geojson",
+    "analysis_date"
+  ],
+  "title": "PreprocessingInput",
+  "type": "object"
+}

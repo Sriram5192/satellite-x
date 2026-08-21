@@ -1,0 +1,6 @@
+{
+  "allowed": true,
+  "reason_code": "GOVERNMENT_SCOPE_ALLOWED",
+  "audit_required": true,
+  "aggregate_only": true
+}

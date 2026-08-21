@@ -1,0 +1,217 @@
+{
+  "acceptable_alternatives": [
+    "S2B_44QMD_20260628_0_L2A",
+    "S2A_44QMD_20260715_0_L2A"
+  ],
+  "field_boundary_source": "acreage_square",
+  "scenes": [
+    {
+      "date": "2026-06-23",
+      "field_pixels": 49,
+      "field_valid_pct": 0.0,
+      "quality": "LOW",
+      "scene_cloud_pct": 100.0,
+      "scene_id": "S2C_44QMD_20260623_0_L2A",
+      "scl_counts": {
+        "9": 49
+      },
+      "selected_by_set1": false,
+      "valid_pixels": 0
+    },
+    {
+      "date": "2026-06-25",
+      "field_pixels": 49,
+      "field_valid_pct": 0.0,
+      "quality": "LOW",
+      "scene_cloud_pct": 89.835811,
+      "scene_id": "S2A_44QMD_20260625_0_L2A",
+      "scl_counts": {
+        "8": 47,
+        "9": 2
+      },
+      "selected_by_set1": false,
+      "valid_pixels": 0
+    },
+    {
+      "date": "2026-06-28",
+      "field_pixels": 49,
+      "field_valid_pct": 100.0,
+      "quality": "MEDIUM",
+      "scene_cloud_pct": 32.511455,
+      "scene_id": "S2B_44QMD_20260628_0_L2A",
+      "scl_counts": {
+        "5": 49
+      },
+      "selected_by_set1": false,
+      "valid_pixels": 49
+    },
+    {
+      "date": "2026-07-03",
+      "field_pixels": 49,
+      "field_valid_pct": 0.0,
+      "quality": "LOW",
+      "scene_cloud_pct": 100.0,
+      "scene_id": "S2C_44QMD_20260703_0_L2A",
+      "scl_counts": {
+        "9": 49
+      },
+      "selected_by_set1": false,
+      "valid_pixels": 0
+    },
+    {
+      "date": "2026-07-08",
+      "field_pixels": 49,
+      "field_valid_pct": 0.0,
+      "quality": "LOW",
+      "scene_cloud_pct": 76.629168,
+      "scene_id": "S2B_44QMD_20260708_0_L2A",
+      "scl_counts": {
+        "8": 46,
+        "9": 3
+      },
+      "selected_by_set1": false,
+      "valid_pixels": 0
+    },
+    {
+      "date": "2026-07-13",
+      "field_pixels": 49,
+      "field_valid_pct": 100.0,
+      "quality": "LOW",
+      "scene_cloud_pct": 55.08486,
+      "scene_id": "S2C_44QMD_20260713_0_L2A",
+      "scl_counts": {
+        "5": 49
+      },
+      "selected_by_set1": false,
+      "valid_pixels": 49
+    },
+    {
+      "date": "2026-07-15",
+      "field_pixels": 49,
+      "field_valid_pct": 100.0,
+      "quality": "MEDIUM",
+      "scene_cloud_pct": 33.927912,
+      "scene_id": "S2A_44QMD_20260715_0_L2A",
+      "scl_counts": {
+        "4": 2,
+        "5": 47
+      },
+      "selected_by_set1": false,
+      "valid_pixels": 49
+    },
+    {
+      "date": "2026-07-18",
+      "field_pixels": 49,
+      "field_valid_pct": 0.0,
+      "quality": "LOW",
+      "scene_cloud_pct": 100.0,
+      "scene_id": "S2B_44QMD_20260718_0_L2A",
+      "scl_counts": {
+        "9": 49
+      },
+      "selected_by_set1": false,
+      "valid_pixels": 0
+    },
+    {
+      "date": "2026-07-23",
+      "field_pixels": 49,
+      "field_valid_pct": 87.76,
+      "quality": "LOW",
+      "scene_cloud_pct": 46.526349,
+      "scene_id": "S2C_44QMD_20260723_0_L2A",
+      "scl_counts": {
+        "5": 40,
+        "7": 3,
+        "8": 4,
+        "9": 2
+      },
+      "selected_by_set1": false,
+      "valid_pixels": 43
+    },
+    {
+      "date": "2026-07-28",
+      "field_pixels": 49,
+      "field_valid_pct": 0.0,
+      "quality": "LOW",
+      "scene_cloud_pct": 95.989603,
+      "scene_id": "S2B_44QMD_20260728_1_L2A",
+      "scl_counts": {
+        "9": 49
+      },
+      "selected_by_set1": false,
+      "valid_pixels": 0
+    },
+    {
+      "date": "2026-08-02",
+      "field_pixels": 49,
+      "field_valid_pct": 0.0,
+      "quality": "LOW",
+      "scene_cloud_pct": 31.020102,
+      "scene_id": "S2C_44QMD_20260802_0_L2A",
+      "scl_counts": {
+        "8": 47,
+        "9": 2
+      },
+      "selected_by_set1": true,
+      "valid_pixels": 0
+    },
+    {
+      "date": "2026-08-04",
+      "field_pixels": 49,
+      "field_valid_pct": 0.0,
+      "quality": "LOW",
+      "scene_cloud_pct": 100.0,
+      "scene_id": "S2A_44QMD_20260804_0_L2A",
+      "scl_counts": {
+        "9": 49
+      },
+      "selected_by_set1": false,
+      "valid_pixels": 0
+    },
+    {
+      "date": "2026-08-07",
+      "field_pixels": 49,
+      "field_valid_pct": 0.0,
+      "quality": "LOW",
+      "scene_cloud_pct": 100.0,
+      "scene_id": "S2B_44QMD_20260807_0_L2A",
+      "scl_counts": {
+        "9": 49
+      },
+      "selected_by_set1": false,
+      "valid_pixels": 0
+    },
+    {
+      "date": "2026-08-12",
+      "field_pixels": 49,
+      "field_valid_pct": 0.0,
+      "quality": "LOW",
+      "scene_cloud_pct": 97.545791,
+      "scene_id": "S2C_44QMD_20260812_0_L2A",
+      "scl_counts": {
+        "8": 47,
+        "9": 2
+      },
+      "selected_by_set1": false,
+      "valid_pixels": 0
+    },
+    {
+      "date": "2026-08-12",
+      "field_pixels": 49,
+      "field_valid_pct": 0.0,
+      "quality": "LOW",
+      "scene_cloud_pct": 97.773039,
+      "scene_id": "S2C_44QMD_20260812_1_L2A",
+      "scl_counts": {
+        "8": 47,
+        "9": 2
+      },
+      "selected_by_set1": false,
+      "valid_pixels": 0
+    }
+  ],
+  "search_end": "2026-08-17",
+  "search_start": "2026-06-19",
+  "selected_scene_id": "S2C_44QMD_20260802_0_L2A",
+  "selected_scene_quality": "LOW"
+}

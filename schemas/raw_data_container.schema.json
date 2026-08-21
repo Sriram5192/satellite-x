@@ -1,0 +1,752 @@
+{
+  "$defs": {
+    "AcquisitionAttempt": {
+      "additionalProperties": false,
+      "properties": {
+        "date_end": {
+          "anyOf": [
+            {
+              "format": "date",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Date End"
+        },
+        "date_start": {
+          "anyOf": [
+            {
+              "format": "date",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Date Start"
+        },
+        "detail": {
+          "title": "Detail",
+          "type": "string"
+        },
+        "outcome": {
+          "enum": [
+            "success",
+            "empty",
+            "error"
+          ],
+          "title": "Outcome",
+          "type": "string"
+        },
+        "source": {
+          "title": "Source",
+          "type": "string"
+        }
+      },
+      "required": [
+        "source",
+        "outcome",
+        "detail"
+      ],
+      "title": "AcquisitionAttempt",
+      "type": "object"
+    },
+    "BandAsset": {
+      "additionalProperties": false,
+      "properties": {
+        "band_code": {
+          "enum": [
+            "B02",
+            "B03",
+            "B04",
+            "B05",
+            "B08",
+            "B11",
+            "SCL"
+          ],
+          "title": "Band Code",
+          "type": "string"
+        },
+        "href": {
+          "minLength": 1,
+          "title": "Href",
+          "type": "string"
+        },
+        "media_type": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Media Type"
+        },
+        "nodata": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Nodata"
+        },
+        "offset": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Offset"
+        },
+        "requires_authentication": {
+          "default": false,
+          "title": "Requires Authentication",
+          "type": "boolean"
+        },
+        "resolution_m": {
+          "exclusiveMinimum": 0,
+          "title": "Resolution M",
+          "type": "integer"
+        },
+        "scale": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Scale"
+        },
+        "source_key": {
+          "title": "Source Key",
+          "type": "string"
+        }
+      },
+      "required": [
+        "band_code",
+        "source_key",
+        "href",
+        "resolution_m"
+      ],
+      "title": "BandAsset",
+      "type": "object"
+    },
+    "CropType": {
+      "enum": [
+        "cotton",
+        "chilli",
+        "paddy"
+      ],
+      "title": "CropType",
+      "type": "string"
+    },
+    "DailyWeather": {
+      "additionalProperties": false,
+      "properties": {
+        "et0_mm": {
+          "minimum": 0,
+          "title": "Et0 Mm",
+          "type": "number"
+        },
+        "observation_date": {
+          "format": "date",
+          "title": "Observation Date",
+          "type": "string"
+        },
+        "precipitation_mm": {
+          "minimum": 0,
+          "title": "Precipitation Mm",
+          "type": "number"
+        },
+        "relative_humidity_mean_pct": {
+          "maximum": 100,
+          "minimum": 0,
+          "title": "Relative Humidity Mean Pct",
+          "type": "number"
+        },
+        "temperature_max_c": {
+          "title": "Temperature Max C",
+          "type": "number"
+        },
+        "temperature_min_c": {
+          "title": "Temperature Min C",
+          "type": "number"
+        }
+      },
+      "required": [
+        "observation_date",
+        "precipitation_mm",
+        "et0_mm",
+        "temperature_max_c",
+        "temperature_min_c",
+        "relative_humidity_mean_pct"
+      ],
+      "title": "DailyWeather",
+      "type": "object"
+    },
+    "FarmInput": {
+      "additionalProperties": false,
+      "properties": {
+        "acres": {
+          "exclusiveMinimum": 0,
+          "maximum": 1000000,
+          "title": "Acres",
+          "type": "number"
+        },
+        "analysis_date": {
+          "format": "date",
+          "title": "Analysis Date",
+          "type": "string"
+        },
+        "boundary_geojson": {
+          "anyOf": [
+            {
+              "additionalProperties": true,
+              "type": "object"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Boundary Geojson"
+        },
+        "crop_type": {
+          "$ref": "#/$defs/CropType"
+        },
+        "field_id": {
+          "pattern": "^[A-Za-z0-9_-]{1,64}$",
+          "title": "Field Id",
+          "type": "string"
+        },
+        "latitude": {
+          "maximum": 90,
+          "minimum": -90,
+          "title": "Latitude",
+          "type": "number"
+        },
+        "longitude": {
+          "maximum": 180,
+          "minimum": -180,
+          "title": "Longitude",
+          "type": "number"
+        },
+        "scan_range_days": {
+          "default": 30,
+          "maximum": 180,
+          "minimum": 1,
+          "title": "Scan Range Days",
+          "type": "integer"
+        },
+        "sowing_date": {
+          "format": "date",
+          "title": "Sowing Date",
+          "type": "string"
+        }
+      },
+      "required": [
+        "field_id",
+        "latitude",
+        "longitude",
+        "crop_type",
+        "sowing_date",
+        "acres"
+      ],
+      "title": "FarmInput",
+      "type": "object"
+    },
+    "IoTReading": {
+      "additionalProperties": false,
+      "properties": {
+        "battery_v": {
+          "maximum": 6,
+          "minimum": 0,
+          "title": "Battery V",
+          "type": "number"
+        },
+        "device_id": {
+          "maxLength": 128,
+          "minLength": 1,
+          "title": "Device Id",
+          "type": "string"
+        },
+        "field_id": {
+          "pattern": "^[A-Za-z0-9_-]{1,64}$",
+          "title": "Field Id",
+          "type": "string"
+        },
+        "k_mg_kg": {
+          "minimum": 0,
+          "title": "K Mg Kg",
+          "type": "number"
+        },
+        "n_mg_kg": {
+          "minimum": 0,
+          "title": "N Mg Kg",
+          "type": "number"
+        },
+        "p_mg_kg": {
+          "minimum": 0,
+          "title": "P Mg Kg",
+          "type": "number"
+        },
+        "soil_moisture_pct": {
+          "maximum": 100,
+          "minimum": 0,
+          "title": "Soil Moisture Pct",
+          "type": "number"
+        },
+        "soil_ph": {
+          "maximum": 14,
+          "minimum": 0,
+          "title": "Soil Ph",
+          "type": "number"
+        },
+        "soil_temp_c": {
+          "maximum": 80,
+          "minimum": -20,
+          "title": "Soil Temp C",
+          "type": "number"
+        },
+        "source": {
+          "const": "live_hardware",
+          "default": "live_hardware",
+          "title": "Source",
+          "type": "string"
+        },
+        "timestamp": {
+          "format": "date-time",
+          "title": "Timestamp",
+          "type": "string"
+        }
+      },
+      "required": [
+        "field_id",
+        "device_id",
+        "timestamp",
+        "soil_moisture_pct",
+        "soil_temp_c",
+        "soil_ph",
+        "n_mg_kg",
+        "p_mg_kg",
+        "k_mg_kg",
+        "battery_v"
+      ],
+      "title": "IoTReading",
+      "type": "object"
+    },
+    "SatelliteAcquisition": {
+      "additionalProperties": false,
+      "properties": {
+        "attempts": {
+          "items": {
+            "$ref": "#/$defs/AcquisitionAttempt"
+          },
+          "title": "Attempts",
+          "type": "array"
+        },
+        "expanded_date_range": {
+          "title": "Expanded Date Range",
+          "type": "boolean"
+        },
+        "fallback_used": {
+          "title": "Fallback Used",
+          "type": "boolean"
+        },
+        "scene": {
+          "$ref": "#/$defs/SatelliteScene"
+        }
+      },
+      "required": [
+        "scene",
+        "attempts",
+        "expanded_date_range",
+        "fallback_used"
+      ],
+      "title": "SatelliteAcquisition",
+      "type": "object"
+    },
+    "SatelliteScene": {
+      "additionalProperties": false,
+      "properties": {
+        "acquired_at": {
+          "format": "date-time",
+          "title": "Acquired At",
+          "type": "string"
+        },
+        "assets": {
+          "additionalProperties": {
+            "$ref": "#/$defs/BandAsset"
+          },
+          "title": "Assets",
+          "type": "object"
+        },
+        "bbox": {
+          "items": {
+            "type": "number"
+          },
+          "maxItems": 4,
+          "minItems": 4,
+          "title": "Bbox",
+          "type": "array"
+        },
+        "cloud_cover_pct": {
+          "maximum": 100,
+          "minimum": 0,
+          "title": "Cloud Cover Pct",
+          "type": "number"
+        },
+        "collection": {
+          "title": "Collection",
+          "type": "string"
+        },
+        "provider": {
+          "enum": [
+            "aws_earth_search",
+            "copernicus_cdse"
+          ],
+          "title": "Provider",
+          "type": "string"
+        },
+        "scene_id": {
+          "title": "Scene Id",
+          "type": "string"
+        }
+      },
+      "required": [
+        "scene_id",
+        "provider",
+        "collection",
+        "acquired_at",
+        "cloud_cover_pct",
+        "bbox",
+        "assets"
+      ],
+      "title": "SatelliteScene",
+      "type": "object"
+    },
+    "SoilProperties": {
+      "additionalProperties": false,
+      "properties": {
+        "cache_key": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Cache Key"
+        },
+        "depth": {
+          "const": "0-5cm",
+          "default": "0-5cm",
+          "title": "Depth",
+          "type": "string"
+        },
+        "fallback_used": {
+          "default": false,
+          "title": "Fallback Used",
+          "type": "boolean"
+        },
+        "nitrogen_g_kg": {
+          "minimum": 0,
+          "title": "Nitrogen G Kg",
+          "type": "number"
+        },
+        "ph_h2o": {
+          "maximum": 14,
+          "minimum": 0,
+          "title": "Ph H2O",
+          "type": "number"
+        },
+        "source": {
+          "enum": [
+            "soilgrids_live",
+            "cache",
+            "regional_ag_zone_baseline"
+          ],
+          "title": "Source",
+          "type": "string"
+        },
+        "statistic": {
+          "const": "mean",
+          "default": "mean",
+          "title": "Statistic",
+          "type": "string"
+        }
+      },
+      "required": [
+        "ph_h2o",
+        "nitrogen_g_kg",
+        "source"
+      ],
+      "title": "SoilProperties",
+      "type": "object"
+    },
+    "StreamState": {
+      "additionalProperties": false,
+      "properties": {
+        "detail": {
+          "title": "Detail",
+          "type": "string"
+        },
+        "state": {
+          "enum": [
+            "live",
+            "cache",
+            "baseline",
+            "unverified",
+            "stale",
+            "not_supplied"
+          ],
+          "title": "State",
+          "type": "string"
+        },
+        "stream": {
+          "enum": [
+            "satellite",
+            "weather",
+            "soil",
+            "iot"
+          ],
+          "title": "Stream",
+          "type": "string"
+        }
+      },
+      "required": [
+        "stream",
+        "state",
+        "detail"
+      ],
+      "title": "StreamState",
+      "type": "object"
+    },
+    "WeatherAcquisition": {
+      "additionalProperties": false,
+      "properties": {
+        "cache_key": {
+          "title": "Cache Key",
+          "type": "string"
+        },
+        "fallback_used": {
+          "default": false,
+          "title": "Fallback Used",
+          "type": "boolean"
+        },
+        "forecast": {
+          "items": {
+            "$ref": "#/$defs/DailyWeather"
+          },
+          "title": "Forecast",
+          "type": "array"
+        },
+        "history": {
+          "items": {
+            "$ref": "#/$defs/DailyWeather"
+          },
+          "title": "History",
+          "type": "array"
+        },
+        "source": {
+          "enum": [
+            "open_meteo_archive",
+            "open_meteo_forecast",
+            "cache"
+          ],
+          "title": "Source",
+          "type": "string"
+        },
+        "summary": {
+          "$ref": "#/$defs/WeatherSummary"
+        }
+      },
+      "required": [
+        "source",
+        "history",
+        "forecast",
+        "summary",
+        "cache_key"
+      ],
+      "title": "WeatherAcquisition",
+      "type": "object"
+    },
+    "WeatherSummary": {
+      "additionalProperties": false,
+      "properties": {
+        "complete_15d": {
+          "title": "Complete 15D",
+          "type": "boolean"
+        },
+        "complete_30d": {
+          "title": "Complete 30D",
+          "type": "boolean"
+        },
+        "days_available_15d": {
+          "maximum": 15,
+          "minimum": 0,
+          "title": "Days Available 15D",
+          "type": "integer"
+        },
+        "days_available_30d": {
+          "maximum": 30,
+          "minimum": 0,
+          "title": "Days Available 30D",
+          "type": "integer"
+        },
+        "et0_15d_mm": {
+          "minimum": 0,
+          "title": "Et0 15D Mm",
+          "type": "number"
+        },
+        "et0_30d_mm": {
+          "minimum": 0,
+          "title": "Et0 30D Mm",
+          "type": "number"
+        },
+        "humidity_mean_5d_pct": {
+          "anyOf": [
+            {
+              "maximum": 100,
+              "minimum": 0,
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Humidity Mean 5D Pct"
+        },
+        "rain_15d_mm": {
+          "minimum": 0,
+          "title": "Rain 15D Mm",
+          "type": "number"
+        },
+        "rain_30d_mm": {
+          "minimum": 0,
+          "title": "Rain 30D Mm",
+          "type": "number"
+        }
+      },
+      "required": [
+        "days_available_15d",
+        "rain_15d_mm",
+        "et0_15d_mm",
+        "days_available_30d",
+        "rain_30d_mm",
+        "et0_30d_mm",
+        "complete_15d",
+        "complete_30d"
+      ],
+      "title": "WeatherSummary",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "acquired_at": {
+      "format": "date-time",
+      "title": "Acquired At",
+      "type": "string"
+    },
+    "field": {
+      "$ref": "#/$defs/FarmInput"
+    },
+    "iot": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/IoTReading"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null
+    },
+    "iot_fresh": {
+      "anyOf": [
+        {
+          "type": "boolean"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Iot Fresh"
+    },
+    "iot_verified": {
+      "default": false,
+      "title": "Iot Verified",
+      "type": "boolean"
+    },
+    "satellite": {
+      "$ref": "#/$defs/SatelliteAcquisition"
+    },
+    "schema_version": {
+      "const": "1.0.0",
+      "default": "1.0.0",
+      "title": "Schema Version",
+      "type": "string"
+    },
+    "soil": {
+      "$ref": "#/$defs/SoilProperties"
+    },
+    "status": {
+      "enum": [
+        "complete",
+        "degraded"
+      ],
+      "title": "Status",
+      "type": "string"
+    },
+    "streams": {
+      "items": {
+        "$ref": "#/$defs/StreamState"
+      },
+      "title": "Streams",
+      "type": "array"
+    },
+    "warnings": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Warnings",
+      "type": "array"
+    },
+    "weather": {
+      "$ref": "#/$defs/WeatherAcquisition"
+    }
+  },
+  "required": [
+    "field",
+    "acquired_at",
+    "status",
+    "satellite",
+    "weather",
+    "soil",
+    "streams"
+  ],
+  "title": "RawDataContainer",
+  "type": "object"
+}

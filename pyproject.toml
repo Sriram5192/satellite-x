@@ -1,0 +1,50 @@
+[build-system]
+requires = ["setuptools>=70"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "satellite-x"
+version = "0.8.0"
+description = "SATELLITE-X field intelligence, governance, TLE/Doppler and calibrated communications simulation engine"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+  "pydantic>=2.8,<3",
+  "requests>=2.31,<3",
+  "duckdb>=1.5,<2",
+  "shapely>=2.1,<3",
+  "pyproj>=3.7,<4",
+  "numpy>=2,<3",
+  "rasterio>=1.4,<2",
+  "cryptography>=43,<47",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8,<10"]
+web = [
+  "streamlit>=1.40,<2",
+  "folium>=0.18,<1",
+  "streamlit-folium>=0.24,<1",
+]
+api = [
+  "fastapi>=0.115,<1",
+  "uvicorn>=0.30,<1",
+]
+communications = [
+  "skyfield>=1.49,<2",
+  "itur>=0.4.0,<1",
+]
+audit = ["numpy>=2,<3", "pyproj>=3.7,<4", "rasterio>=1.4,<2"]
+
+[project.scripts]
+satellite-x = "satellite_x.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+addopts = "-m 'not live' -q"
+testpaths = ["tests"]
+markers = [
+  "live: calls real external APIs (run with: pytest -m live -o addopts='')",
+]

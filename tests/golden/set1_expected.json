@@ -1,0 +1,429 @@
+{
+  "acquired_at": "2024-01-30T12:00:00Z",
+  "field": {
+    "acres": 5.0,
+    "analysis_date": "2024-01-30",
+    "boundary_geojson": null,
+    "crop_type": "cotton",
+    "field_id": "AP_F001",
+    "latitude": 16.3067,
+    "longitude": 80.4365,
+    "scan_range_days": 30,
+    "sowing_date": "2024-01-01"
+  },
+  "iot": {
+    "battery_v": 3.8,
+    "device_id": "ESP32_GOLDEN",
+    "field_id": "AP_F001",
+    "k_mg_kg": 35.2,
+    "n_mg_kg": 28.0,
+    "p_mg_kg": 19.5,
+    "soil_moisture_pct": 34.5,
+    "soil_ph": 6.8,
+    "soil_temp_c": 27.1,
+    "source": "live_hardware",
+    "timestamp": "2024-01-30T10:30:00Z"
+  },
+  "iot_fresh": true,
+  "iot_verified": false,
+  "satellite": {
+    "attempts": [
+      {
+        "date_end": "2024-01-30",
+        "date_start": "2024-01-01",
+        "detail": "selected S2A_GOLDEN_20240125_L2A at 5.00% cloud",
+        "outcome": "success",
+        "source": "aws_earth_search"
+      }
+    ],
+    "expanded_date_range": false,
+    "fallback_used": false,
+    "scene": {
+      "acquired_at": "2024-01-25T05:10:00Z",
+      "assets": {
+        "B02": {
+          "band_code": "B02",
+          "href": "https://example.test/blue.tif",
+          "media_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "nodata": 0.0,
+          "offset": -0.1,
+          "requires_authentication": false,
+          "resolution_m": 10,
+          "scale": 0.0001,
+          "source_key": "blue"
+        },
+        "B03": {
+          "band_code": "B03",
+          "href": "https://example.test/green.tif",
+          "media_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "nodata": 0.0,
+          "offset": -0.1,
+          "requires_authentication": false,
+          "resolution_m": 10,
+          "scale": 0.0001,
+          "source_key": "green"
+        },
+        "B04": {
+          "band_code": "B04",
+          "href": "https://example.test/red.tif",
+          "media_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "nodata": 0.0,
+          "offset": -0.1,
+          "requires_authentication": false,
+          "resolution_m": 10,
+          "scale": 0.0001,
+          "source_key": "red"
+        },
+        "B05": {
+          "band_code": "B05",
+          "href": "https://example.test/rededge1.tif",
+          "media_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "nodata": 0.0,
+          "offset": -0.1,
+          "requires_authentication": false,
+          "resolution_m": 20,
+          "scale": 0.0001,
+          "source_key": "rededge1"
+        },
+        "B08": {
+          "band_code": "B08",
+          "href": "https://example.test/nir.tif",
+          "media_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "nodata": 0.0,
+          "offset": -0.1,
+          "requires_authentication": false,
+          "resolution_m": 10,
+          "scale": 0.0001,
+          "source_key": "nir"
+        },
+        "B11": {
+          "band_code": "B11",
+          "href": "https://example.test/swir16.tif",
+          "media_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "nodata": 0.0,
+          "offset": -0.1,
+          "requires_authentication": false,
+          "resolution_m": 20,
+          "scale": 0.0001,
+          "source_key": "swir16"
+        },
+        "SCL": {
+          "band_code": "SCL",
+          "href": "https://example.test/scl.tif",
+          "media_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "nodata": 0.0,
+          "offset": null,
+          "requires_authentication": false,
+          "resolution_m": 20,
+          "scale": null,
+          "source_key": "scl"
+        }
+      },
+      "bbox": [
+        80.0,
+        16.0,
+        81.0,
+        17.0
+      ],
+      "cloud_cover_pct": 5.0,
+      "collection": "sentinel-2-l2a",
+      "provider": "aws_earth_search",
+      "scene_id": "S2A_GOLDEN_20240125_L2A"
+    }
+  },
+  "schema_version": "1.0.0",
+  "soil": {
+    "cache_key": "soilgrids-d16d10c89dea04e98bedba108a2454664034137a443f81fc385ffe92c8c928a2",
+    "depth": "0-5cm",
+    "fallback_used": false,
+    "nitrogen_g_kg": 0.25,
+    "ph_h2o": 6.8,
+    "source": "soilgrids_live",
+    "statistic": "mean"
+  },
+  "status": "degraded",
+  "streams": [
+    {
+      "detail": "aws_earth_search:S2A_GOLDEN_20240125_L2A",
+      "state": "live",
+      "stream": "satellite"
+    },
+    {
+      "detail": "open_meteo_archive",
+      "state": "live",
+      "stream": "weather"
+    },
+    {
+      "detail": "soilgrids_live",
+      "state": "live",
+      "stream": "soil"
+    },
+    {
+      "detail": "ESP32_GOLDEN; verified=False; age_hours=1.50",
+      "state": "unverified",
+      "stream": "iot"
+    }
+  ],
+  "warnings": [
+    "IoT payload schema is valid but hardware provenance is unverified; a valid HMAC-SHA256 signature is required for live status."
+  ],
+  "weather": {
+    "cache_key": "weather-history-f0db2ab1df8555fe6398f4d75b6395b37f668b002fe94d337578ec292a0eb214",
+    "fallback_used": false,
+    "forecast": [],
+    "history": [
+      {
+        "et0_mm": 4.0,
+        "observation_date": "2024-01-01",
+        "precipitation_mm": 1.0,
+        "relative_humidity_mean_pct": 61.0,
+        "temperature_max_c": 30.0,
+        "temperature_min_c": 20.0
+      },
+      {
+        "et0_mm": 4.0,
+        "observation_date": "2024-01-02",
+        "precipitation_mm": 2.0,
+        "relative_humidity_mean_pct": 62.0,
+        "temperature_max_c": 30.0,
+        "temperature_min_c": 20.0
+      },
+      {
+        "et0_mm": 4.0,
+        "observation_date": "2024-01-03",
+        "precipitation_mm": 3.0,
+        "relative_humidity_mean_pct": 63.0,
+        "temperature_max_c": 30.0,
+        "temperature_min_c": 20.0
+      },
+      {
+        "et0_mm": 4.0,
+        "observation_date": "2024-01-04",
+        "precipitation_mm": 4.0,
+        "relative_humidity_mean_pct": 64.0,
+        "temperature_max_c": 30.0,
+        "temperature_min_c": 20.0
+      },
+      {
+        "et0_mm": 4.0,
+        "observation_date": "2024-01-05",
+        "precipitation_mm": 5.0,
+        "relative_humidity_mean_pct": 65.0,
+        "temperature_max_c": 30.0,
+        "temperature_min_c": 20.0
+      },
+      {
+        "et0_mm": 4.0,
+        "observation_date": "2024-01-06",
+        "precipitation_mm": 6.0,
+        "relative_humidity_mean_pct": 66.0,
+        "temperature_max_c": 30.0,
+        "temperature_min_c": 20.0
+      },
+      {
+        "et0_mm": 4.0,
+        "observation_date": "2024-01-07",
+        "precipitation_mm": 7.0,
+        "relative_humidity_mean_pct": 67.0,
+        "temperature_max_c": 30.0,
+        "temperature_min_c": 20.0
+      },
+      {
+        "et0_mm": 4.0,
+        "observation_date": "2024-01-08",
+        "precipitation_mm": 8.0,
+        "relative_humidity_mean_pct": 68.0,
+        "temperature_max_c": 30.0,
+        "temperature_min_c": 20.0
+      },
+      {
+        "et0_mm": 4.0,
+        "observation_date": "2024-01-09",
+        "precipitation_mm": 9.0,
+        "relative_humidity_mean_pct": 69.0,
+        "temperature_max_c": 30.0,
+        "temperature_min_c": 20.0
+      },
+      {
+        "et0_mm": 4.0,
+        "observation_date": "2024-01-10",
+        "precipitation_mm": 10.0,
+        "relative_humidity_mean_pct": 70.0,
+        "temperature_max_c": 30.0,
+        "temperature_min_c": 20.0
+      },
+      {
+        "et0_mm": 4.0,
+        "observation_date": "2024-01-11",
+        "precipitation_mm": 11.0,
+        "relative_humidity_mean_pct": 71.0,
+        "temperature_max_c": 30.0,
+        "temperature_min_c": 20.0
+      },
+      {
+        "et0_mm": 4.0,
+        "observation_date": "2024-01-12",
+        "precipitation_mm": 12.0,
+        "relative_humidity_mean_pct": 72.0,
+        "temperature_max_c": 30.0,
+        "temperature_min_c": 20.0
+      },
+      {
+        "et0_mm": 4.0,
+        "observation_date": "2024-01-13",
+        "precipitation_mm": 13.0,
+        "relative_humidity_mean_pct": 73.0,
+        "temperature_max_c": 30.0,
+        "temperature_min_c": 20.0
+      },
+      {
+        "et0_mm": 4.0,
+        "observation_date": "2024-01-14",
+        "precipitation_mm": 14.0,
+        "relative_humidity_mean_pct": 74.0,
+        "temperature_max_c": 30.0,
+        "temperature_min_c": 20.0
+      },
+      {
+        "et0_mm": 4.0,
+        "observation_date": "2024-01-15",
+        "precipitation_mm": 15.0,
+        "relative_humidity_mean_pct": 75.0,
+        "temperature_max_c": 30.0,
+        "temperature_min_c": 20.0
+      },
+      {
+        "et0_mm": 4.0,
+        "observation_date": "2024-01-16",
+        "precipitation_mm": 16.0,
+        "relative_humidity_mean_pct": 76.0,
+        "temperature_max_c": 30.0,
+        "temperature_min_c": 20.0
+      },
+      {
+        "et0_mm": 4.0,
+        "observation_date": "2024-01-17",
+        "precipitation_mm": 17.0,
+        "relative_humidity_mean_pct": 77.0,
+        "temperature_max_c": 30.0,
+        "temperature_min_c": 20.0
+      },
+      {
+        "et0_mm": 4.0,
+        "observation_date": "2024-01-18",
+        "precipitation_mm": 18.0,
+        "relative_humidity_mean_pct": 78.0,
+        "temperature_max_c": 30.0,
+        "temperature_min_c": 20.0
+      },
+      {
+        "et0_mm": 4.0,
+        "observation_date": "2024-01-19",
+        "precipitation_mm": 19.0,
+        "relative_humidity_mean_pct": 79.0,
+        "temperature_max_c": 30.0,
+        "temperature_min_c": 20.0
+      },
+      {
+        "et0_mm": 4.0,
+        "observation_date": "2024-01-20",
+        "precipitation_mm": 20.0,
+        "relative_humidity_mean_pct": 80.0,
+        "temperature_max_c": 30.0,
+        "temperature_min_c": 20.0
+      },
+      {
+        "et0_mm": 4.0,
+        "observation_date": "2024-01-21",
+        "precipitation_mm": 21.0,
+        "relative_humidity_mean_pct": 81.0,
+        "temperature_max_c": 30.0,
+        "temperature_min_c": 20.0
+      },
+      {
+        "et0_mm": 4.0,
+        "observation_date": "2024-01-22",
+        "precipitation_mm": 22.0,
+        "relative_humidity_mean_pct": 82.0,
+        "temperature_max_c": 30.0,
+        "temperature_min_c": 20.0
+      },
+      {
+        "et0_mm": 4.0,
+        "observation_date": "2024-01-23",
+        "precipitation_mm": 23.0,
+        "relative_humidity_mean_pct": 83.0,
+        "temperature_max_c": 30.0,
+        "temperature_min_c": 20.0
+      },
+      {
+        "et0_mm": 4.0,
+        "observation_date": "2024-01-24",
+        "precipitation_mm": 24.0,
+        "relative_humidity_mean_pct": 84.0,
+        "temperature_max_c": 30.0,
+        "temperature_min_c": 20.0
+      },
+      {
+        "et0_mm": 4.0,
+        "observation_date": "2024-01-25",
+        "precipitation_mm": 25.0,
+        "relative_humidity_mean_pct": 85.0,
+        "temperature_max_c": 30.0,
+        "temperature_min_c": 20.0
+      },
+      {
+        "et0_mm": 4.0,
+        "observation_date": "2024-01-26",
+        "precipitation_mm": 26.0,
+        "relative_humidity_mean_pct": 86.0,
+        "temperature_max_c": 30.0,
+        "temperature_min_c": 20.0
+      },
+      {
+        "et0_mm": 4.0,
+        "observation_date": "2024-01-27",
+        "precipitation_mm": 27.0,
+        "relative_humidity_mean_pct": 87.0,
+        "temperature_max_c": 30.0,
+        "temperature_min_c": 20.0
+      },
+      {
+        "et0_mm": 4.0,
+        "observation_date": "2024-01-28",
+        "precipitation_mm": 28.0,
+        "relative_humidity_mean_pct": 88.0,
+        "temperature_max_c": 30.0,
+        "temperature_min_c": 20.0
+      },
+      {
+        "et0_mm": 4.0,
+        "observation_date": "2024-01-29",
+        "precipitation_mm": 29.0,
+        "relative_humidity_mean_pct": 89.0,
+        "temperature_max_c": 30.0,
+        "temperature_min_c": 20.0
+      },
+      {
+        "et0_mm": 4.0,
+        "observation_date": "2024-01-30",
+        "precipitation_mm": 30.0,
+        "relative_humidity_mean_pct": 90.0,
+        "temperature_max_c": 30.0,
+        "temperature_min_c": 20.0
+      }
+    ],
+    "source": "open_meteo_archive",
+    "summary": {
+      "complete_15d": true,
+      "complete_30d": true,
+      "days_available_15d": 15,
+      "days_available_30d": 30,
+      "et0_15d_mm": 60.0,
+      "et0_30d_mm": 120.0,
+      "humidity_mean_5d_pct": 88.0,
+      "rain_15d_mm": 345.0,
+      "rain_30d_mm": 465.0
+    }
+  }
+}

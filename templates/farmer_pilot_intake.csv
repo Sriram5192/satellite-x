@@ -1,0 +1,6 @@
+farmer_user_id,field_id,latitude,longitude,reported_acres,crop_type,sowing_date,boundary_source,boundary_geojson_file,location_consent,consent_timestamp_ist,notes
+FARMER-001,FIELD-001,,,,chilli,,ftw_user_confirmed,,YES,,
+FARMER-002,FIELD-002,,,,cotton,,user_drawn,,YES,,
+FARMER-003,FIELD-003,,,,paddy,,official_fmb,,YES,,
+FARMER-004,FIELD-004,,,,chilli,,ftw_user_confirmed,,YES,,
+FARMER-005,FIELD-005,,,,cotton,,user_drawn,,YES,,

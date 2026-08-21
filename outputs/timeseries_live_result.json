@@ -1,0 +1,65 @@
+{
+  "below_expected_ndvi_observations": 1,
+  "crop_type": "chilli",
+  "end_date": "2026-05-09",
+  "field_id": "AP_GNT_FTW_CROP_TEST",
+  "index_trends": {
+    "evi": {
+      "direction": "decreasing",
+      "first_mean": 0.35202,
+      "latest_mean": 0.172071,
+      "slope_per_day": -0.003082,
+      "total_change": -0.179949
+    },
+    "gndvi": {
+      "direction": "decreasing",
+      "first_mean": 0.649008,
+      "latest_mean": 0.583955,
+      "slope_per_day": -0.001492,
+      "total_change": -0.065053
+    },
+    "ndmi": {
+      "direction": "decreasing",
+      "first_mean": 0.032922,
+      "latest_mean": -0.146315,
+      "slope_per_day": -0.002779,
+      "total_change": -0.179237
+    },
+    "ndre": {
+      "direction": "decreasing",
+      "first_mean": 0.376353,
+      "latest_mean": 0.208317,
+      "slope_per_day": -0.00303,
+      "total_change": -0.168036
+    },
+    "ndvi": {
+      "direction": "decreasing",
+      "first_mean": 0.640144,
+      "latest_mean": 0.383041,
+      "slope_per_day": -0.00485,
+      "total_change": -0.257103
+    },
+    "ndwi": {
+      "direction": "increasing",
+      "first_mean": -0.649008,
+      "latest_mean": -0.583955,
+      "slope_per_day": 0.001492,
+      "total_change": 0.065053
+    },
+    "savi": {
+      "direction": "decreasing",
+      "first_mean": 0.335544,
+      "latest_mean": 0.198308,
+      "slope_per_day": -0.002381,
+      "total_change": -0.137236
+    }
+  },
+  "max_gap_days": 33,
+  "observation_count": 3,
+  "persistent_water_deficit_observations": 3,
+  "quality": "limited",
+  "start_date": "2026-03-20",
+  "warnings": [
+    "A scene gap exceeds 30 days; interpret temporal slopes cautiously."
+  ]
+}

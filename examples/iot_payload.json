@@ -1,0 +1,13 @@
+{
+  "field_id": "AP_GNT_F001",
+  "device_id": "ESP32_FIELD_NODE_01",
+  "timestamp": "2026-08-15T10:30:00Z",
+  "soil_moisture_pct": 34.5,
+  "soil_temp_c": 27.1,
+  "soil_ph": 6.8,
+  "n_mg_kg": 28.0,
+  "p_mg_kg": 19.5,
+  "k_mg_kg": 35.2,
+  "battery_v": 3.8,
+  "source": "live_hardware"
+}

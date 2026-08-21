@@ -1,0 +1,83 @@
+{
+  "capabilities": [
+    {
+      "activation_requirements": [
+        "Local SAR ground labels before diagnosis thresholds"
+      ],
+      "code": "sentinel1_rtc",
+      "status": "implemented_evidence_only",
+      "unsafe_shortcut": "Treating SAR dB as NDVI or fixed crop stress"
+    },
+    {
+      "activation_requirements": [
+        "Official API/MoU",
+        "Authorized credentials",
+        "Legal/privacy review"
+      ],
+      "code": "government_land_records",
+      "status": "implemented_activation_required",
+      "unsafe_shortcut": "Scraping or bypassing CAPTCHA/OTP"
+    },
+    {
+      "activation_requirements": [
+        "SMS provider credentials",
+        "Consent notice",
+        "Production secrets vault"
+      ],
+      "code": "phone_otp",
+      "status": "implemented_activation_required",
+      "unsafe_shortcut": "Fake OTP or hard-coded bypass"
+    },
+    {
+      "activation_requirements": [
+        "Multi-season verified field yields",
+        "District/crop human validation",
+        "Approval report"
+      ],
+      "code": "yield_prediction",
+      "status": "implemented_activation_required",
+      "unsafe_shortcut": "Publishing yield from unvalidated coefficients"
+    },
+    {
+      "activation_requirements": [
+        "Target equipment profile",
+        "Agronomist-approved rates",
+        "Operator checks",
+        "Safety field trial"
+      ],
+      "code": "vra_machinery",
+      "status": "implemented_activation_required",
+      "unsafe_shortcut": "Generating fertilizer or spray rates from NDVI alone"
+    },
+    {
+      "activation_requirements": [
+        "Target-device GPS/photo test",
+        "Production TLS deployment",
+        "Authorized SMS and backend secrets"
+      ],
+      "code": "mobile_offline",
+      "status": "implemented_activation_required",
+      "unsafe_shortcut": "Claiming field deployment from automated PWA/API tests"
+    },
+    {
+      "activation_requirements": [
+        "Fresh or historical TLE near prediction epoch",
+        "Ground-station coordinates",
+        "Live beacon for measured validation"
+      ],
+      "code": "orbit_tle_doppler",
+      "status": "implemented_evidence_only",
+      "unsafe_shortcut": "Calling TLE/SGP4 a live telemetry or beacon measurement"
+    },
+    {
+      "activation_requirements": [
+        "Calibrated EIRP/G-T/noise inputs",
+        "Local meteorology or beacon measurements",
+        "Authorized mission contact/traffic traces"
+      ],
+      "code": "xband_atmosphere_traffic",
+      "status": "implemented_evidence_only",
+      "unsafe_shortcut": "Claiming a generic 100-station fixture represents Sentinel operations"
+    }
+  ]
+}

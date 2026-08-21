@@ -1,0 +1,30 @@
+{
+  "checked_at": "2026-08-17T12:08:04.871929+00:00",
+  "checks": {
+    "confirmed_candidate_matches_selection": true,
+    "direct_ftw_found_rows": true,
+    "independent_area_matches_output": true,
+    "remote_polygon_not_claimed_legal": true,
+    "road_distance_below_20m": true,
+    "road_output_rejected": true,
+    "road_reverse_category_is_highway": true,
+    "rural_nearest_road_beyond_20m": true,
+    "selected_candidate_matches_direct_ftw": true
+  },
+  "open_field": {
+    "direct_first_candidate_id": "ftw-IN-AP-1537149-2025-545a8a4ecb",
+    "direct_ftw_rows": 2,
+    "independent_area_m2": 7061.486,
+    "nearest_feature_distance_m": 122.971,
+    "nearest_reverse_feature": "Guntur - Parchuru Road, Tikkireddypalem, Prathipadu, Guntur, Andhra Pradesh, 522019, India",
+    "output_area_m2": 7061.486,
+    "output_selected_candidate_id": "ftw-IN-AP-1537149-2025-545a8a4ecb"
+  },
+  "pass": true,
+  "road": {
+    "category": "highway",
+    "feature_distance_m": 11.321,
+    "output_status": "rejected_location",
+    "type": "primary"
+  }
+}

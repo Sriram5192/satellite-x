@@ -1,0 +1,104 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "id": "S2A_GOLDEN_20240125_L2A",
+      "bbox": [
+        80.0,
+        16.0,
+        81.0,
+        17.0
+      ],
+      "properties": {
+        "datetime": "2024-01-25T05:10:00Z",
+        "eo:cloud_cover": 5.0
+      },
+      "assets": {
+        "blue": {
+          "href": "https://example.test/blue.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "raster:bands": [
+            {
+              "nodata": 0,
+              "data_type": "uint16",
+              "scale": 0.0001,
+              "offset": -0.1
+            }
+          ]
+        },
+        "green": {
+          "href": "https://example.test/green.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "raster:bands": [
+            {
+              "nodata": 0,
+              "data_type": "uint16",
+              "scale": 0.0001,
+              "offset": -0.1
+            }
+          ]
+        },
+        "red": {
+          "href": "https://example.test/red.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "raster:bands": [
+            {
+              "nodata": 0,
+              "data_type": "uint16",
+              "scale": 0.0001,
+              "offset": -0.1
+            }
+          ]
+        },
+        "rededge1": {
+          "href": "https://example.test/rededge1.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "raster:bands": [
+            {
+              "nodata": 0,
+              "data_type": "uint16",
+              "scale": 0.0001,
+              "offset": -0.1
+            }
+          ]
+        },
+        "nir": {
+          "href": "https://example.test/nir.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "raster:bands": [
+            {
+              "nodata": 0,
+              "data_type": "uint16",
+              "scale": 0.0001,
+              "offset": -0.1
+            }
+          ]
+        },
+        "swir16": {
+          "href": "https://example.test/swir16.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "raster:bands": [
+            {
+              "nodata": 0,
+              "data_type": "uint16",
+              "scale": 0.0001,
+              "offset": -0.1
+            }
+          ]
+        },
+        "scl": {
+          "href": "https://example.test/scl.tif",
+          "type": "image/tiff; application=geotiff; profile=cloud-optimized",
+          "raster:bands": [
+            {
+              "nodata": 0,
+              "data_type": "uint8",
+              "spatial_resolution": 20
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

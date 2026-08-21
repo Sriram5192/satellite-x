@@ -1,0 +1,18 @@
+{
+  "authorization_id": "AUTH_DEMO_001",
+  "officer_id": "OFFICER_DEMO",
+  "department": "Agriculture",
+  "designation": "Mandal Agriculture Officer",
+  "permission_status": "approved",
+  "permissions": [
+    "VIEW_VILLAGE_SUMMARY",
+    "VIEW_PARCEL_DETAILS"
+  ],
+  "village_codes": [
+    "AP_GNT_DEMO"
+  ],
+  "order_reference": "DEMO-NOT-A-GOVT-ORDER",
+  "valid_from": "2026-08-16T13:00:00Z",
+  "valid_until": "2026-09-16T13:00:00Z",
+  "approved_by": "DEMO_APPROVER"
+}

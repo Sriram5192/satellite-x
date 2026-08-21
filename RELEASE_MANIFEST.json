@@ -1,0 +1,42 @@
+{
+  "product": "SATELLITE-X",
+  "version": "0.8.0",
+  "release_date": "2026-08-20",
+  "validation": {
+    "deterministic_tests": "95/95 PASS",
+    "live_tests": "8/8 PASS",
+    "schemas": "32/32 valid",
+    "orbit_communications_oracle": "16/16 PASS",
+    "public_demo_pages": "7/7 PASS",
+    "explicit_external_warning": true,
+    "public_one_page_tester": "10/10 flow checks PASS"
+  },
+  "publishing": {
+    "github": "repo-ready; owner authentication/license decision required",
+    "linkedin": "launch post and technical article ready; owner must publish",
+    "demo": "running read-only Streamlit preview",
+    "public_tester": "running temporary Arena preview; GitHub/Streamlit deployment ready"
+  },
+  "non_claims": [
+    "no live beacon telemetry",
+    "no historical TLE validation for June scene",
+    "no operational ESA link profile",
+    "no authorized ESA traffic trace"
+  ],
+  "artifact_sha256": {
+    "apps/power_engine_demo.py": "a22081384edc7cc06f8e103b0dab2bf104c245f4b1a30530e4cfa73c517cc38a",
+    "outputs/power_engine_demo_flow.json": "2e8f2f5fe1f8c5b5b0b87008bf7dac94afef46a3475ce0ac55e901c5cfc9408b",
+    "media/satellite_x_v0_8_launch_card.png": "8d0b08f5142f338b91de91f94eb5ff3a968a88a86d22d9c0158ed00510758ed4",
+    "LINKEDIN_LAUNCH_POST_v0.8.md": "ff3df7aadafce412a9f9c97b328a9fcdd95f582434c25ea589bd9d28b683954c",
+    "LINKEDIN_TECHNICAL_ARTICLE_v0.8.md": "57905e96cad7f1ea6919d6b64daa7806fe3377b17bcea83d66de529806647532",
+    "GITHUB_RELEASE_NOTES_v0.8.0.md": "6443fd52660554efedc6f889e1a9754a4f0eae059e04d7aff48dae4a4d9c0b7f",
+    "DEMO_RUN_GUIDE.md": "f82ac729bdccfb49c8cfd36c6c53b66d2d2be14c460891ecf7e70c433ebed741",
+    "SATELLITE_X_v0.8.0_COLAB_VERIFICATION.ipynb": "0c1f84525277f1dde8081a9e98bd5d4426c0ba1cd021f85c3b9197ac42833fbc",
+    "ORBIT_COMMUNICATIONS_RECTIFICATION_REPORT.md": "537d548d5462ba954965a1bc544a4fd3feb950d8d9cfd670a7f3cd466f70b903",
+    "outputs/orbit_communications_reality.json": "50d430b2a599ff7d0c43ec3c98bcc522b6ab403fe1c3cca88b57112795ea59c2",
+    "public_demo/app.py": "c6ae2a1288f8a635a276d370efafddb677d59036ce389336674005211a1f4b65",
+    "public_demo/requirements.txt": "9a7729f60e42460bd5caa6c61d81791b34161f7dddb1bdf8eb1d1e1b2434cb23",
+    "outputs/public_tester_flow.json": "7de650a35649b5fbbb6bde26756d6c0a420c8471efb88263daefb1fb9f7bf096",
+    "GITHUB_STREAMLIT_LINKEDIN_STEP_BY_STEP_TE.md": "6a50982da75c0fb1adc073a75b550b9361036bde57d73bd3cb4c123dc9e7a379"
+  }
+}

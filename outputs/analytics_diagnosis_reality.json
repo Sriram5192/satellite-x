@@ -1,0 +1,33 @@
+{
+  "checked_at": "2026-08-18T16:20:17.321023+00:00",
+  "checks": {
+    "confidence_equal": true,
+    "das_equal": true,
+    "evi_mean_equal": true,
+    "gndvi_mean_equal": true,
+    "ndmi_mean_equal": true,
+    "ndre_mean_equal": true,
+    "ndvi_mean_equal": true,
+    "ndwi_mean_equal": true,
+    "savi_mean_equal": true,
+    "spectral_pixels_equal": true,
+    "verdict_equal": true,
+    "water_balance_equal": true
+  },
+  "confidence_pct": 64.0,
+  "das": 13,
+  "inside_pixels": 26,
+  "means": {
+    "evi": 0.060957,
+    "gndvi": 0.590786,
+    "ndmi": -0.224481,
+    "ndre": 0.134915,
+    "ndvi": 0.324206,
+    "ndwi": -0.590786,
+    "savi": 0.070268
+  },
+  "pass": true,
+  "spectral_pixels": 26,
+  "verdict": "NORMAL_OR_UNRESOLVED",
+  "water_balance_mm": -12.67
+}

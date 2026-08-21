@@ -1,0 +1,13 @@
+{
+  "aggregate_only": true,
+  "authorization_id": "DEMO-AUTH-1",
+  "fetched_at": "2026-08-17T16:27:18.270598Z",
+  "provider": "agristack",
+  "reason_code": "CONNECTOR_DISABLED",
+  "record": null,
+  "source_url": null,
+  "status": "activation_required",
+  "warnings": [
+    "Official connector is disabled until API/MoU activation."
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "passed": true,
+  "exceptions": [],
+  "field_id": "AP_GNT_FTW_CROP_TEST",
+  "sar_status": "accepted",
+  "sar_scene_id": "S1D_IW_GRDH_1SDV_20260817T003010_20260817T003035_004158_0079BF_rtc",
+  "set2_status": "accepted",
+  "set2_scene_id": "S2B_44PMC_20260628_0_L2A",
+  "multimodal_route": "OPTICAL_PRIMARY_SAR_ANCILLARY",
+  "set3_ndvi_mean": 0.324206,
+  "set4_verdict": "NORMAL_OR_UNRESOLVED",
+  "set4_confidence_pct": 64.0,
+  "weather_reference_end": "2026-06-28",
+  "water_balance_15d_mm": -12.67
+}

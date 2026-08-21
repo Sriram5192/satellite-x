@@ -1,0 +1,105 @@
+{
+  "schema_version": "1.1.0",
+  "field_id": "AP_GNT_FTW_CROP_TEST",
+  "computed_at": "2026-08-17T13:21:19.034413Z",
+  "scene_id": "S2C_44PMC_20260524_0_L2A",
+  "scene_date": "2026-05-24",
+  "spectral_valid_pixels": 22,
+  "spectral_valid_pct": 84.615,
+  "indices": {
+    "ndvi": {
+      "mean": 0.352138,
+      "median": 0.349748,
+      "p10": 0.316254,
+      "p90": 0.389462,
+      "minimum": 0.299451,
+      "maximum": 0.405882,
+      "valid_pixels": 22
+    },
+    "evi": {
+      "mean": 0.12099,
+      "median": 0.120524,
+      "p10": 0.103998,
+      "p90": 0.134286,
+      "minimum": 0.100705,
+      "maximum": 0.143675,
+      "valid_pixels": 22
+    },
+    "savi": {
+      "mean": 0.153751,
+      "median": 0.153883,
+      "p10": 0.134408,
+      "p90": 0.169865,
+      "minimum": 0.130093,
+      "maximum": 0.183081,
+      "valid_pixels": 22
+    },
+    "ndre": {
+      "mean": 0.176327,
+      "median": 0.178756,
+      "p10": 0.145196,
+      "p90": 0.205786,
+      "minimum": 0.135093,
+      "maximum": 0.226096,
+      "valid_pixels": 22
+    },
+    "ndmi": {
+      "mean": -0.164865,
+      "median": -0.166842,
+      "p10": -0.190295,
+      "p90": -0.141753,
+      "minimum": -0.195551,
+      "maximum": -0.115684,
+      "valid_pixels": 22
+    },
+    "ndwi": {
+      "mean": -0.628469,
+      "median": -0.634791,
+      "p10": -0.659425,
+      "p90": -0.588608,
+      "minimum": -0.682322,
+      "maximum": -0.577348,
+      "valid_pixels": 22
+    },
+    "gndvi": {
+      "mean": 0.628469,
+      "median": 0.634791,
+      "p10": 0.588608,
+      "p90": 0.659425,
+      "minimum": 0.577348,
+      "maximum": 0.682322,
+      "valid_pixels": 22
+    }
+  },
+  "phenology": {
+    "crop_type": "chilli",
+    "das": 23,
+    "stage_name": "Vegetative",
+    "stage_start_das": 20,
+    "stage_end_das": 50,
+    "expected_ndvi_low": 0.22,
+    "expected_ndvi_high": 0.45,
+    "criticality": "MEDIUM",
+    "ndvi_position": "WITHIN_EXPECTED"
+  },
+  "water_balance": {
+    "rain_15d_mm": 12.2,
+    "et0_15d_mm": 106.48,
+    "water_balance_15d_mm": -94.28,
+    "humidity_mean_5d_pct": 56.008,
+    "deficit_flag": true,
+    "threshold_mm": -30.0
+  },
+  "soil": {
+    "ph_h2o": 6.7,
+    "nitrogen_g_kg": 1.42,
+    "depth": "0-5cm",
+    "statistic": "mean",
+    "source": "cache",
+    "fallback_used": true,
+    "cache_key": "soilgrids-b6e20a1b30fbc0c545a23b2aade085a0248da1e5cf4956958c371a7ad56d5ee8"
+  },
+  "data_warnings": [
+    "Soil source is cache; it is not treated as verified live soil."
+  ]
+}

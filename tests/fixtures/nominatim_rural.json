@@ -1,0 +1,32 @@
+{
+  "place_id": 250476302,
+  "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+  "osm_type": "way",
+  "osm_id": 277715573,
+  "lat": "16.1887274",
+  "lon": "80.3441675",
+  "category": "highway",
+  "type": "primary",
+  "place_rank": 26,
+  "importance": 0.05339178072785531,
+  "addresstype": "road",
+  "name": "Guntur - Parchuru Road",
+  "display_name": "Guntur - Parchuru Road, Tikkireddypalem, Prathipadu, Guntur, Andhra Pradesh, 522019, India",
+  "address": {
+    "road": "Guntur - Parchuru Road",
+    "village": "Tikkireddypalem",
+    "county": "Prathipadu",
+    "state_district": "Guntur",
+    "state": "Andhra Pradesh",
+    "ISO3166-2-lvl4": "IN-AP",
+    "postcode": "522019",
+    "country": "India",
+    "country_code": "in"
+  },
+  "boundingbox": [
+    "16.1882251",
+    "16.1945725",
+    "80.3435842",
+    "80.3505295"
+  ]
+}

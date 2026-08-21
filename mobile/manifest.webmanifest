@@ -1,0 +1,9 @@
+{
+  "name": "SATELLITE-X Field Verification",
+  "short_name": "SX Verify",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#eef5ef",
+  "theme_color": "#14532d",
+  "description": "Offline-first authenticated ground-verification evidence capture"
+}

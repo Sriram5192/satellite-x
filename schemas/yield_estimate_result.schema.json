@@ -1,0 +1,91 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "estimate_kg_per_acre": {
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Estimate Kg Per Acre"
+    },
+    "field_id": {
+      "title": "Field Id",
+      "type": "string"
+    },
+    "generated_at": {
+      "format": "date-time",
+      "title": "Generated At",
+      "type": "string"
+    },
+    "lower_bound_kg_per_acre": {
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Lower Bound Kg Per Acre"
+    },
+    "model_id": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Model Id"
+    },
+    "production_authorized": {
+      "const": false,
+      "default": false,
+      "title": "Production Authorized",
+      "type": "boolean"
+    },
+    "status": {
+      "enum": [
+        "unavailable_unvalidated_model",
+        "experimental_human_review_required"
+      ],
+      "title": "Status",
+      "type": "string"
+    },
+    "upper_bound_kg_per_acre": {
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Upper Bound Kg Per Acre"
+    },
+    "warnings": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Warnings",
+      "type": "array"
+    }
+  },
+  "required": [
+    "field_id",
+    "status",
+    "generated_at",
+    "warnings"
+  ],
+  "title": "YieldEstimateResult",
+  "type": "object"
+}

@@ -1,0 +1,17 @@
+{
+  "cloud_db": 0.437774,
+  "combined_total_db": 7.569104,
+  "gaseous_db": 0.153801,
+  "ionospheric_fade_db": null,
+  "ionospheric_status": "not_applied_x_band_above_6_ghz",
+  "live_beacon_calibrated": false,
+  "model": "ITU-R_P.618_with_P.676_P.837_P.840",
+  "modeled_total_db": 7.569104,
+  "rain_db": 6.932008,
+  "tropospheric_scintillation_db": 0.820387,
+  "warnings": [
+    "ITU-R output is a long-term statistical prediction, not live beacon telemetry.",
+    "Climatology is used for omitted local meteorological inputs.",
+    "No measured ionospheric fade was supplied; no unverified ionospheric loss was invented."
+  ]
+}

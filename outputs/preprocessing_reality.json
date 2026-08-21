@@ -1,0 +1,56 @@
+{
+  "checked_at": "2026-08-18T16:20:15.689784+00:00",
+  "checks": {
+    "built_pct_equal": true,
+    "expanded_flag_true": true,
+    "expanded_scene_is_older_than_original_start": true,
+    "ndbi_equal": true,
+    "ndvi_equal": true,
+    "scl_counts_equal": true,
+    "spectral_pct_equal": true,
+    "spectral_pixels_equal": true,
+    "status_accepted": true,
+    "total_pixels_equal": true,
+    "urban_not_rejected": true,
+    "valid_pct_equal": true,
+    "valid_pixels_equal": true
+  },
+  "oracle": {
+    "built_pct": 0.0,
+    "counts": {
+      "5": 26
+    },
+    "mean_ndbi": 0.224481,
+    "mean_ndvi": 0.324206,
+    "spectral": 26,
+    "spectral_pct": 100.0,
+    "total": 26,
+    "valid": 26,
+    "valid_pct": 100.0
+  },
+  "output_quality": {
+    "acquired_at": "2026-06-28T05:14:27.094000Z",
+    "field_valid_pct": 100.0,
+    "in_original_range": false,
+    "quality": "MEDIUM",
+    "rejection_reasons": [],
+    "scene_cloud_pct": 25.91446,
+    "scene_id": "S2B_44PMC_20260628_0_L2A",
+    "scl_counts": {
+      "5": 26
+    },
+    "total_field_pixels": 26,
+    "valid_field_pixels": 26
+  },
+  "output_urban_gate": {
+    "built_pixel_pct": 0.0,
+    "condition": "URBAN_MEAN_CONDITION_NOT_MET",
+    "mean_ndbi": 0.224481,
+    "mean_ndvi": 0.324206,
+    "spectral_valid_pct": 100.0,
+    "spectral_valid_pixels": 26,
+    "urban_rejected": false
+  },
+  "pass": true,
+  "scene_id": "S2B_44PMC_20260628_0_L2A"
+}

@@ -1,0 +1,40 @@
+{
+  "candidates": [],
+  "checked_at": "2026-08-17T10:16:17.118980Z",
+  "location": {
+    "blocking": true,
+    "category": "highway",
+    "country_code": "IN",
+    "display_name": "SH288, Guntur Urban, Arundelpet, Brodipet, Guntur, Andhra Pradesh, 522001, India",
+    "feature_distance_m": 11.321,
+    "feature_type": "primary",
+    "matched_latitude": 16.3066111,
+    "matched_longitude": 80.4365517,
+    "name": "SH288",
+    "raw_osm_id": 848767149,
+    "raw_osm_type": "way",
+    "reason_code": "POINT_ON_OR_NEXT_TO_ROAD",
+    "source": "nominatim_live",
+    "subdivision_code": "AP"
+  },
+  "reason_codes": [
+    "POINT_ON_OR_NEXT_TO_ROAD"
+  ],
+  "request": {
+    "acres": 5.0,
+    "country_code": "IN",
+    "field_id": "AP_GNT_ROAD_NEGATIVE",
+    "gps_tolerance_m": 30.0,
+    "latitude": 16.3067,
+    "location_consent": true,
+    "longitude": 80.4365,
+    "search_radius_m": 300.0,
+    "subdivision_code": "AP"
+  },
+  "schema_version": "1.0.0",
+  "selected_candidate_id": null,
+  "status": "rejected_location",
+  "warnings": [
+    "Location preflight blocked automatic polygon recovery. Correct the GPS point or provide an official/user-drawn boundary."
+  ]
+}

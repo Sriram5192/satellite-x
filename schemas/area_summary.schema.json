@@ -1,0 +1,129 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "contains_personal_data": {
+      "const": false,
+      "default": false,
+      "title": "Contains Personal Data",
+      "type": "boolean"
+    },
+    "crop_acres": {
+      "additionalProperties": {
+        "type": "number"
+      },
+      "title": "Crop Acres",
+      "type": "object"
+    },
+    "field_count": {
+      "anyOf": [
+        {
+          "minimum": 0,
+          "type": "integer"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Field Count"
+    },
+    "generated_at": {
+      "format": "date-time",
+      "title": "Generated At",
+      "type": "string"
+    },
+    "low_confidence_fields": {
+      "anyOf": [
+        {
+          "minimum": 0,
+          "type": "integer"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Low Confidence Fields"
+    },
+    "minimum_group_size": {
+      "default": 5,
+      "minimum": 5,
+      "title": "Minimum Group Size",
+      "type": "integer"
+    },
+    "privacy_status": {
+      "default": "released",
+      "enum": [
+        "released",
+        "suppressed_small_group"
+      ],
+      "title": "Privacy Status",
+      "type": "string"
+    },
+    "scope_code": {
+      "title": "Scope Code",
+      "type": "string"
+    },
+    "scope_level": {
+      "enum": [
+        "village",
+        "mandal",
+        "district"
+      ],
+      "title": "Scope Level",
+      "type": "string"
+    },
+    "suppression_reason": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Suppression Reason"
+    },
+    "total_agri_acres": {
+      "anyOf": [
+        {
+          "minimum": 0,
+          "type": "number"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Total Agri Acres"
+    },
+    "verdict_acres": {
+      "additionalProperties": {
+        "type": "number"
+      },
+      "title": "Verdict Acres",
+      "type": "object"
+    },
+    "verification_required_fields": {
+      "anyOf": [
+        {
+          "minimum": 0,
+          "type": "integer"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Verification Required Fields"
+    }
+  },
+  "required": [
+    "scope_level",
+    "scope_code",
+    "generated_at"
+  ],
+  "title": "AreaSummary",
+  "type": "object"
+}

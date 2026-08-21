@@ -1,0 +1,82 @@
+{
+  "$defs": {
+    "CropType": {
+      "enum": [
+        "cotton",
+        "chilli",
+        "paddy"
+      ],
+      "title": "CropType",
+      "type": "string"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "acres": {
+      "exclusiveMinimum": 0,
+      "maximum": 1000000,
+      "title": "Acres",
+      "type": "number"
+    },
+    "analysis_date": {
+      "format": "date",
+      "title": "Analysis Date",
+      "type": "string"
+    },
+    "boundary_geojson": {
+      "anyOf": [
+        {
+          "additionalProperties": true,
+          "type": "object"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Boundary Geojson"
+    },
+    "crop_type": {
+      "$ref": "#/$defs/CropType"
+    },
+    "field_id": {
+      "pattern": "^[A-Za-z0-9_-]{1,64}$",
+      "title": "Field Id",
+      "type": "string"
+    },
+    "latitude": {
+      "maximum": 90,
+      "minimum": -90,
+      "title": "Latitude",
+      "type": "number"
+    },
+    "longitude": {
+      "maximum": 180,
+      "minimum": -180,
+      "title": "Longitude",
+      "type": "number"
+    },
+    "scan_range_days": {
+      "default": 30,
+      "maximum": 180,
+      "minimum": 1,
+      "title": "Scan Range Days",
+      "type": "integer"
+    },
+    "sowing_date": {
+      "format": "date",
+      "title": "Sowing Date",
+      "type": "string"
+    }
+  },
+  "required": [
+    "field_id",
+    "latitude",
+    "longitude",
+    "crop_type",
+    "sowing_date",
+    "acres"
+  ],
+  "title": "FarmInput",
+  "type": "object"
+}

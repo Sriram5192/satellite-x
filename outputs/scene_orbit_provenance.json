@@ -1,0 +1,14 @@
+{
+  "absolute_epoch_gap_hours": 1264.689431,
+  "expected_norad_id": 42063,
+  "scene_id": "S2B_44PMC_20260628_0_L2A",
+  "scene_time_utc": "2026-06-28T05:14:27.094000Z",
+  "spacecraft_code": "S2B",
+  "status": "historical_tle_required",
+  "tle_epoch": "2026-08-19T21:55:49.046295Z",
+  "tle_norad_id": 42063,
+  "usable_for_pass_validation": false,
+  "warnings": [
+    "Latest TLE is too far from the historical scene; obtain an authorized historical TLE instead of back-propagating it."
+  ]
+}

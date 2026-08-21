@@ -1,0 +1,11 @@
+{
+  "acres": 2.4791228671574923,
+  "analysis_date": "2026-06-28",
+  "boundary_geojson": null,
+  "crop_type": "chilli",
+  "field_id": "AP_GNT_FTW_CROP_TEST",
+  "latitude": 16.064444813421694,
+  "longitude": 80.6059204280875,
+  "scan_range_days": 30,
+  "sowing_date": "2026-06-15"
+}

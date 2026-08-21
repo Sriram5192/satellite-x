@@ -1,0 +1,977 @@
+{
+  "scenario_purpose": "deterministic_validation_fixture",
+  "simulation_duration_seconds": 600,
+  "time_step_seconds": 1,
+  "contacts": [
+    {
+      "window_id": "PASS-1",
+      "start_second": 0,
+      "end_second": 600,
+      "channel_count": 2,
+      "per_channel_capacity_mbps": 280.0
+    }
+  ],
+  "requests": [
+    {
+      "request_id": "R000",
+      "station_id": "STATION-000",
+      "arrival_second": 0,
+      "deadline_second": 300,
+      "data_megabits": 4000,
+      "priority": 1
+    },
+    {
+      "request_id": "R001",
+      "station_id": "STATION-001",
+      "arrival_second": 1,
+      "deadline_second": 330,
+      "data_megabits": 4500,
+      "priority": 2
+    },
+    {
+      "request_id": "R002",
+      "station_id": "STATION-002",
+      "arrival_second": 2,
+      "deadline_second": 360,
+      "data_megabits": 5000,
+      "priority": 3
+    },
+    {
+      "request_id": "R003",
+      "station_id": "STATION-003",
+      "arrival_second": 3,
+      "deadline_second": 390,
+      "data_megabits": 5500,
+      "priority": 4
+    },
+    {
+      "request_id": "R004",
+      "station_id": "STATION-004",
+      "arrival_second": 4,
+      "deadline_second": 420,
+      "data_megabits": 4000,
+      "priority": 5
+    },
+    {
+      "request_id": "R005",
+      "station_id": "STATION-005",
+      "arrival_second": 5,
+      "deadline_second": 300,
+      "data_megabits": 4500,
+      "priority": 6
+    },
+    {
+      "request_id": "R006",
+      "station_id": "STATION-006",
+      "arrival_second": 6,
+      "deadline_second": 330,
+      "data_megabits": 5000,
+      "priority": 7
+    },
+    {
+      "request_id": "R007",
+      "station_id": "STATION-007",
+      "arrival_second": 7,
+      "deadline_second": 360,
+      "data_megabits": 5500,
+      "priority": 8
+    },
+    {
+      "request_id": "R008",
+      "station_id": "STATION-008",
+      "arrival_second": 8,
+      "deadline_second": 390,
+      "data_megabits": 4000,
+      "priority": 9
+    },
+    {
+      "request_id": "R009",
+      "station_id": "STATION-009",
+      "arrival_second": 9,
+      "deadline_second": 420,
+      "data_megabits": 4500,
+      "priority": 10
+    },
+    {
+      "request_id": "R010",
+      "station_id": "STATION-010",
+      "arrival_second": 10,
+      "deadline_second": 300,
+      "data_megabits": 5000,
+      "priority": 1
+    },
+    {
+      "request_id": "R011",
+      "station_id": "STATION-011",
+      "arrival_second": 11,
+      "deadline_second": 330,
+      "data_megabits": 5500,
+      "priority": 2
+    },
+    {
+      "request_id": "R012",
+      "station_id": "STATION-012",
+      "arrival_second": 12,
+      "deadline_second": 360,
+      "data_megabits": 4000,
+      "priority": 3
+    },
+    {
+      "request_id": "R013",
+      "station_id": "STATION-013",
+      "arrival_second": 13,
+      "deadline_second": 390,
+      "data_megabits": 4500,
+      "priority": 4
+    },
+    {
+      "request_id": "R014",
+      "station_id": "STATION-014",
+      "arrival_second": 14,
+      "deadline_second": 420,
+      "data_megabits": 5000,
+      "priority": 5
+    },
+    {
+      "request_id": "R015",
+      "station_id": "STATION-015",
+      "arrival_second": 15,
+      "deadline_second": 300,
+      "data_megabits": 5500,
+      "priority": 6
+    },
+    {
+      "request_id": "R016",
+      "station_id": "STATION-016",
+      "arrival_second": 16,
+      "deadline_second": 330,
+      "data_megabits": 4000,
+      "priority": 7
+    },
+    {
+      "request_id": "R017",
+      "station_id": "STATION-017",
+      "arrival_second": 17,
+      "deadline_second": 360,
+      "data_megabits": 4500,
+      "priority": 8
+    },
+    {
+      "request_id": "R018",
+      "station_id": "STATION-018",
+      "arrival_second": 18,
+      "deadline_second": 390,
+      "data_megabits": 5000,
+      "priority": 9
+    },
+    {
+      "request_id": "R019",
+      "station_id": "STATION-019",
+      "arrival_second": 19,
+      "deadline_second": 420,
+      "data_megabits": 5500,
+      "priority": 10
+    },
+    {
+      "request_id": "R020",
+      "station_id": "STATION-020",
+      "arrival_second": 20,
+      "deadline_second": 300,
+      "data_megabits": 4000,
+      "priority": 1
+    },
+    {
+      "request_id": "R021",
+      "station_id": "STATION-021",
+      "arrival_second": 21,
+      "deadline_second": 330,
+      "data_megabits": 4500,
+      "priority": 2
+    },
+    {
+      "request_id": "R022",
+      "station_id": "STATION-022",
+      "arrival_second": 22,
+      "deadline_second": 360,
+      "data_megabits": 5000,
+      "priority": 3
+    },
+    {
+      "request_id": "R023",
+      "station_id": "STATION-023",
+      "arrival_second": 23,
+      "deadline_second": 390,
+      "data_megabits": 5500,
+      "priority": 4
+    },
+    {
+      "request_id": "R024",
+      "station_id": "STATION-024",
+      "arrival_second": 24,
+      "deadline_second": 420,
+      "data_megabits": 4000,
+      "priority": 5
+    },
+    {
+      "request_id": "R025",
+      "station_id": "STATION-025",
+      "arrival_second": 25,
+      "deadline_second": 300,
+      "data_megabits": 4500,
+      "priority": 6
+    },
+    {
+      "request_id": "R026",
+      "station_id": "STATION-026",
+      "arrival_second": 26,
+      "deadline_second": 330,
+      "data_megabits": 5000,
+      "priority": 7
+    },
+    {
+      "request_id": "R027",
+      "station_id": "STATION-027",
+      "arrival_second": 27,
+      "deadline_second": 360,
+      "data_megabits": 5500,
+      "priority": 8
+    },
+    {
+      "request_id": "R028",
+      "station_id": "STATION-028",
+      "arrival_second": 28,
+      "deadline_second": 390,
+      "data_megabits": 4000,
+      "priority": 9
+    },
+    {
+      "request_id": "R029",
+      "station_id": "STATION-029",
+      "arrival_second": 29,
+      "deadline_second": 420,
+      "data_megabits": 4500,
+      "priority": 10
+    },
+    {
+      "request_id": "R030",
+      "station_id": "STATION-030",
+      "arrival_second": 30,
+      "deadline_second": 300,
+      "data_megabits": 5000,
+      "priority": 1
+    },
+    {
+      "request_id": "R031",
+      "station_id": "STATION-031",
+      "arrival_second": 31,
+      "deadline_second": 330,
+      "data_megabits": 5500,
+      "priority": 2
+    },
+    {
+      "request_id": "R032",
+      "station_id": "STATION-032",
+      "arrival_second": 32,
+      "deadline_second": 360,
+      "data_megabits": 4000,
+      "priority": 3
+    },
+    {
+      "request_id": "R033",
+      "station_id": "STATION-033",
+      "arrival_second": 33,
+      "deadline_second": 390,
+      "data_megabits": 4500,
+      "priority": 4
+    },
+    {
+      "request_id": "R034",
+      "station_id": "STATION-034",
+      "arrival_second": 34,
+      "deadline_second": 420,
+      "data_megabits": 5000,
+      "priority": 5
+    },
+    {
+      "request_id": "R035",
+      "station_id": "STATION-035",
+      "arrival_second": 35,
+      "deadline_second": 300,
+      "data_megabits": 5500,
+      "priority": 6
+    },
+    {
+      "request_id": "R036",
+      "station_id": "STATION-036",
+      "arrival_second": 36,
+      "deadline_second": 330,
+      "data_megabits": 4000,
+      "priority": 7
+    },
+    {
+      "request_id": "R037",
+      "station_id": "STATION-037",
+      "arrival_second": 37,
+      "deadline_second": 360,
+      "data_megabits": 4500,
+      "priority": 8
+    },
+    {
+      "request_id": "R038",
+      "station_id": "STATION-038",
+      "arrival_second": 38,
+      "deadline_second": 390,
+      "data_megabits": 5000,
+      "priority": 9
+    },
+    {
+      "request_id": "R039",
+      "station_id": "STATION-039",
+      "arrival_second": 39,
+      "deadline_second": 420,
+      "data_megabits": 5500,
+      "priority": 10
+    },
+    {
+      "request_id": "R040",
+      "station_id": "STATION-040",
+      "arrival_second": 40,
+      "deadline_second": 300,
+      "data_megabits": 4000,
+      "priority": 1
+    },
+    {
+      "request_id": "R041",
+      "station_id": "STATION-041",
+      "arrival_second": 41,
+      "deadline_second": 330,
+      "data_megabits": 4500,
+      "priority": 2
+    },
+    {
+      "request_id": "R042",
+      "station_id": "STATION-042",
+      "arrival_second": 42,
+      "deadline_second": 360,
+      "data_megabits": 5000,
+      "priority": 3
+    },
+    {
+      "request_id": "R043",
+      "station_id": "STATION-043",
+      "arrival_second": 43,
+      "deadline_second": 390,
+      "data_megabits": 5500,
+      "priority": 4
+    },
+    {
+      "request_id": "R044",
+      "station_id": "STATION-044",
+      "arrival_second": 44,
+      "deadline_second": 420,
+      "data_megabits": 4000,
+      "priority": 5
+    },
+    {
+      "request_id": "R045",
+      "station_id": "STATION-045",
+      "arrival_second": 45,
+      "deadline_second": 300,
+      "data_megabits": 4500,
+      "priority": 6
+    },
+    {
+      "request_id": "R046",
+      "station_id": "STATION-046",
+      "arrival_second": 46,
+      "deadline_second": 330,
+      "data_megabits": 5000,
+      "priority": 7
+    },
+    {
+      "request_id": "R047",
+      "station_id": "STATION-047",
+      "arrival_second": 47,
+      "deadline_second": 360,
+      "data_megabits": 5500,
+      "priority": 8
+    },
+    {
+      "request_id": "R048",
+      "station_id": "STATION-048",
+      "arrival_second": 48,
+      "deadline_second": 390,
+      "data_megabits": 4000,
+      "priority": 9
+    },
+    {
+      "request_id": "R049",
+      "station_id": "STATION-049",
+      "arrival_second": 49,
+      "deadline_second": 420,
+      "data_megabits": 4500,
+      "priority": 10
+    },
+    {
+      "request_id": "R050",
+      "station_id": "STATION-050",
+      "arrival_second": 50,
+      "deadline_second": 300,
+      "data_megabits": 5000,
+      "priority": 1
+    },
+    {
+      "request_id": "R051",
+      "station_id": "STATION-051",
+      "arrival_second": 51,
+      "deadline_second": 330,
+      "data_megabits": 5500,
+      "priority": 2
+    },
+    {
+      "request_id": "R052",
+      "station_id": "STATION-052",
+      "arrival_second": 52,
+      "deadline_second": 360,
+      "data_megabits": 4000,
+      "priority": 3
+    },
+    {
+      "request_id": "R053",
+      "station_id": "STATION-053",
+      "arrival_second": 53,
+      "deadline_second": 390,
+      "data_megabits": 4500,
+      "priority": 4
+    },
+    {
+      "request_id": "R054",
+      "station_id": "STATION-054",
+      "arrival_second": 54,
+      "deadline_second": 420,
+      "data_megabits": 5000,
+      "priority": 5
+    },
+    {
+      "request_id": "R055",
+      "station_id": "STATION-055",
+      "arrival_second": 55,
+      "deadline_second": 300,
+      "data_megabits": 5500,
+      "priority": 6
+    },
+    {
+      "request_id": "R056",
+      "station_id": "STATION-056",
+      "arrival_second": 56,
+      "deadline_second": 330,
+      "data_megabits": 4000,
+      "priority": 7
+    },
+    {
+      "request_id": "R057",
+      "station_id": "STATION-057",
+      "arrival_second": 57,
+      "deadline_second": 360,
+      "data_megabits": 4500,
+      "priority": 8
+    },
+    {
+      "request_id": "R058",
+      "station_id": "STATION-058",
+      "arrival_second": 58,
+      "deadline_second": 390,
+      "data_megabits": 5000,
+      "priority": 9
+    },
+    {
+      "request_id": "R059",
+      "station_id": "STATION-059",
+      "arrival_second": 59,
+      "deadline_second": 420,
+      "data_megabits": 5500,
+      "priority": 10
+    },
+    {
+      "request_id": "R060",
+      "station_id": "STATION-060",
+      "arrival_second": 0,
+      "deadline_second": 300,
+      "data_megabits": 4000,
+      "priority": 1
+    },
+    {
+      "request_id": "R061",
+      "station_id": "STATION-061",
+      "arrival_second": 1,
+      "deadline_second": 330,
+      "data_megabits": 4500,
+      "priority": 2
+    },
+    {
+      "request_id": "R062",
+      "station_id": "STATION-062",
+      "arrival_second": 2,
+      "deadline_second": 360,
+      "data_megabits": 5000,
+      "priority": 3
+    },
+    {
+      "request_id": "R063",
+      "station_id": "STATION-063",
+      "arrival_second": 3,
+      "deadline_second": 390,
+      "data_megabits": 5500,
+      "priority": 4
+    },
+    {
+      "request_id": "R064",
+      "station_id": "STATION-064",
+      "arrival_second": 4,
+      "deadline_second": 420,
+      "data_megabits": 4000,
+      "priority": 5
+    },
+    {
+      "request_id": "R065",
+      "station_id": "STATION-065",
+      "arrival_second": 5,
+      "deadline_second": 300,
+      "data_megabits": 4500,
+      "priority": 6
+    },
+    {
+      "request_id": "R066",
+      "station_id": "STATION-066",
+      "arrival_second": 6,
+      "deadline_second": 330,
+      "data_megabits": 5000,
+      "priority": 7
+    },
+    {
+      "request_id": "R067",
+      "station_id": "STATION-067",
+      "arrival_second": 7,
+      "deadline_second": 360,
+      "data_megabits": 5500,
+      "priority": 8
+    },
+    {
+      "request_id": "R068",
+      "station_id": "STATION-068",
+      "arrival_second": 8,
+      "deadline_second": 390,
+      "data_megabits": 4000,
+      "priority": 9
+    },
+    {
+      "request_id": "R069",
+      "station_id": "STATION-069",
+      "arrival_second": 9,
+      "deadline_second": 420,
+      "data_megabits": 4500,
+      "priority": 10
+    },
+    {
+      "request_id": "R070",
+      "station_id": "STATION-070",
+      "arrival_second": 10,
+      "deadline_second": 300,
+      "data_megabits": 5000,
+      "priority": 1
+    },
+    {
+      "request_id": "R071",
+      "station_id": "STATION-071",
+      "arrival_second": 11,
+      "deadline_second": 330,
+      "data_megabits": 5500,
+      "priority": 2
+    },
+    {
+      "request_id": "R072",
+      "station_id": "STATION-072",
+      "arrival_second": 12,
+      "deadline_second": 360,
+      "data_megabits": 4000,
+      "priority": 3
+    },
+    {
+      "request_id": "R073",
+      "station_id": "STATION-073",
+      "arrival_second": 13,
+      "deadline_second": 390,
+      "data_megabits": 4500,
+      "priority": 4
+    },
+    {
+      "request_id": "R074",
+      "station_id": "STATION-074",
+      "arrival_second": 14,
+      "deadline_second": 420,
+      "data_megabits": 5000,
+      "priority": 5
+    },
+    {
+      "request_id": "R075",
+      "station_id": "STATION-075",
+      "arrival_second": 15,
+      "deadline_second": 300,
+      "data_megabits": 5500,
+      "priority": 6
+    },
+    {
+      "request_id": "R076",
+      "station_id": "STATION-076",
+      "arrival_second": 16,
+      "deadline_second": 330,
+      "data_megabits": 4000,
+      "priority": 7
+    },
+    {
+      "request_id": "R077",
+      "station_id": "STATION-077",
+      "arrival_second": 17,
+      "deadline_second": 360,
+      "data_megabits": 4500,
+      "priority": 8
+    },
+    {
+      "request_id": "R078",
+      "station_id": "STATION-078",
+      "arrival_second": 18,
+      "deadline_second": 390,
+      "data_megabits": 5000,
+      "priority": 9
+    },
+    {
+      "request_id": "R079",
+      "station_id": "STATION-079",
+      "arrival_second": 19,
+      "deadline_second": 420,
+      "data_megabits": 5500,
+      "priority": 10
+    },
+    {
+      "request_id": "R080",
+      "station_id": "STATION-080",
+      "arrival_second": 20,
+      "deadline_second": 300,
+      "data_megabits": 4000,
+      "priority": 1
+    },
+    {
+      "request_id": "R081",
+      "station_id": "STATION-081",
+      "arrival_second": 21,
+      "deadline_second": 330,
+      "data_megabits": 4500,
+      "priority": 2
+    },
+    {
+      "request_id": "R082",
+      "station_id": "STATION-082",
+      "arrival_second": 22,
+      "deadline_second": 360,
+      "data_megabits": 5000,
+      "priority": 3
+    },
+    {
+      "request_id": "R083",
+      "station_id": "STATION-083",
+      "arrival_second": 23,
+      "deadline_second": 390,
+      "data_megabits": 5500,
+      "priority": 4
+    },
+    {
+      "request_id": "R084",
+      "station_id": "STATION-084",
+      "arrival_second": 24,
+      "deadline_second": 420,
+      "data_megabits": 4000,
+      "priority": 5
+    },
+    {
+      "request_id": "R085",
+      "station_id": "STATION-085",
+      "arrival_second": 25,
+      "deadline_second": 300,
+      "data_megabits": 4500,
+      "priority": 6
+    },
+    {
+      "request_id": "R086",
+      "station_id": "STATION-086",
+      "arrival_second": 26,
+      "deadline_second": 330,
+      "data_megabits": 5000,
+      "priority": 7
+    },
+    {
+      "request_id": "R087",
+      "station_id": "STATION-087",
+      "arrival_second": 27,
+      "deadline_second": 360,
+      "data_megabits": 5500,
+      "priority": 8
+    },
+    {
+      "request_id": "R088",
+      "station_id": "STATION-088",
+      "arrival_second": 28,
+      "deadline_second": 390,
+      "data_megabits": 4000,
+      "priority": 9
+    },
+    {
+      "request_id": "R089",
+      "station_id": "STATION-089",
+      "arrival_second": 29,
+      "deadline_second": 420,
+      "data_megabits": 4500,
+      "priority": 10
+    },
+    {
+      "request_id": "R090",
+      "station_id": "STATION-090",
+      "arrival_second": 30,
+      "deadline_second": 300,
+      "data_megabits": 5000,
+      "priority": 1
+    },
+    {
+      "request_id": "R091",
+      "station_id": "STATION-091",
+      "arrival_second": 31,
+      "deadline_second": 330,
+      "data_megabits": 5500,
+      "priority": 2
+    },
+    {
+      "request_id": "R092",
+      "station_id": "STATION-092",
+      "arrival_second": 32,
+      "deadline_second": 360,
+      "data_megabits": 4000,
+      "priority": 3
+    },
+    {
+      "request_id": "R093",
+      "station_id": "STATION-093",
+      "arrival_second": 33,
+      "deadline_second": 390,
+      "data_megabits": 4500,
+      "priority": 4
+    },
+    {
+      "request_id": "R094",
+      "station_id": "STATION-094",
+      "arrival_second": 34,
+      "deadline_second": 420,
+      "data_megabits": 5000,
+      "priority": 5
+    },
+    {
+      "request_id": "R095",
+      "station_id": "STATION-095",
+      "arrival_second": 35,
+      "deadline_second": 300,
+      "data_megabits": 5500,
+      "priority": 6
+    },
+    {
+      "request_id": "R096",
+      "station_id": "STATION-096",
+      "arrival_second": 36,
+      "deadline_second": 330,
+      "data_megabits": 4000,
+      "priority": 7
+    },
+    {
+      "request_id": "R097",
+      "station_id": "STATION-097",
+      "arrival_second": 37,
+      "deadline_second": 360,
+      "data_megabits": 4500,
+      "priority": 8
+    },
+    {
+      "request_id": "R098",
+      "station_id": "STATION-098",
+      "arrival_second": 38,
+      "deadline_second": 390,
+      "data_megabits": 5000,
+      "priority": 9
+    },
+    {
+      "request_id": "R099",
+      "station_id": "STATION-099",
+      "arrival_second": 39,
+      "deadline_second": 420,
+      "data_megabits": 5500,
+      "priority": 10
+    },
+    {
+      "request_id": "R100",
+      "station_id": "STATION-100",
+      "arrival_second": 40,
+      "deadline_second": 300,
+      "data_megabits": 4000,
+      "priority": 1
+    },
+    {
+      "request_id": "R101",
+      "station_id": "STATION-101",
+      "arrival_second": 41,
+      "deadline_second": 330,
+      "data_megabits": 4500,
+      "priority": 2
+    },
+    {
+      "request_id": "R102",
+      "station_id": "STATION-102",
+      "arrival_second": 42,
+      "deadline_second": 360,
+      "data_megabits": 5000,
+      "priority": 3
+    },
+    {
+      "request_id": "R103",
+      "station_id": "STATION-103",
+      "arrival_second": 43,
+      "deadline_second": 390,
+      "data_megabits": 5500,
+      "priority": 4
+    },
+    {
+      "request_id": "R104",
+      "station_id": "STATION-104",
+      "arrival_second": 44,
+      "deadline_second": 420,
+      "data_megabits": 4000,
+      "priority": 5
+    },
+    {
+      "request_id": "R105",
+      "station_id": "STATION-105",
+      "arrival_second": 45,
+      "deadline_second": 300,
+      "data_megabits": 4500,
+      "priority": 6
+    },
+    {
+      "request_id": "R106",
+      "station_id": "STATION-106",
+      "arrival_second": 46,
+      "deadline_second": 330,
+      "data_megabits": 5000,
+      "priority": 7
+    },
+    {
+      "request_id": "R107",
+      "station_id": "STATION-107",
+      "arrival_second": 47,
+      "deadline_second": 360,
+      "data_megabits": 5500,
+      "priority": 8
+    },
+    {
+      "request_id": "R108",
+      "station_id": "STATION-108",
+      "arrival_second": 48,
+      "deadline_second": 390,
+      "data_megabits": 4000,
+      "priority": 9
+    },
+    {
+      "request_id": "R109",
+      "station_id": "STATION-109",
+      "arrival_second": 49,
+      "deadline_second": 420,
+      "data_megabits": 4500,
+      "priority": 10
+    },
+    {
+      "request_id": "R110",
+      "station_id": "STATION-110",
+      "arrival_second": 50,
+      "deadline_second": 300,
+      "data_megabits": 5000,
+      "priority": 1
+    },
+    {
+      "request_id": "R111",
+      "station_id": "STATION-111",
+      "arrival_second": 51,
+      "deadline_second": 330,
+      "data_megabits": 5500,
+      "priority": 2
+    },
+    {
+      "request_id": "R112",
+      "station_id": "STATION-112",
+      "arrival_second": 52,
+      "deadline_second": 360,
+      "data_megabits": 4000,
+      "priority": 3
+    },
+    {
+      "request_id": "R113",
+      "station_id": "STATION-113",
+      "arrival_second": 53,
+      "deadline_second": 390,
+      "data_megabits": 4500,
+      "priority": 4
+    },
+    {
+      "request_id": "R114",
+      "station_id": "STATION-114",
+      "arrival_second": 54,
+      "deadline_second": 420,
+      "data_megabits": 5000,
+      "priority": 5
+    },
+    {
+      "request_id": "R115",
+      "station_id": "STATION-115",
+      "arrival_second": 55,
+      "deadline_second": 300,
+      "data_megabits": 5500,
+      "priority": 6
+    },
+    {
+      "request_id": "R116",
+      "station_id": "STATION-116",
+      "arrival_second": 56,
+      "deadline_second": 330,
+      "data_megabits": 4000,
+      "priority": 7
+    },
+    {
+      "request_id": "R117",
+      "station_id": "STATION-117",
+      "arrival_second": 57,
+      "deadline_second": 360,
+      "data_megabits": 4500,
+      "priority": 8
+    },
+    {
+      "request_id": "R118",
+      "station_id": "STATION-118",
+      "arrival_second": 58,
+      "deadline_second": 390,
+      "data_megabits": 5000,
+      "priority": 9
+    },
+    {
+      "request_id": "R119",
+      "station_id": "STATION-119",
+      "arrival_second": 59,
+      "deadline_second": 420,
+      "data_megabits": 5500,
+      "priority": 10
+    }
+  ],
+  "scheduling_policy": "priority_earliest_deadline"
+}

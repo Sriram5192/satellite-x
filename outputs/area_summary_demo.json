@@ -1,0 +1,48 @@
+{
+  "demo_only": true,
+  "privacy_note": "One-field metrics are intentionally suppressed by k>=5 policy.",
+  "village": {
+    "village_code": "DEMO-V1",
+    "generated_at": "2026-08-18T00:00:00Z",
+    "privacy_status": "suppressed_small_group",
+    "minimum_group_size": 5,
+    "suppression_reason": "Aggregate suppressed because fewer than 5 fields are in scope.",
+    "field_count": null,
+    "total_agri_acres": null,
+    "crop_acres": {},
+    "verdict_acres": {},
+    "verification_required_fields": null,
+    "low_confidence_fields": null,
+    "contains_personal_data": false
+  },
+  "mandal": {
+    "scope_level": "mandal",
+    "scope_code": "DEMO-M1",
+    "generated_at": "2026-08-18T00:00:00Z",
+    "privacy_status": "suppressed_small_group",
+    "minimum_group_size": 5,
+    "suppression_reason": "Aggregate suppressed because fewer than 5 fields are in scope.",
+    "field_count": null,
+    "total_agri_acres": null,
+    "crop_acres": {},
+    "verdict_acres": {},
+    "verification_required_fields": null,
+    "low_confidence_fields": null,
+    "contains_personal_data": false
+  },
+  "district": {
+    "scope_level": "district",
+    "scope_code": "DEMO-GNT",
+    "generated_at": "2026-08-18T00:00:00Z",
+    "privacy_status": "suppressed_small_group",
+    "minimum_group_size": 5,
+    "suppression_reason": "Aggregate suppressed because fewer than 5 fields are in scope.",
+    "field_count": null,
+    "total_agri_acres": null,
+    "crop_acres": {},
+    "verdict_acres": {},
+    "verification_required_fields": null,
+    "low_confidence_fields": null,
+    "contains_personal_data": false
+  }
+}

@@ -1,0 +1,75 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "acres": {
+      "exclusiveMinimum": 0,
+      "maximum": 1000000,
+      "title": "Acres",
+      "type": "number"
+    },
+    "country_code": {
+      "default": "IN",
+      "pattern": "^[A-Z]{2}$",
+      "title": "Country Code",
+      "type": "string"
+    },
+    "field_id": {
+      "pattern": "^[A-Za-z0-9_-]{1,64}$",
+      "title": "Field Id",
+      "type": "string"
+    },
+    "gps_tolerance_m": {
+      "default": 30.0,
+      "maximum": 100,
+      "minimum": 5,
+      "title": "Gps Tolerance M",
+      "type": "number"
+    },
+    "latitude": {
+      "maximum": 90,
+      "minimum": -90,
+      "title": "Latitude",
+      "type": "number"
+    },
+    "location_consent": {
+      "const": true,
+      "title": "Location Consent",
+      "type": "boolean"
+    },
+    "longitude": {
+      "maximum": 180,
+      "minimum": -180,
+      "title": "Longitude",
+      "type": "number"
+    },
+    "search_radius_m": {
+      "default": 300.0,
+      "maximum": 1000,
+      "minimum": 30,
+      "title": "Search Radius M",
+      "type": "number"
+    },
+    "subdivision_code": {
+      "anyOf": [
+        {
+          "pattern": "^[A-Z0-9]{1,3}$",
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Subdivision Code"
+    }
+  },
+  "required": [
+    "field_id",
+    "latitude",
+    "longitude",
+    "acres",
+    "location_consent"
+  ],
+  "title": "PolygonRecoveryInput",
+  "type": "object"
+}

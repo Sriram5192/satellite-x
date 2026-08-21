@@ -1,0 +1,52 @@
+{
+  "oracle": "independent_ols_from_three_real_set3_outputs",
+  "expected": {
+    "evi": {
+      "slope_per_day": -0.003082,
+      "total_change": -0.179949
+    },
+    "gndvi": {
+      "slope_per_day": -0.001492,
+      "total_change": -0.065053
+    },
+    "ndmi": {
+      "slope_per_day": -0.002779,
+      "total_change": -0.179237
+    },
+    "ndre": {
+      "slope_per_day": -0.00303,
+      "total_change": -0.168036
+    },
+    "ndvi": {
+      "slope_per_day": -0.00485,
+      "total_change": -0.257103
+    },
+    "ndwi": {
+      "slope_per_day": 0.001492,
+      "total_change": 0.065053
+    },
+    "savi": {
+      "slope_per_day": -0.002381,
+      "total_change": -0.137236
+    }
+  },
+  "checks": {
+    "evi_slope": true,
+    "evi_change": true,
+    "gndvi_slope": true,
+    "gndvi_change": true,
+    "ndmi_slope": true,
+    "ndmi_change": true,
+    "ndre_slope": true,
+    "ndre_change": true,
+    "ndvi_slope": true,
+    "ndvi_change": true,
+    "ndwi_slope": true,
+    "ndwi_change": true,
+    "savi_slope": true,
+    "savi_change": true,
+    "observation_count": true,
+    "max_gap_days": true
+  },
+  "passed": true
+}

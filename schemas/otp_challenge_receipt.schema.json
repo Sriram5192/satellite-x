@@ -1,0 +1,30 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "challenge_id": {
+      "title": "Challenge Id",
+      "type": "string"
+    },
+    "expires_at": {
+      "format": "date-time",
+      "title": "Expires At",
+      "type": "string"
+    },
+    "masked_phone": {
+      "title": "Masked Phone",
+      "type": "string"
+    },
+    "provider_message_id": {
+      "title": "Provider Message Id",
+      "type": "string"
+    }
+  },
+  "required": [
+    "challenge_id",
+    "masked_phone",
+    "expires_at",
+    "provider_message_id"
+  ],
+  "title": "OtpChallengeReceipt",
+  "type": "object"
+}

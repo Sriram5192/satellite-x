@@ -1,0 +1,15 @@
+{
+  "python_digest": "af518cc5f8db45cec36d4ed42deb61db19226f8f053d7ecf72f102a3cd550502",
+  "javascript_digest": "af518cc5f8db45cec36d4ed42deb61db19226f8f053d7ecf72f102a3cd550502",
+  "checks": {
+    "python_js_digest_equal": true,
+    "ed25519_receipt_js_verify": true,
+    "app_js_syntax": true,
+    "service_worker_syntax": true,
+    "queue_uses_no_inner_html": true,
+    "service_worker_bypasses_api": true,
+    "offline_index_present": true,
+    "manifest_present": true
+  },
+  "passed": true
+}

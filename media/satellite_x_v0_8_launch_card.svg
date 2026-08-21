@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+<defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#062f2b"/><stop offset="0.55" stop-color="#0b4f6c"/><stop offset="1" stop-color="#312e81"/></linearGradient></defs>
+<rect width="1600" height="900" fill="url(#g)"/>
+<circle cx="1390" cy="140" r="210" fill="#22d3ee" opacity=".12"/><circle cx="1480" cy="760" r="300" fill="#a78bfa" opacity=".12"/>
+<text x="90" y="120" fill="#a7f3d0" font-family="Arial,sans-serif" font-size="30" font-weight="700">OPEN-DATA • EXPLAINABLE • FAIL-CLOSED</text>
+<text x="90" y="220" fill="white" font-family="Arial,sans-serif" font-size="78" font-weight="900">SATELLITE-X v0.8</text>
+<text x="90" y="280" fill="#dbeafe" font-family="Arial,sans-serif" font-size="34">Agriculture Intelligence + Orbit &amp; Communications Power Engine</text>
+<g font-family="Arial,sans-serif">
+<rect x="90" y="350" width="300" height="150" rx="24" fill="white" opacity=".95"/><text x="125" y="405" fill="#123" font-size="24">DETERMINISTIC</text><text x="125" y="465" fill="#047857" font-size="54" font-weight="900">95 PASS</text>
+<rect x="420" y="350" width="300" height="150" rx="24" fill="white" opacity=".95"/><text x="455" y="405" fill="#123" font-size="24">LIVE INTEGRATION</text><text x="455" y="465" fill="#047857" font-size="54" font-weight="900">8 PASS</text>
+<rect x="750" y="350" width="300" height="150" rx="24" fill="white" opacity=".95"/><text x="785" y="405" fill="#123" font-size="24">JSON SCHEMAS</text><text x="785" y="465" fill="#047857" font-size="54" font-weight="900">32 VALID</text>
+<rect x="1080" y="350" width="390" height="150" rx="24" fill="white" opacity=".95"/><text x="1115" y="405" fill="#123" font-size="24">ORBIT/COMMS ORACLE</text><text x="1115" y="465" fill="#047857" font-size="54" font-weight="900">16 / 16</text>
+</g>
+<text x="90" y="590" fill="white" font-family="Arial,sans-serif" font-size="30" font-weight="700">✓ Sentinel-2/Sentinel-1 field analytics</text>
+<text x="90" y="640" fill="white" font-family="Arial,sans-serif" font-size="30" font-weight="700">✓ Live CelesTrak TLE • SGP4 passes • dynamic Doppler</text>
+<text x="90" y="690" fill="white" font-family="Arial,sans-serif" font-size="30" font-weight="700">✓ ITU-R atmosphere • thermal link math • scheduled-contact DES</text>
+<text x="90" y="740" fill="white" font-family="Arial,sans-serif" font-size="30" font-weight="700">✓ Signed governance • encrypted evidence • independent Colab verification</text>
+<rect x="90" y="790" width="1380" height="62" rx="18" fill="#f59e0b"/><text x="780" y="831" text-anchor="middle" fill="#1f2937" font-family="Arial,sans-serif" font-size="24" font-weight="800">DEMO ≠ LIVE BEACON TELEMETRY OR ESA OPERATIONAL TRAFFIC — MISSING EVIDENCE STAYS EXPLICIT</text>
+</svg>

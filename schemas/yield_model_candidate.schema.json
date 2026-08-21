@@ -1,0 +1,186 @@
+{
+  "$defs": {
+    "SignedArtifact": {
+      "additionalProperties": false,
+      "properties": {
+        "artifact_id": {
+          "title": "Artifact Id",
+          "type": "string"
+        },
+        "artifact_type": {
+          "title": "Artifact Type",
+          "type": "string"
+        },
+        "issued_at": {
+          "format": "date-time",
+          "title": "Issued At",
+          "type": "string"
+        },
+        "key_id": {
+          "title": "Key Id",
+          "type": "string"
+        },
+        "parent_sha256": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Parent Sha256",
+          "type": "array"
+        },
+        "payload_sha256": {
+          "pattern": "^[0-9a-f]{64}$",
+          "title": "Payload Sha256",
+          "type": "string"
+        },
+        "public_key_base64": {
+          "title": "Public Key Base64",
+          "type": "string"
+        },
+        "signature_base64": {
+          "title": "Signature Base64",
+          "type": "string"
+        }
+      },
+      "required": [
+        "artifact_type",
+        "artifact_id",
+        "issued_at",
+        "payload_sha256",
+        "key_id",
+        "public_key_base64",
+        "signature_base64"
+      ],
+      "title": "SignedArtifact",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "candidate_id": {
+      "title": "Candidate Id",
+      "type": "string"
+    },
+    "coefficients": {
+      "additionalProperties": {
+        "type": "number"
+      },
+      "title": "Coefficients",
+      "type": "object"
+    },
+    "crop_type": {
+      "title": "Crop Type",
+      "type": "string"
+    },
+    "dataset_purpose": {
+      "enum": [
+        "production_verified",
+        "deterministic_validation_fixture"
+      ],
+      "title": "Dataset Purpose",
+      "type": "string"
+    },
+    "dataset_sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "title": "Dataset Sha256",
+      "type": "string"
+    },
+    "district_code": {
+      "title": "District Code",
+      "type": "string"
+    },
+    "feature_names": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Feature Names",
+      "type": "array"
+    },
+    "generated_at": {
+      "format": "date-time",
+      "title": "Generated At",
+      "type": "string"
+    },
+    "independent_seasons": {
+      "title": "Independent Seasons",
+      "type": "integer"
+    },
+    "intercept_kg_per_acre": {
+      "title": "Intercept Kg Per Acre",
+      "type": "number"
+    },
+    "model_signature": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/SignedArtifact"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null
+    },
+    "production_authorized": {
+      "const": false,
+      "default": false,
+      "title": "Production Authorized",
+      "type": "boolean"
+    },
+    "status": {
+      "enum": [
+        "candidate_requires_human_approval",
+        "validation_fixture_only"
+      ],
+      "title": "Status",
+      "type": "string"
+    },
+    "training_records": {
+      "title": "Training Records",
+      "type": "integer"
+    },
+    "validation_abs_residual_q95_kg_per_acre": {
+      "exclusiveMinimum": 0,
+      "title": "Validation Abs Residual Q95 Kg Per Acre",
+      "type": "number"
+    },
+    "validation_mae_kg_per_acre": {
+      "minimum": 0,
+      "title": "Validation Mae Kg Per Acre",
+      "type": "number"
+    },
+    "validation_method": {
+      "const": "leave_one_season_out",
+      "default": "leave_one_season_out",
+      "title": "Validation Method",
+      "type": "string"
+    },
+    "validation_r2": {
+      "title": "Validation R2",
+      "type": "number"
+    },
+    "validation_rmse_kg_per_acre": {
+      "minimum": 0,
+      "title": "Validation Rmse Kg Per Acre",
+      "type": "number"
+    }
+  },
+  "required": [
+    "candidate_id",
+    "crop_type",
+    "district_code",
+    "feature_names",
+    "coefficients",
+    "intercept_kg_per_acre",
+    "validation_r2",
+    "validation_mae_kg_per_acre",
+    "validation_rmse_kg_per_acre",
+    "validation_abs_residual_q95_kg_per_acre",
+    "training_records",
+    "independent_seasons",
+    "dataset_sha256",
+    "dataset_purpose",
+    "generated_at",
+    "status"
+  ],
+  "title": "YieldModelCandidate",
+  "type": "object"
+}

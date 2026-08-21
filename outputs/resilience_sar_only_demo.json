@@ -1,0 +1,12 @@
+{
+  "decided_at": "2026-08-17T16:30:58.645063Z",
+  "diagnosis_allowed": false,
+  "field_id": "AP_GNT_FTW_CROP_TEST",
+  "optical_analytics_allowed": false,
+  "optical_indices_available": false,
+  "sar_evidence_available": true,
+  "status": "SAR_ONLY_UNRESOLVED",
+  "warnings": [
+    "Only SAR backscatter evidence is available. No optical indices, crop-stress verdict, or agronomic diagnosis is generated."
+  ]
+}

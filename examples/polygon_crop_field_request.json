@@ -1,0 +1,11 @@
+{
+  "field_id": "AP_GNT_FTW_CROP_TEST",
+  "latitude": 16.064444813421694,
+  "longitude": 80.6059204280875,
+  "acres": 2.4791228671574923,
+  "location_consent": true,
+  "country_code": "IN",
+  "subdivision_code": "AP",
+  "search_radius_m": 300,
+  "gps_tolerance_m": 30
+}

@@ -1,0 +1,81 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "cloud_db": {
+      "title": "Cloud Db",
+      "type": "number"
+    },
+    "combined_total_db": {
+      "title": "Combined Total Db",
+      "type": "number"
+    },
+    "gaseous_db": {
+      "title": "Gaseous Db",
+      "type": "number"
+    },
+    "ionospheric_fade_db": {
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "title": "Ionospheric Fade Db"
+    },
+    "ionospheric_status": {
+      "enum": [
+        "measured_value_included",
+        "not_applied_x_band_above_6_ghz",
+        "requires_measured_or_calibrated_input"
+      ],
+      "title": "Ionospheric Status",
+      "type": "string"
+    },
+    "live_beacon_calibrated": {
+      "const": false,
+      "default": false,
+      "title": "Live Beacon Calibrated",
+      "type": "boolean"
+    },
+    "model": {
+      "const": "ITU-R_P.618_with_P.676_P.837_P.840",
+      "title": "Model",
+      "type": "string"
+    },
+    "modeled_total_db": {
+      "title": "Modeled Total Db",
+      "type": "number"
+    },
+    "rain_db": {
+      "title": "Rain Db",
+      "type": "number"
+    },
+    "tropospheric_scintillation_db": {
+      "title": "Tropospheric Scintillation Db",
+      "type": "number"
+    },
+    "warnings": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Warnings",
+      "type": "array"
+    }
+  },
+  "required": [
+    "model",
+    "gaseous_db",
+    "cloud_db",
+    "rain_db",
+    "tropospheric_scintillation_db",
+    "modeled_total_db",
+    "ionospheric_fade_db",
+    "combined_total_db",
+    "ionospheric_status",
+    "warnings"
+  ],
+  "title": "AtmosphericLossResult",
+  "type": "object"
+}

@@ -1,0 +1,387 @@
+{
+  "norad_id": 40697,
+  "passes": [
+    {
+      "aos": "2026-08-20T05:29:20.963962Z",
+      "duration_seconds": 610.57,
+      "los": "2026-08-20T05:39:31.534177Z",
+      "max_absolute_doppler_hz": 177567.613,
+      "max_elevation_deg": 58.792329,
+      "samples": [
+        {
+          "azimuth_deg": 2.224531,
+          "doppler_shift_hz": 177567.613,
+          "elevation_deg": 10.008002,
+          "range_km": 2348.493895,
+          "range_rate_km_s": -6.491881858,
+          "timestamp": "2026-08-20T05:29:20.963962Z"
+        },
+        {
+          "azimuth_deg": 1.032614,
+          "doppler_shift_hz": 175055.07,
+          "elevation_deg": 12.771839,
+          "range_km": 2155.039918,
+          "range_rate_km_s": -6.40002312,
+          "timestamp": "2026-08-20T05:29:50.963962Z"
+        },
+        {
+          "azimuth_deg": 359.557758,
+          "doppler_shift_hz": 171569.014,
+          "elevation_deg": 15.885721,
+          "range_km": 1964.8468,
+          "range_rate_km_s": -6.272572738,
+          "timestamp": "2026-08-20T05:30:20.963962Z"
+        },
+        {
+          "azimuth_deg": 357.692814,
+          "doppler_shift_hz": 166720.502,
+          "elevation_deg": 19.444736,
+          "range_km": 1779.181161,
+          "range_rate_km_s": -6.095310853,
+          "timestamp": "2026-08-20T05:30:50.963962Z"
+        },
+        {
+          "azimuth_deg": 355.270459,
+          "doppler_shift_hz": 159922.213,
+          "elevation_deg": 23.571437,
+          "range_km": 1599.837161,
+          "range_rate_km_s": -5.846765057,
+          "timestamp": "2026-08-20T05:31:20.963962Z"
+        },
+        {
+          "azimuth_deg": 352.016862,
+          "doppler_shift_hz": 150285.436,
+          "elevation_deg": 28.415533,
+          "range_km": 1429.407465,
+          "range_rate_km_s": -5.494443941,
+          "timestamp": "2026-08-20T05:31:50.963962Z"
+        },
+        {
+          "azimuth_deg": 347.459771,
+          "doppler_shift_hz": 136493.849,
+          "elevation_deg": 34.13307,
+          "range_km": 1271.682655,
+          "range_rate_km_s": -4.990222728,
+          "timestamp": "2026-08-20T05:32:20.963962Z"
+        },
+        {
+          "azimuth_deg": 340.741687,
+          "doppler_shift_hz": 116735.897,
+          "elevation_deg": 40.801898,
+          "range_km": 1132.170765,
+          "range_rate_km_s": -4.26787092,
+          "timestamp": "2026-08-20T05:32:50.963962Z"
+        },
+        {
+          "azimuth_deg": 330.270067,
+          "doppler_shift_hz": 88975.929,
+          "elevation_deg": 48.168282,
+          "range_km": 1018.544493,
+          "range_rate_km_s": -3.252964919,
+          "timestamp": "2026-08-20T05:33:20.963962Z"
+        },
+        {
+          "azimuth_deg": 313.428878,
+          "doppler_shift_hz": 52110.328,
+          "elevation_deg": 55.062103,
+          "range_km": 940.359416,
+          "range_rate_km_s": -1.905156485,
+          "timestamp": "2026-08-20T05:33:50.963962Z"
+        },
+        {
+          "azimuth_deg": 288.645932,
+          "doppler_shift_hz": 8090.323,
+          "elevation_deg": 58.792329,
+          "range_km": 906.905884,
+          "range_rate_km_s": -0.295782678,
+          "timestamp": "2026-08-20T05:34:20.963962Z"
+        },
+        {
+          "azimuth_deg": 262.038048,
+          "doppler_shift_hz": -37187.571,
+          "elevation_deg": 56.900788,
+          "range_km": 923.084693,
+          "range_rate_km_s": 1.35957966,
+          "timestamp": "2026-08-20T05:34:50.963962Z"
+        },
+        {
+          "azimuth_deg": 242.345915,
+          "doppler_shift_hz": -76992.938,
+          "elevation_deg": 50.737175,
+          "range_km": 986.432155,
+          "range_rate_km_s": 2.814866106,
+          "timestamp": "2026-08-20T05:35:20.963962Z"
+        },
+        {
+          "azimuth_deg": 229.97197,
+          "doppler_shift_hz": -107913.454,
+          "elevation_deg": 43.329473,
+          "range_km": 1088.680429,
+          "range_rate_km_s": 3.945321907,
+          "timestamp": "2026-08-20T05:35:50.963962Z"
+        },
+        {
+          "azimuth_deg": 222.156233,
+          "doppler_shift_hz": -130238.168,
+          "elevation_deg": 36.355661,
+          "range_km": 1219.991594,
+          "range_rate_km_s": 4.761514679,
+          "timestamp": "2026-08-20T05:36:20.963962Z"
+        },
+        {
+          "azimuth_deg": 216.947381,
+          "doppler_shift_hz": -145871.073,
+          "elevation_deg": 30.303933,
+          "range_km": 1371.926537,
+          "range_rate_km_s": 5.333054592,
+          "timestamp": "2026-08-20T05:36:50.963962Z"
+        },
+        {
+          "azimuth_deg": 213.279563,
+          "doppler_shift_hz": -156766.333,
+          "elevation_deg": 25.170093,
+          "range_km": 1538.249564,
+          "range_rate_km_s": 5.731385891,
+          "timestamp": "2026-08-20T05:37:20.963962Z"
+        },
+        {
+          "azimuth_deg": 210.573933,
+          "doppler_shift_hz": -164415.424,
+          "elevation_deg": 20.810216,
+          "range_km": 1714.629037,
+          "range_rate_km_s": 6.0110371,
+          "timestamp": "2026-08-20T05:37:50.963962Z"
+        },
+        {
+          "azimuth_deg": 208.501103,
+          "doppler_shift_hz": -169843.056,
+          "elevation_deg": 17.068023,
+          "range_km": 1898.104024,
+          "range_rate_km_s": 6.2094716,
+          "timestamp": "2026-08-20T05:38:20.963962Z"
+        },
+        {
+          "azimuth_deg": 206.86335,
+          "doppler_shift_hz": -173728.999,
+          "elevation_deg": 13.810815,
+          "range_km": 2086.636609,
+          "range_rate_km_s": 6.351541918,
+          "timestamp": "2026-08-20T05:38:50.963962Z"
+        },
+        {
+          "azimuth_deg": 205.536009,
+          "doppler_shift_hz": -176522.332,
+          "elevation_deg": 10.934302,
+          "range_km": 2278.798972,
+          "range_rate_km_s": 6.453666309,
+          "timestamp": "2026-08-20T05:39:20.963962Z"
+        },
+        {
+          "azimuth_deg": 205.126059,
+          "doppler_shift_hz": -177305.525,
+          "elevation_deg": 9.995947,
+          "range_km": 2347.169933,
+          "range_rate_km_s": 6.48229991,
+          "timestamp": "2026-08-20T05:39:31.534177Z"
+        }
+      ],
+      "tca": "2026-08-20T05:34:26.267597Z"
+    },
+    {
+      "aos": "2026-08-20T16:33:45.064655Z",
+      "duration_seconds": 603.285,
+      "los": "2026-08-20T16:43:48.350017Z",
+      "max_absolute_doppler_hz": 175518.423,
+      "max_elevation_deg": 52.602567,
+      "samples": [
+        {
+          "azimuth_deg": 151.713175,
+          "doppler_shift_hz": 175166.657,
+          "elevation_deg": 10.005151,
+          "range_km": 2346.139911,
+          "range_rate_km_s": -6.40410276,
+          "timestamp": "2026-08-20T16:33:45.064655Z"
+        },
+        {
+          "azimuth_deg": 150.159717,
+          "doppler_shift_hz": 172279.491,
+          "elevation_deg": 12.730056,
+          "range_km": 2155.516326,
+          "range_rate_km_s": -6.298547818,
+          "timestamp": "2026-08-20T16:34:15.064655Z"
+        },
+        {
+          "azimuth_deg": 148.264111,
+          "doppler_shift_hz": 168313.494,
+          "elevation_deg": 15.784639,
+          "range_km": 1968.619759,
+          "range_rate_km_s": -6.153550738,
+          "timestamp": "2026-08-20T16:34:45.064655Z"
+        },
+        {
+          "azimuth_deg": 145.899362,
+          "doppler_shift_hz": 162850.136,
+          "elevation_deg": 19.250325,
+          "range_km": 1786.848167,
+          "range_rate_km_s": -5.953810073,
+          "timestamp": "2026-08-20T16:35:15.064655Z"
+        },
+        {
+          "azimuth_deg": 142.871819,
+          "doppler_shift_hz": 155271.212,
+          "elevation_deg": 23.225342,
+          "range_km": 1612.160892,
+          "range_rate_km_s": -5.676724197,
+          "timestamp": "2026-08-20T16:35:45.064655Z"
+        },
+        {
+          "azimuth_deg": 138.875828,
+          "doppler_shift_hz": 144670.512,
+          "elevation_deg": 27.815477,
+          "range_km": 1447.344495,
+          "range_rate_km_s": -5.28916201,
+          "timestamp": "2026-08-20T16:36:15.064655Z"
+        },
+        {
+          "azimuth_deg": 133.413826,
+          "doppler_shift_hz": 129767.725,
+          "elevation_deg": 33.098093,
+          "range_km": 1296.378756,
+          "range_rate_km_s": -4.744315278,
+          "timestamp": "2026-08-20T16:36:45.064655Z"
+        },
+        {
+          "azimuth_deg": 125.666656,
+          "doppler_shift_hz": 108927.352,
+          "elevation_deg": 39.019211,
+          "range_km": 1164.855032,
+          "range_rate_km_s": -3.982390069,
+          "timestamp": "2026-08-20T16:37:15.064655Z"
+        },
+        {
+          "azimuth_deg": 114.362259,
+          "doppler_shift_hz": 80550.509,
+          "elevation_deg": 45.154469,
+          "range_km": 1060.203032,
+          "range_rate_km_s": -2.944931107,
+          "timestamp": "2026-08-20T16:37:45.064655Z"
+        },
+        {
+          "azimuth_deg": 98.065178,
+          "doppler_shift_hz": 44209.931,
+          "elevation_deg": 50.328592,
+          "range_km": 991.105749,
+          "range_rate_km_s": -1.616317549,
+          "timestamp": "2026-08-20T16:38:15.064655Z"
+        },
+        {
+          "azimuth_deg": 77.086101,
+          "doppler_shift_hz": 2255.967,
+          "elevation_deg": 52.602567,
+          "range_km": 965.317145,
+          "range_rate_km_s": -0.082478282,
+          "timestamp": "2026-08-20T16:38:45.064655Z"
+        },
+        {
+          "azimuth_deg": 55.802082,
+          "doppler_shift_hz": -40023.628,
+          "elevation_deg": 50.74731,
+          "range_km": 986.278898,
+          "range_rate_km_s": 1.463266083,
+          "timestamp": "2026-08-20T16:39:15.064655Z"
+        },
+        {
+          "azimuth_deg": 38.934757,
+          "doppler_shift_hz": -77148.039,
+          "elevation_deg": 45.785407,
+          "range_km": 1051.189461,
+          "range_rate_km_s": 2.820536603,
+          "timestamp": "2026-08-20T16:39:45.064655Z"
+        },
+        {
+          "azimuth_deg": 27.170378,
+          "doppler_shift_hz": -106409.753,
+          "elevation_deg": 39.681072,
+          "range_km": 1152.599303,
+          "range_rate_km_s": 3.890346525,
+          "timestamp": "2026-08-20T16:40:15.064655Z"
+        },
+        {
+          "azimuth_deg": 19.128688,
+          "doppler_shift_hz": -128010.779,
+          "elevation_deg": 33.707614,
+          "range_km": 1281.794977,
+          "range_rate_km_s": 4.680081248,
+          "timestamp": "2026-08-20T16:40:45.064655Z"
+        },
+        {
+          "azimuth_deg": 13.490249,
+          "doppler_shift_hz": -143492.609,
+          "elevation_deg": 28.350515,
+          "range_km": 1431.167426,
+          "range_rate_km_s": 5.246097816,
+          "timestamp": "2026-08-20T16:41:15.064655Z"
+        },
+        {
+          "azimuth_deg": 9.392232,
+          "doppler_shift_hz": -154514.458,
+          "elevation_deg": 23.688856,
+          "range_km": 1594.935394,
+          "range_rate_km_s": 5.649057213,
+          "timestamp": "2026-08-20T16:41:45.064655Z"
+        },
+        {
+          "azimuth_deg": 6.309808,
+          "doppler_shift_hz": -162398.213,
+          "elevation_deg": 19.652695,
+          "range_km": 1768.968659,
+          "range_rate_km_s": 5.937287738,
+          "timestamp": "2026-08-20T16:42:15.064655Z"
+        },
+        {
+          "azimuth_deg": 3.921424,
+          "doppler_shift_hz": -168085.959,
+          "elevation_deg": 16.136871,
+          "range_km": 1950.373647,
+          "range_rate_km_s": 6.14523204,
+          "timestamp": "2026-08-20T16:42:45.064655Z"
+        },
+        {
+          "azimuth_deg": 2.024108,
+          "doppler_shift_hz": -172221.798,
+          "elevation_deg": 13.041661,
+          "range_km": 2137.117863,
+          "range_rate_km_s": 6.296438561,
+          "timestamp": "2026-08-20T16:43:15.064655Z"
+        },
+        {
+          "azimuth_deg": 0.485253,
+          "doppler_shift_hz": -175241.796,
+          "elevation_deg": 10.283784,
+          "range_km": 2327.753788,
+          "range_rate_km_s": 6.406849851,
+          "timestamp": "2026-08-20T16:43:45.064655Z"
+        },
+        {
+          "azimuth_deg": 0.33438,
+          "doppler_shift_hz": -175518.423,
+          "elevation_deg": 9.999275,
+          "range_km": 2348.819323,
+          "range_rate_km_s": 6.416963337,
+          "timestamp": "2026-08-20T16:43:48.350017Z"
+        }
+      ],
+      "tca": "2026-08-20T16:38:46.773862Z"
+    }
+  ],
+  "prediction_end": "2026-08-20T18:44:47.804657Z",
+  "prediction_start": "2026-08-19T18:44:47.804657Z",
+  "satellite_name": "SENTINEL-2A",
+  "station_id": "GUNTUR-REFERENCE",
+  "status": "accepted",
+  "tle_epoch": "2026-08-19T18:44:47.804657Z",
+  "tle_epoch_gap_hours": 0.0,
+  "warnings": [
+    "TLE/SGP4 validates predicted geometry, not live beacon telemetry or measured atmospheric loss."
+  ]
+}

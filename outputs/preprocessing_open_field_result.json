@@ -1,0 +1,618 @@
+{
+  "candidates": [
+    {
+      "acquired_at": "2026-06-23T05:14:28.849000Z",
+      "field_valid_pct": 0.0,
+      "in_original_range": false,
+      "quality": "LOW",
+      "rejection_reasons": [
+        "FIELD_VALID_PIXELS_BELOW_60_PERCENT",
+        "SCENE_CLOUD_ABOVE_40_PERCENT"
+      ],
+      "scene_cloud_pct": 100.0,
+      "scene_id": "S2C_44PMC_20260623_0_L2A",
+      "scl_counts": {
+        "8": 19
+      },
+      "total_field_pixels": 19,
+      "valid_field_pixels": 0
+    },
+    {
+      "acquired_at": "2026-06-25T05:14:45.872000Z",
+      "field_valid_pct": 100.0,
+      "in_original_range": false,
+      "quality": "LOW",
+      "rejection_reasons": [
+        "SCENE_CLOUD_ABOVE_40_PERCENT"
+      ],
+      "scene_cloud_pct": 79.373997,
+      "scene_id": "S2A_44PMC_20260625_0_L2A",
+      "scl_counts": {
+        "7": 19
+      },
+      "total_field_pixels": 19,
+      "valid_field_pixels": 19
+    },
+    {
+      "acquired_at": "2026-06-28T05:14:27.094000Z",
+      "field_valid_pct": 100.0,
+      "in_original_range": false,
+      "quality": "MEDIUM",
+      "rejection_reasons": [],
+      "scene_cloud_pct": 25.91446,
+      "scene_id": "S2B_44PMC_20260628_0_L2A",
+      "scl_counts": {
+        "5": 19
+      },
+      "total_field_pixels": 19,
+      "valid_field_pixels": 19
+    },
+    {
+      "acquired_at": "2026-07-03T05:14:28.019000Z",
+      "field_valid_pct": 0.0,
+      "in_original_range": false,
+      "quality": "LOW",
+      "rejection_reasons": [
+        "FIELD_VALID_PIXELS_BELOW_60_PERCENT",
+        "SCENE_CLOUD_ABOVE_40_PERCENT"
+      ],
+      "scene_cloud_pct": 99.999142,
+      "scene_id": "S2C_44PMC_20260703_0_L2A",
+      "scl_counts": {
+        "9": 19
+      },
+      "total_field_pixels": 19,
+      "valid_field_pixels": 0
+    },
+    {
+      "acquired_at": "2026-07-08T05:14:27.767000Z",
+      "field_valid_pct": 0.0,
+      "in_original_range": false,
+      "quality": "LOW",
+      "rejection_reasons": [
+        "FIELD_VALID_PIXELS_BELOW_60_PERCENT",
+        "SCENE_CLOUD_ABOVE_40_PERCENT"
+      ],
+      "scene_cloud_pct": 53.74164,
+      "scene_id": "S2B_44PMC_20260708_0_L2A",
+      "scl_counts": {
+        "8": 10,
+        "9": 9
+      },
+      "total_field_pixels": 19,
+      "valid_field_pixels": 0
+    },
+    {
+      "acquired_at": "2026-07-13T05:14:30.022000Z",
+      "field_valid_pct": 0.0,
+      "in_original_range": false,
+      "quality": "LOW",
+      "rejection_reasons": [
+        "FIELD_VALID_PIXELS_BELOW_60_PERCENT",
+        "SCENE_CLOUD_ABOVE_40_PERCENT"
+      ],
+      "scene_cloud_pct": 43.585512,
+      "scene_id": "S2C_44PMC_20260713_0_L2A",
+      "scl_counts": {
+        "10": 19
+      },
+      "total_field_pixels": 19,
+      "valid_field_pixels": 0
+    },
+    {
+      "acquired_at": "2026-07-15T05:14:45.798000Z",
+      "field_valid_pct": 100.0,
+      "in_original_range": false,
+      "quality": "MEDIUM",
+      "rejection_reasons": [],
+      "scene_cloud_pct": 26.851735,
+      "scene_id": "S2A_44PMC_20260715_0_L2A",
+      "scl_counts": {
+        "5": 19
+      },
+      "total_field_pixels": 19,
+      "valid_field_pixels": 19
+    },
+    {
+      "acquired_at": "2026-07-18T05:14:29.449000Z",
+      "field_valid_pct": 0.0,
+      "in_original_range": false,
+      "quality": "LOW",
+      "rejection_reasons": [
+        "FIELD_VALID_PIXELS_BELOW_60_PERCENT",
+        "SCENE_CLOUD_ABOVE_40_PERCENT"
+      ],
+      "scene_cloud_pct": 100.0,
+      "scene_id": "S2B_44PMC_20260718_0_L2A",
+      "scl_counts": {
+        "9": 19
+      },
+      "total_field_pixels": 19,
+      "valid_field_pixels": 0
+    },
+    {
+      "acquired_at": "2026-07-23T05:14:30.918000Z",
+      "field_valid_pct": 84.211,
+      "in_original_range": true,
+      "quality": "MEDIUM",
+      "rejection_reasons": [],
+      "scene_cloud_pct": 12.280248,
+      "scene_id": "S2C_44PMC_20260723_0_L2A",
+      "scl_counts": {
+        "5": 12,
+        "7": 4,
+        "8": 3
+      },
+      "total_field_pixels": 19,
+      "valid_field_pixels": 16
+    },
+    {
+      "acquired_at": "2026-07-28T05:14:29.885000Z",
+      "field_valid_pct": 0.0,
+      "in_original_range": true,
+      "quality": "LOW",
+      "rejection_reasons": [
+        "FIELD_VALID_PIXELS_BELOW_60_PERCENT",
+        "SCENE_CLOUD_ABOVE_40_PERCENT"
+      ],
+      "scene_cloud_pct": 100.0,
+      "scene_id": "S2B_44PMC_20260728_1_L2A",
+      "scl_counts": {
+        "8": 19
+      },
+      "total_field_pixels": 19,
+      "valid_field_pixels": 0
+    },
+    {
+      "acquired_at": "2026-08-02T05:14:30.384000Z",
+      "field_valid_pct": 10.526,
+      "in_original_range": true,
+      "quality": "LOW",
+      "rejection_reasons": [
+        "FIELD_VALID_PIXELS_BELOW_60_PERCENT",
+        "SCENE_CLOUD_ABOVE_40_PERCENT"
+      ],
+      "scene_cloud_pct": 82.097989,
+      "scene_id": "S2C_44PMC_20260802_0_L2A",
+      "scl_counts": {
+        "7": 2,
+        "8": 17
+      },
+      "total_field_pixels": 19,
+      "valid_field_pixels": 2
+    },
+    {
+      "acquired_at": "2026-08-04T05:14:46.791000Z",
+      "field_valid_pct": 0.0,
+      "in_original_range": true,
+      "quality": "LOW",
+      "rejection_reasons": [
+        "FIELD_VALID_PIXELS_BELOW_60_PERCENT",
+        "SCENE_CLOUD_ABOVE_40_PERCENT"
+      ],
+      "scene_cloud_pct": 66.508788,
+      "scene_id": "S2A_44PMC_20260804_0_L2A",
+      "scl_counts": {
+        "9": 19
+      },
+      "total_field_pixels": 19,
+      "valid_field_pixels": 0
+    },
+    {
+      "acquired_at": "2026-08-07T05:14:28.687000Z",
+      "field_valid_pct": 0.0,
+      "in_original_range": true,
+      "quality": "LOW",
+      "rejection_reasons": [
+        "FIELD_VALID_PIXELS_BELOW_60_PERCENT",
+        "SCENE_CLOUD_ABOVE_40_PERCENT"
+      ],
+      "scene_cloud_pct": 97.015661,
+      "scene_id": "S2B_44PMC_20260807_0_L2A",
+      "scl_counts": {
+        "9": 19
+      },
+      "total_field_pixels": 19,
+      "valid_field_pixels": 0
+    },
+    {
+      "acquired_at": "2026-08-12T05:14:23.174000Z",
+      "field_valid_pct": 0.0,
+      "in_original_range": true,
+      "quality": "LOW",
+      "rejection_reasons": [
+        "FIELD_VALID_PIXELS_BELOW_60_PERCENT",
+        "SCENE_CLOUD_ABOVE_40_PERCENT"
+      ],
+      "scene_cloud_pct": 99.998158,
+      "scene_id": "S2C_44PMC_20260812_0_L2A",
+      "scl_counts": {
+        "8": 19
+      },
+      "total_field_pixels": 19,
+      "valid_field_pixels": 0
+    },
+    {
+      "acquired_at": "2026-08-12T05:14:28.435000Z",
+      "field_valid_pct": 0.0,
+      "in_original_range": true,
+      "quality": "LOW",
+      "rejection_reasons": [
+        "FIELD_VALID_PIXELS_BELOW_60_PERCENT",
+        "SCENE_CLOUD_ABOVE_40_PERCENT"
+      ],
+      "scene_cloud_pct": 98.749804,
+      "scene_id": "S2C_44PMC_20260812_1_L2A",
+      "scl_counts": {
+        "8": 19
+      },
+      "total_field_pixels": 19,
+      "valid_field_pixels": 0
+    },
+    {
+      "acquired_at": "2026-08-17T05:14:26.406000Z",
+      "field_valid_pct": 0.0,
+      "in_original_range": true,
+      "quality": "LOW",
+      "rejection_reasons": [
+        "FIELD_VALID_PIXELS_BELOW_60_PERCENT",
+        "SCENE_CLOUD_ABOVE_40_PERCENT"
+      ],
+      "scene_cloud_pct": 99.792314,
+      "scene_id": "S2B_44PMC_20260817_0_L2A",
+      "scl_counts": {
+        "10": 17,
+        "8": 2
+      },
+      "total_field_pixels": 19,
+      "valid_field_pixels": 0
+    }
+  ],
+  "expanded_search_used": true,
+  "processed_at": "2026-08-17T12:06:23.324747Z",
+  "request": {
+    "analysis_date": "2026-08-17",
+    "boundary_geojson": {
+      "coordinates": [
+        [
+          [
+            80.343388751348,
+            16.1901635753026
+          ],
+          [
+            80.343388751348,
+            16.190073744104396
+          ],
+          [
+            80.3432989201498,
+            16.190073744104396
+          ],
+          [
+            80.3432989201498,
+            16.189894081707997
+          ],
+          [
+            80.343388751348,
+            16.189894081707997
+          ],
+          [
+            80.343388751348,
+            16.1898042505098
+          ],
+          [
+            80.34320908895161,
+            16.1898042505098
+          ],
+          [
+            80.34320908895161,
+            16.189714419311596
+          ],
+          [
+            80.3431192577534,
+            16.189714419311596
+          ],
+          [
+            80.3431192577534,
+            16.189534756915197
+          ],
+          [
+            80.34320908895161,
+            16.189534756915197
+          ],
+          [
+            80.34320908895161,
+            16.189444925716998
+          ],
+          [
+            80.3432989201498,
+            16.189444925716998
+          ],
+          [
+            80.3432989201498,
+            16.189355094518795
+          ],
+          [
+            80.3430294265552,
+            16.189355094518795
+          ],
+          [
+            80.3430294265552,
+            16.189085600924198
+          ],
+          [
+            80.3431192577534,
+            16.189085600924198
+          ],
+          [
+            80.3431192577534,
+            16.188905938527796
+          ],
+          [
+            80.343388751348,
+            16.188905938527796
+          ],
+          [
+            80.343388751348,
+            16.188995769726
+          ],
+          [
+            80.3435684137444,
+            16.188995769726
+          ],
+          [
+            80.3435684137444,
+            16.189175432122397
+          ],
+          [
+            80.3436582449426,
+            16.189175432122397
+          ],
+          [
+            80.3436582449426,
+            16.189355094518795
+          ],
+          [
+            80.34374807614081,
+            16.189355094518795
+          ],
+          [
+            80.34374807614081,
+            16.189624588113396
+          ],
+          [
+            80.3436582449426,
+            16.189624588113396
+          ],
+          [
+            80.3436582449426,
+            16.189714419311596
+          ],
+          [
+            80.34383790733901,
+            16.189714419311596
+          ],
+          [
+            80.34383790733901,
+            16.1898042505098
+          ],
+          [
+            80.3439277385372,
+            16.1898042505098
+          ],
+          [
+            80.3439277385372,
+            16.189983912906197
+          ],
+          [
+            80.34374807614081,
+            16.189983912906197
+          ],
+          [
+            80.34374807614081,
+            16.190073744104396
+          ],
+          [
+            80.3435684137444,
+            16.190073744104396
+          ],
+          [
+            80.3435684137444,
+            16.1901635753026
+          ],
+          [
+            80.343388751348,
+            16.1901635753026
+          ]
+        ],
+        [
+          [
+            80.343388751348,
+            16.1898042505098
+          ],
+          [
+            80.3435684137444,
+            16.1898042505098
+          ],
+          [
+            80.3435684137444,
+            16.189714419311596
+          ],
+          [
+            80.343388751348,
+            16.189714419311596
+          ],
+          [
+            80.343388751348,
+            16.1898042505098
+          ]
+        ],
+        [
+          [
+            80.3432989201498,
+            16.189355094518795
+          ],
+          [
+            80.34347858254621,
+            16.189355094518795
+          ],
+          [
+            80.34347858254621,
+            16.189175432122397
+          ],
+          [
+            80.343388751348,
+            16.189175432122397
+          ],
+          [
+            80.343388751348,
+            16.189265263320596
+          ],
+          [
+            80.3432989201498,
+            16.189265263320596
+          ],
+          [
+            80.3432989201498,
+            16.189355094518795
+          ]
+        ]
+      ],
+      "type": "Polygon"
+    },
+    "expansion_days": 30,
+    "field_id": "AP_GNT_FTW_OPEN_TEST",
+    "latitude": 16.1895796725143,
+    "location_blocking": false,
+    "location_reason": null,
+    "longitude": 80.3434336669471,
+    "scan_range_days": 30
+  },
+  "schema_version": "1.0.0",
+  "selected_quality": {
+    "acquired_at": "2026-06-28T05:14:27.094000Z",
+    "field_valid_pct": 100.0,
+    "in_original_range": false,
+    "quality": "MEDIUM",
+    "rejection_reasons": [],
+    "scene_cloud_pct": 25.91446,
+    "scene_id": "S2B_44PMC_20260628_0_L2A",
+    "scl_counts": {
+      "5": 19
+    },
+    "total_field_pixels": 19,
+    "valid_field_pixels": 19
+  },
+  "selected_scene": {
+    "acquired_at": "2026-06-28T05:14:27.094000Z",
+    "assets": {
+      "B02": {
+        "band_code": "B02",
+        "href": "https://sentinel-cogs.s3.us-west-2.amazonaws.com/sentinel-s2-l2a-cogs/44/P/MC/2026/6/S2B_44PMC_20260628_0_L2A/B02.tif",
+        "media_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+        "nodata": 0.0,
+        "offset": -0.1,
+        "requires_authentication": false,
+        "resolution_m": 10,
+        "scale": 0.0001,
+        "source_key": "blue"
+      },
+      "B03": {
+        "band_code": "B03",
+        "href": "https://sentinel-cogs.s3.us-west-2.amazonaws.com/sentinel-s2-l2a-cogs/44/P/MC/2026/6/S2B_44PMC_20260628_0_L2A/B03.tif",
+        "media_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+        "nodata": 0.0,
+        "offset": -0.1,
+        "requires_authentication": false,
+        "resolution_m": 10,
+        "scale": 0.0001,
+        "source_key": "green"
+      },
+      "B04": {
+        "band_code": "B04",
+        "href": "https://sentinel-cogs.s3.us-west-2.amazonaws.com/sentinel-s2-l2a-cogs/44/P/MC/2026/6/S2B_44PMC_20260628_0_L2A/B04.tif",
+        "media_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+        "nodata": 0.0,
+        "offset": -0.1,
+        "requires_authentication": false,
+        "resolution_m": 10,
+        "scale": 0.0001,
+        "source_key": "red"
+      },
+      "B05": {
+        "band_code": "B05",
+        "href": "https://sentinel-cogs.s3.us-west-2.amazonaws.com/sentinel-s2-l2a-cogs/44/P/MC/2026/6/S2B_44PMC_20260628_0_L2A/B05.tif",
+        "media_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+        "nodata": 0.0,
+        "offset": -0.1,
+        "requires_authentication": false,
+        "resolution_m": 20,
+        "scale": 0.0001,
+        "source_key": "rededge1"
+      },
+      "B08": {
+        "band_code": "B08",
+        "href": "https://sentinel-cogs.s3.us-west-2.amazonaws.com/sentinel-s2-l2a-cogs/44/P/MC/2026/6/S2B_44PMC_20260628_0_L2A/B08.tif",
+        "media_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+        "nodata": 0.0,
+        "offset": -0.1,
+        "requires_authentication": false,
+        "resolution_m": 10,
+        "scale": 0.0001,
+        "source_key": "nir"
+      },
+      "B11": {
+        "band_code": "B11",
+        "href": "https://sentinel-cogs.s3.us-west-2.amazonaws.com/sentinel-s2-l2a-cogs/44/P/MC/2026/6/S2B_44PMC_20260628_0_L2A/B11.tif",
+        "media_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+        "nodata": 0.0,
+        "offset": -0.1,
+        "requires_authentication": false,
+        "resolution_m": 20,
+        "scale": 0.0001,
+        "source_key": "swir16"
+      },
+      "SCL": {
+        "band_code": "SCL",
+        "href": "https://sentinel-cogs.s3.us-west-2.amazonaws.com/sentinel-s2-l2a-cogs/44/P/MC/2026/6/S2B_44PMC_20260628_0_L2A/SCL.tif",
+        "media_type": "image/tiff; application=geotiff; profile=cloud-optimized",
+        "nodata": 0.0,
+        "offset": null,
+        "requires_authentication": false,
+        "resolution_m": 20,
+        "scale": null,
+        "source_key": "scl"
+      }
+    },
+    "bbox": [
+      80.063709,
+      15.286247,
+      81.091341,
+      16.280805
+    ],
+    "cloud_cover_pct": 25.91446,
+    "collection": "sentinel-2-l2a",
+    "provider": "aws_earth_search",
+    "scene_id": "S2B_44PMC_20260628_0_L2A"
+  },
+  "status": "accepted",
+  "urban_gate": {
+    "built_pixel_pct": 0.0,
+    "condition": "URBAN_MEAN_CONDITION_NOT_MET",
+    "mean_ndbi": 0.257883,
+    "mean_ndvi": 0.438266,
+    "spectral_valid_pct": 100.0,
+    "spectral_valid_pixels": 19,
+    "urban_rejected": false
+  },
+  "valid_scl_classes": [
+    4,
+    5,
+    6,
+    7
+  ],
+  "warnings": [
+    "S2C_44PMC_20260723_0_L2A: rejected by calibrated NDBI/NDVI urban mean rule.",
+    "Original range had no spectrally usable non-urban scene; search expanded by 30 days.",
+    "Scene passed SCL quality, calibrated spectral-validity, and NDBI/NDVI mean gates."
+  ]
+}

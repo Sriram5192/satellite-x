@@ -1,0 +1,14 @@
+{
+  "calibration_status": "caller_supplied_validation_fixture",
+  "frequency_ghz": 8.2,
+  "range_km": 1000.0,
+  "data_rate_bps": 560000000.0,
+  "transmit_eirp_dbw": 60.0,
+  "receive_antenna_diameter_m": 3.0,
+  "receive_antenna_efficiency": 0.6,
+  "system_noise_temperature_k": 150.0,
+  "atmospheric_loss_db": 8.0,
+  "other_losses_db": 2.0,
+  "required_eb_n0_db": 6.0,
+  "range_rate_km_s": 5.0
+}

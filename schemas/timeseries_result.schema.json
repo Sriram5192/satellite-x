@@ -1,0 +1,120 @@
+{
+  "$defs": {
+    "IndexTrend": {
+      "additionalProperties": false,
+      "properties": {
+        "direction": {
+          "enum": [
+            "increasing",
+            "stable",
+            "decreasing"
+          ],
+          "title": "Direction",
+          "type": "string"
+        },
+        "first_mean": {
+          "title": "First Mean",
+          "type": "number"
+        },
+        "latest_mean": {
+          "title": "Latest Mean",
+          "type": "number"
+        },
+        "slope_per_day": {
+          "title": "Slope Per Day",
+          "type": "number"
+        },
+        "total_change": {
+          "title": "Total Change",
+          "type": "number"
+        }
+      },
+      "required": [
+        "first_mean",
+        "latest_mean",
+        "total_change",
+        "slope_per_day",
+        "direction"
+      ],
+      "title": "IndexTrend",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "below_expected_ndvi_observations": {
+      "minimum": 0,
+      "title": "Below Expected Ndvi Observations",
+      "type": "integer"
+    },
+    "crop_type": {
+      "title": "Crop Type",
+      "type": "string"
+    },
+    "end_date": {
+      "format": "date",
+      "title": "End Date",
+      "type": "string"
+    },
+    "field_id": {
+      "title": "Field Id",
+      "type": "string"
+    },
+    "index_trends": {
+      "additionalProperties": {
+        "$ref": "#/$defs/IndexTrend"
+      },
+      "title": "Index Trends",
+      "type": "object"
+    },
+    "max_gap_days": {
+      "minimum": 1,
+      "title": "Max Gap Days",
+      "type": "integer"
+    },
+    "observation_count": {
+      "minimum": 2,
+      "title": "Observation Count",
+      "type": "integer"
+    },
+    "persistent_water_deficit_observations": {
+      "minimum": 0,
+      "title": "Persistent Water Deficit Observations",
+      "type": "integer"
+    },
+    "quality": {
+      "enum": [
+        "limited",
+        "usable"
+      ],
+      "title": "Quality",
+      "type": "string"
+    },
+    "start_date": {
+      "format": "date",
+      "title": "Start Date",
+      "type": "string"
+    },
+    "warnings": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Warnings",
+      "type": "array"
+    }
+  },
+  "required": [
+    "field_id",
+    "crop_type",
+    "start_date",
+    "end_date",
+    "observation_count",
+    "max_gap_days",
+    "quality",
+    "index_trends",
+    "below_expected_ndvi_observations",
+    "persistent_water_deficit_observations"
+  ],
+  "title": "TimeSeriesResult",
+  "type": "object"
+}

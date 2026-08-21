@@ -1,0 +1,469 @@
+{
+  "$defs": {
+    "BandAsset": {
+      "additionalProperties": false,
+      "properties": {
+        "band_code": {
+          "enum": [
+            "B02",
+            "B03",
+            "B04",
+            "B05",
+            "B08",
+            "B11",
+            "SCL"
+          ],
+          "title": "Band Code",
+          "type": "string"
+        },
+        "href": {
+          "minLength": 1,
+          "title": "Href",
+          "type": "string"
+        },
+        "media_type": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Media Type"
+        },
+        "nodata": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Nodata"
+        },
+        "offset": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Offset"
+        },
+        "requires_authentication": {
+          "default": false,
+          "title": "Requires Authentication",
+          "type": "boolean"
+        },
+        "resolution_m": {
+          "exclusiveMinimum": 0,
+          "title": "Resolution M",
+          "type": "integer"
+        },
+        "scale": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Scale"
+        },
+        "source_key": {
+          "title": "Source Key",
+          "type": "string"
+        }
+      },
+      "required": [
+        "band_code",
+        "source_key",
+        "href",
+        "resolution_m"
+      ],
+      "title": "BandAsset",
+      "type": "object"
+    },
+    "PreprocessingInput": {
+      "additionalProperties": false,
+      "properties": {
+        "analysis_date": {
+          "format": "date",
+          "title": "Analysis Date",
+          "type": "string"
+        },
+        "boundary_geojson": {
+          "additionalProperties": true,
+          "title": "Boundary Geojson",
+          "type": "object"
+        },
+        "expansion_days": {
+          "default": 30,
+          "maximum": 180,
+          "minimum": 1,
+          "title": "Expansion Days",
+          "type": "integer"
+        },
+        "field_id": {
+          "pattern": "^[A-Za-z0-9_-]{1,64}$",
+          "title": "Field Id",
+          "type": "string"
+        },
+        "latitude": {
+          "maximum": 90,
+          "minimum": -90,
+          "title": "Latitude",
+          "type": "number"
+        },
+        "location_blocking": {
+          "default": false,
+          "title": "Location Blocking",
+          "type": "boolean"
+        },
+        "location_reason": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Location Reason"
+        },
+        "longitude": {
+          "maximum": 180,
+          "minimum": -180,
+          "title": "Longitude",
+          "type": "number"
+        },
+        "scan_range_days": {
+          "default": 30,
+          "maximum": 180,
+          "minimum": 1,
+          "title": "Scan Range Days",
+          "type": "integer"
+        }
+      },
+      "required": [
+        "field_id",
+        "latitude",
+        "longitude",
+        "boundary_geojson",
+        "analysis_date"
+      ],
+      "title": "PreprocessingInput",
+      "type": "object"
+    },
+    "SatelliteScene": {
+      "additionalProperties": false,
+      "properties": {
+        "acquired_at": {
+          "format": "date-time",
+          "title": "Acquired At",
+          "type": "string"
+        },
+        "assets": {
+          "additionalProperties": {
+            "$ref": "#/$defs/BandAsset"
+          },
+          "title": "Assets",
+          "type": "object"
+        },
+        "bbox": {
+          "items": {
+            "type": "number"
+          },
+          "maxItems": 4,
+          "minItems": 4,
+          "title": "Bbox",
+          "type": "array"
+        },
+        "cloud_cover_pct": {
+          "maximum": 100,
+          "minimum": 0,
+          "title": "Cloud Cover Pct",
+          "type": "number"
+        },
+        "collection": {
+          "title": "Collection",
+          "type": "string"
+        },
+        "provider": {
+          "enum": [
+            "aws_earth_search",
+            "copernicus_cdse"
+          ],
+          "title": "Provider",
+          "type": "string"
+        },
+        "scene_id": {
+          "title": "Scene Id",
+          "type": "string"
+        }
+      },
+      "required": [
+        "scene_id",
+        "provider",
+        "collection",
+        "acquired_at",
+        "cloud_cover_pct",
+        "bbox",
+        "assets"
+      ],
+      "title": "SatelliteScene",
+      "type": "object"
+    },
+    "SceneFieldQuality": {
+      "additionalProperties": false,
+      "properties": {
+        "acquired_at": {
+          "format": "date-time",
+          "title": "Acquired At",
+          "type": "string"
+        },
+        "field_valid_pct": {
+          "maximum": 100,
+          "minimum": 0,
+          "title": "Field Valid Pct",
+          "type": "number"
+        },
+        "in_original_range": {
+          "title": "In Original Range",
+          "type": "boolean"
+        },
+        "quality": {
+          "enum": [
+            "HIGH",
+            "MEDIUM",
+            "LOW"
+          ],
+          "title": "Quality",
+          "type": "string"
+        },
+        "rejection_reasons": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Rejection Reasons",
+          "type": "array"
+        },
+        "scene_cloud_pct": {
+          "maximum": 100,
+          "minimum": 0,
+          "title": "Scene Cloud Pct",
+          "type": "number"
+        },
+        "scene_id": {
+          "title": "Scene Id",
+          "type": "string"
+        },
+        "scl_counts": {
+          "additionalProperties": {
+            "type": "integer"
+          },
+          "title": "Scl Counts",
+          "type": "object"
+        },
+        "total_field_pixels": {
+          "minimum": 0,
+          "title": "Total Field Pixels",
+          "type": "integer"
+        },
+        "valid_field_pixels": {
+          "minimum": 0,
+          "title": "Valid Field Pixels",
+          "type": "integer"
+        }
+      },
+      "required": [
+        "scene_id",
+        "acquired_at",
+        "scene_cloud_pct",
+        "in_original_range",
+        "total_field_pixels",
+        "valid_field_pixels",
+        "field_valid_pct",
+        "scl_counts",
+        "quality"
+      ],
+      "title": "SceneFieldQuality",
+      "type": "object"
+    },
+    "UrbanGateResult": {
+      "additionalProperties": false,
+      "properties": {
+        "built_pixel_pct": {
+          "anyOf": [
+            {
+              "maximum": 100,
+              "minimum": 0,
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Built Pixel Pct"
+        },
+        "condition": {
+          "title": "Condition",
+          "type": "string"
+        },
+        "mean_ndbi": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Mean Ndbi"
+        },
+        "mean_ndvi": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Mean Ndvi"
+        },
+        "spectral_valid_pct": {
+          "maximum": 100,
+          "minimum": 0,
+          "title": "Spectral Valid Pct",
+          "type": "number"
+        },
+        "spectral_valid_pixels": {
+          "minimum": 0,
+          "title": "Spectral Valid Pixels",
+          "type": "integer"
+        },
+        "urban_rejected": {
+          "title": "Urban Rejected",
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "spectral_valid_pixels",
+        "spectral_valid_pct",
+        "urban_rejected",
+        "condition"
+      ],
+      "title": "UrbanGateResult",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "candidates": {
+      "items": {
+        "$ref": "#/$defs/SceneFieldQuality"
+      },
+      "title": "Candidates",
+      "type": "array"
+    },
+    "expanded_search_used": {
+      "default": false,
+      "title": "Expanded Search Used",
+      "type": "boolean"
+    },
+    "processed_at": {
+      "format": "date-time",
+      "title": "Processed At",
+      "type": "string"
+    },
+    "request": {
+      "$ref": "#/$defs/PreprocessingInput"
+    },
+    "schema_version": {
+      "const": "1.0.0",
+      "default": "1.0.0",
+      "title": "Schema Version",
+      "type": "string"
+    },
+    "selected_quality": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/SceneFieldQuality"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null
+    },
+    "selected_scene": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/SatelliteScene"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null
+    },
+    "status": {
+      "enum": [
+        "accepted",
+        "rejected_location",
+        "no_satellite_scene",
+        "no_acceptable_scene",
+        "urban_rejected",
+        "processing_error"
+      ],
+      "title": "Status",
+      "type": "string"
+    },
+    "urban_gate": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/UrbanGateResult"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null
+    },
+    "valid_scl_classes": {
+      "items": {
+        "type": "integer"
+      },
+      "title": "Valid Scl Classes",
+      "type": "array"
+    },
+    "warnings": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Warnings",
+      "type": "array"
+    }
+  },
+  "required": [
+    "request",
+    "processed_at",
+    "status"
+  ],
+  "title": "PreprocessingResult",
+  "type": "object"
+}

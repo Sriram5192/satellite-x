@@ -1,0 +1,19 @@
+{
+  "scope": "public_one_page_original_services",
+  "checks": {
+    "no_streamlit_exception": true,
+    "boundary_confirmed": true,
+    "set2_accepted": true,
+    "sar_accepted": true,
+    "optical_primary_sar_ancillary": true,
+    "seven_indices": true,
+    "scene_weather_aligned": true,
+    "diagnosis_present": true,
+    "download_available": true,
+    "ephemeral_no_persistence": true
+  },
+  "passed": true,
+  "verdict": "NORMAL_OR_UNRESOLVED",
+  "scene_date": "2026-06-28",
+  "water_balance_mm": -12.67
+}

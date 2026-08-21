@@ -1,0 +1,179 @@
+{
+  "$defs": {
+    "RequestOutcome": {
+      "additionalProperties": false,
+      "properties": {
+        "completion_second": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Completion Second"
+        },
+        "dropped_megabits": {
+          "title": "Dropped Megabits",
+          "type": "number"
+        },
+        "first_service_second": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "First Service Second"
+        },
+        "queue_wait_seconds": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Queue Wait Seconds"
+        },
+        "request_id": {
+          "title": "Request Id",
+          "type": "string"
+        },
+        "requested_megabits": {
+          "title": "Requested Megabits",
+          "type": "number"
+        },
+        "station_id": {
+          "title": "Station Id",
+          "type": "string"
+        },
+        "status": {
+          "enum": [
+            "completed",
+            "dropped_deadline",
+            "dropped_simulation_end"
+          ],
+          "title": "Status",
+          "type": "string"
+        },
+        "transmitted_megabits": {
+          "title": "Transmitted Megabits",
+          "type": "number"
+        }
+      },
+      "required": [
+        "request_id",
+        "station_id",
+        "status",
+        "requested_megabits",
+        "transmitted_megabits",
+        "dropped_megabits",
+        "first_service_second",
+        "completion_second",
+        "queue_wait_seconds"
+      ],
+      "title": "RequestOutcome",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "available_capacity_megabits": {
+      "title": "Available Capacity Megabits",
+      "type": "number"
+    },
+    "channel_utilization_pct": {
+      "title": "Channel Utilization Pct",
+      "type": "number"
+    },
+    "completed_requests": {
+      "title": "Completed Requests",
+      "type": "integer"
+    },
+    "dropped_megabits": {
+      "title": "Dropped Megabits",
+      "type": "number"
+    },
+    "dropped_requests": {
+      "title": "Dropped Requests",
+      "type": "integer"
+    },
+    "mean_completed_queue_wait_seconds": {
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "title": "Mean Completed Queue Wait Seconds"
+    },
+    "outcomes": {
+      "items": {
+        "$ref": "#/$defs/RequestOutcome"
+      },
+      "title": "Outcomes",
+      "type": "array"
+    },
+    "packet_drop_request_pct": {
+      "title": "Packet Drop Request Pct",
+      "type": "number"
+    },
+    "requested_megabits": {
+      "title": "Requested Megabits",
+      "type": "number"
+    },
+    "scenario_purpose": {
+      "title": "Scenario Purpose",
+      "type": "string"
+    },
+    "scheduling_policy": {
+      "title": "Scheduling Policy",
+      "type": "string"
+    },
+    "throughput_mbps": {
+      "title": "Throughput Mbps",
+      "type": "number"
+    },
+    "total_requests": {
+      "title": "Total Requests",
+      "type": "integer"
+    },
+    "transmitted_megabits": {
+      "title": "Transmitted Megabits",
+      "type": "number"
+    },
+    "warnings": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Warnings",
+      "type": "array"
+    }
+  },
+  "required": [
+    "scenario_purpose",
+    "scheduling_policy",
+    "total_requests",
+    "completed_requests",
+    "dropped_requests",
+    "packet_drop_request_pct",
+    "requested_megabits",
+    "transmitted_megabits",
+    "dropped_megabits",
+    "throughput_mbps",
+    "available_capacity_megabits",
+    "channel_utilization_pct",
+    "mean_completed_queue_wait_seconds",
+    "outcomes",
+    "warnings"
+  ],
+  "title": "TrafficSimulationResult",
+  "type": "object"
+}
