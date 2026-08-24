@@ -257,6 +257,14 @@ if st.session_state.field_request:
             location=[request.latitude, request.longitude], zoom_start=17,
             tiles="OpenStreetMap",
         )
+        folium.TileLayer(
+            tiles="https://mt1.google.com/vt/lyrs=s&x={x}&y={y}&z={z}",
+            attr="Google",
+            name="Satellite",
+            overlay=False,
+            control=True,
+        ).add_to(field_map)
+        folium.LayerControl().add_to(field_map)
         folium.Marker(
             [request.latitude, request.longitude], tooltip="Input GPS point"
         ).add_to(field_map)
