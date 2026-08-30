@@ -20,7 +20,7 @@ jobs:
           node-version: '20'
       - run: python -m pip install --upgrade pip
       - run: python -m pip install -r requirements.txt
-      - run: PYTHONPATH=src python -m compileall -q src apps audit
+      - run: PYTHONPATH=src python -m compileall -q src apps audit public_demo
       - run: node --check mobile/app.js && node --check mobile/service-worker.js
       - run: PYTHONPATH=src pytest -q
       - run: PYTHONPATH=src python -m satellite_x export-schemas --directory schemas-ci
