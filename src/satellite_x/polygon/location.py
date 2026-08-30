@@ -103,7 +103,15 @@ class LocationPreflightClient:
             distance_m <= self.settings.structure_reject_distance_m
         ):
             return True, "POINT_ON_OR_NEXT_TO_STRUCTURE"
-        if category in {"waterway"} and distance_m <= self.settings.water_reject_distance_m:
+              # Irrigation canals/drains/ditches are expected to run alongside
+        # cropland by design (fields need irrigation access) — only block
+        # on natural water bodies (rivers, streams), not irrigation infra.
+        irrigation_waterway_types = {"canal", "drain", "ditch"}
+        if (
+            category == "waterway"
+            and feature_type not in irrigation_waterway_types
+            and distance_m <= self.settings.water_reject_distance_m
+        ):
             return True, "POINT_ON_OR_NEXT_TO_WATER"
         if category == "natural" and feature_type in {
             "water",
