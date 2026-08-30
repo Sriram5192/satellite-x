@@ -85,11 +85,19 @@ class LocationPreflightClient:
                 int(payload["osm_id"]) if payload.get("osm_id") is not None else None
             ),
         )
-
     def _classify(
         self, category: str | None, feature_type: str | None, distance_m: float
     ) -> tuple[bool, str]:
-        if category == "highway" and distance_m <= self.settings.road_reject_distance_m:
+        # Farm access tracks/paths are expected to be near cropland by design
+        # (fields need an access route) — only block on real public roads.
+        non_blocking_highway_types = {
+            "track", "path", "footway", "service", "bridleway", "cycleway",
+        }
+        if (
+            category == "highway"
+            and feature_type not in non_blocking_highway_types
+            and distance_m <= self.settings.road_reject_distance_m
+        ):
             return True, "POINT_ON_OR_NEXT_TO_ROAD"
         if category in {"building", "shop", "office", "amenity"} and (
             distance_m <= self.settings.structure_reject_distance_m
